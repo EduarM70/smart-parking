@@ -1,0 +1,12 @@
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartParking.Properties.Resources.resources
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.GenerateResource.cache
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\bin\Debug\SmartParking.exe.config
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\bin\Debug\SmartParking.exe
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartParking.exe
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.Login.resources
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
