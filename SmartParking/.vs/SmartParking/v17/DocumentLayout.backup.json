@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\",
+  "WorkspaceRootPath": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smartparking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smart-parking\\smartparking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smartparking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smartparking\\smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smartparking\\smartparking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\smartparking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -32,22 +32,21 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
               "RelativeDocumentMoniker": "SmartParking\\Program.cs",
-              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Program.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
               "RelativeToolTip": "SmartParking\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T04:53:08.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T04:53:08.69Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs*",
+              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs*",
               "RelativeToolTip": "SmartParking\\Formularios\\Login\\Login.cs*",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -58,9 +57,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]*",
               "RelativeToolTip": "SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T04:30:18.449Z",
@@ -70,13 +69,12 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\smart-parking\\SmartParking\\SmartParking\\Form1.cs",
               "RelativeDocumentMoniker": "SmartParking\\Form1.cs",
               "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SmartParking\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\SmartParking\\SmartParking\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T04:20:52.785Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-30T04:20:52.785Z"
             }
           ]
         }
