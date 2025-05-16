@@ -1,42 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\",
+  "WorkspaceRootPath": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\cvfila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\cvfila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\michi\\onedrive\\escritorio\\smart-parking\\smartparking\\smartparking\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\cgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\cgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\cespaciop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\cespaciop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\cacalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\cacalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smartparking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smartparking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smartparking\\smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\marti\\onedrive - universidad don bosco\\i ciclo udb 2025\\ped104\\proyecto\\smartparking\\smartparking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,155 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e78e0cf7-2e4e-48a7-bf7f-a94d9330a3be}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PruebaDibujoForm.cs",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\PruebaDibujoForm.cs",
-              "RelativeDocumentMoniker": "SmartParking\\PruebaDibujoForm.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\PruebaDibujoForm.cs",
-              "RelativeToolTip": "SmartParking\\PruebaDibujoForm.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAiwDsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T00:50:02.143Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PruebaDibujoForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\PruebaDibujoForm.cs",
-              "RelativeDocumentMoniker": "SmartParking\\PruebaDibujoForm.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\PruebaDibujoForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SmartParking\\PruebaDibujoForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T00:48:29.518Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CVfila.cs",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CVfila.cs",
-              "RelativeDocumentMoniker": "SmartParking\\CVfila.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CVfila.cs",
-              "RelativeToolTip": "SmartParking\\CVfila.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAAAJ0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T00:42:50.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CGrafo.cs",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CGrafo.cs",
-              "RelativeDocumentMoniker": "SmartParking\\CGrafo.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CGrafo.cs",
-              "RelativeToolTip": "SmartParking\\CGrafo.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAADYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T00:42:47.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CEspacioP.cs",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CEspacioP.cs",
-              "RelativeDocumentMoniker": "SmartParking\\CEspacioP.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CEspacioP.cs",
-              "RelativeToolTip": "SmartParking\\CEspacioP.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T00:42:46.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CAcalle.cs",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CAcalle.cs",
-              "RelativeDocumentMoniker": "SmartParking\\CAcalle.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CAcalle.cs",
-              "RelativeToolTip": "SmartParking\\CAcalle.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T00:42:18.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Program.cs",
               "RelativeDocumentMoniker": "SmartParking\\Program.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Program.cs",
               "RelativeToolTip": "SmartParking\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T04:53:08.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
               "RelativeToolTip": "SmartParking\\Formularios\\Login\\Login.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T04:30:25.565Z"
+              "WhenOpened": "2025-04-30T04:30:25.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]",
               "RelativeToolTip": "SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T04:30:18.449Z"
+              "WhenOpened": "2025-04-30T04:30:18.449Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Form1.cs",
+              "RelativeDocumentMoniker": "SmartParking\\Form1.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive - Universidad Don Bosco\\I CICLO UDB 2025\\PED104\\PROYECTO\\SmartParking\\SmartParking\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SmartParking\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T04:20:52.785Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
