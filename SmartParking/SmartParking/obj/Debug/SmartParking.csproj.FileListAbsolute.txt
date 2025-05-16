@@ -22,3 +22,16 @@ C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO
 C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
 C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.exe
 C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.AssemblyReference.cache
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.Login.resources
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.PruebaDibujoForm.resources
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Properties.Resources.resources
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.GenerateResource.cache
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.CoreCompileInputs.cache
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.exe
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe.config
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
