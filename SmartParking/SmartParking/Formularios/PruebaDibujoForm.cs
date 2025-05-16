@@ -40,11 +40,11 @@ namespace SmartParking
             grafo.AgregarFila(entrada);
             // Agregar filas (vértices)
 
-            CVfila fila1 = grafo.Agregarfila("Fila1", new Point(80, 70));
-            CVfila fila2 = grafo.Agregarfila("Fila2", new Point(80, 95));
-            CVfila fila3 = grafo.Agregarfila("Fila3", new Point(80, 145));
-            CVfila fila4 = grafo.Agregarfila("Fila4", new Point(80, 170));
-            CVfila fila5 = grafo.Agregarfila("Fila5", new Point(80, 220));
+            CVfila fila1 = grafo.Agregarfila("Fila1", new Point(80, 70), 'u');
+            CVfila fila2 = grafo.Agregarfila("Fila2", new Point(80, 95),'d');
+            CVfila fila3 = grafo.Agregarfila("Fila3", new Point(80, 145),'u');
+            CVfila fila4 = grafo.Agregarfila("Fila4", new Point(80, 170),'d');
+            CVfila fila5 = grafo.Agregarfila("Fila5", new Point(80, 220),'u');
             // Agregar calles entre las filas (vértices)
             grafo.AgregarCalle(fila1, fila2, 10);     // Calle de fila1 a fila2
             grafo.AgregarCalle(fila2, fila3, 20);    // Calle de fila2 a fila3
@@ -53,11 +53,11 @@ namespace SmartParking
 
             grafo.DibujarGrafoPrueba(e);
             List<CVfila> caminoPrueba = new List<CVfila>();
-            caminoPrueba.Add(entrada);
-            caminoPrueba.Add(fila4);
+           caminoPrueba.Add(entrada);
             caminoPrueba.Add(fila3);
-            caminoPrueba.Add(fila2);
-            caminoPrueba.Add(fila1);
+            caminoPrueba.Add(fila4);
+      //      caminoPrueba.Add(fila1);
+       //     caminoPrueba.Add(fila1);
             return  caminoPrueba;
 
         }

@@ -19,9 +19,9 @@ namespace SmartParking
 
         public int getTotalFilas() { return 0; }
 
-        public CVfila Agregarfila(string bloque, Point coordenadas)
+        public CVfila Agregarfila(string bloque, Point coordenadas,char posicionCalle)
         {
-            CVfila nodo = new CVfila(bloque, coordenadas);
+            CVfila nodo = new CVfila(bloque, coordenadas, posicionCalle);
             nodos.Add(nodo);
             return nodo;
         }
@@ -45,14 +45,13 @@ namespace SmartParking
         {
             using (Pen lapiz = new Pen(Color.Black, 2))
             {
+                Point destinoAnt=new Point(0,0);
                 // Dibujamos las calles entre los vértices
                 for (int i = 0; i < camino.Count - 1; i++)
                 {
                     CVfila verticeOrigen = camino[i];
                     CVfila verticeDestino = camino[i + 1];
-
-
-                    verticeOrigen.DibujarCalle(g, verticeOrigen.Coordenada, verticeDestino.Coordenada);
+                   destinoAnt =  verticeOrigen.DibujarCalle(g, verticeOrigen, verticeDestino, destinoAnt);
 
                 }
             }

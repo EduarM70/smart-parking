@@ -20,7 +20,7 @@ namespace SmartParking
         public char PosicionRelativaCalle;  //hace referencia a si la calle esta arriba de la fila o abajo, o ninguna en el caso de entradas
                                             // u: up (arriba) d: down (abajo), n : none(ninguno)
 
-       public CVfila(string bloqueFila, Point coordenada) //el array de espacios esta llenado asi de forma provisional por motivos de prueba, no es asi en defecto
+       public CVfila(string bloqueFila, Point coordenada, char posicioncalle) //el array de espacios esta llenado asi de forma provisional por motivos de prueba, no es asi en defecto
         {
             Coordenada = coordenada;
             BloqueFila = bloqueFila;
@@ -62,14 +62,14 @@ namespace SmartParking
                 CodigoParqueado = null
             };
             Visitado = false;
-            PosicionRelativaCalle = 'u';
+            PosicionRelativaCalle = posicioncalle;
 
         }
        //constructor de prueba
        public CVfila()
         {
            
-            Coordenada = new Point(5, 165);
+            Coordenada = new Point(600, 130);
             PosicionRelativaCalle = 'n';
 
 
@@ -130,59 +130,66 @@ namespace SmartParking
             
         }
 
-        public void DibujarCalle(Graphics g, Point origen, Point destino)//dibuja arcos, conexion entre 2 vertices(filas de parqueo)
+        public Point DibujarCalle(Graphics g, CVfila origen, CVfila destino, Point DestinoAnt)//dibuja arcos, conexion entre 2 vertices(filas de parqueo)
         { 
-          //revisa si la linea es vertical
-          if(Math.Abs(origen.X - destino.X)<=5)
+            int origenX=origen.Coordenada.X;                                  //si sdestino ant es 0,0 no lo toma, ese seria el valor por defecto
+            int origenY = origen.Coordenada.Y;
+            int destinoX = destino.Coordenada.X;
+            int destinoY = destino.Coordenada.Y;
+            bool ExisteAnt = false;
+            //se asegura de conectar con la linea anterior si hubo
+            if (DestinoAnt != new Point(0, 0))
             {
-                origen.X = origen.X - 15;
-                destino.X= origen.X;
+                origenX = DestinoAnt.X+5;
+                origenY = DestinoAnt.Y;
+                ExisteAnt= true;
+            }
+
+            //para ver a que lado de la fila conectar
+            if (Math.Abs(destino.PuntoEnFila(5).X - origenX) < Math.Abs(destinoX - origenX))
+            {
+                destinoX = destino.PuntoEnFila(5).X+20;
+               
+            }
+            else
+            {
+                origenX -= 15;
+                destinoX -= 15;
+            }
+
+                //ubica las coordenadas sobre la calle
+                if (destino.PosicionRelativaCalle == 'd')
+                    destinoY = destinoY + 35;
+                else if (destino.PosicionRelativaCalle == 'u')
+                {
+                    destinoY = destinoY - 15;
+                }
+
+            if (!ExisteAnt) //si se tomaron las coordenadas de ant no se necesita ajustar 
+            {
+                if (origen.PosicionRelativaCalle == 'd')
+                    origenY = origenY + 35;
+                else if (origen.PosicionRelativaCalle == 'u')
+                {
+                    origenY = origenY - 15;
+                }
+            }
+            
+
+            //revisa si la linea es vertical
+            if (Math.Abs(origenX - destinoX)<15)
+            {
+                destinoX = origenX;
             }
 
             //revisa si la linea es horizontal
-            if (Math.Abs(origen.Y- destino.Y) <= 5)
+            if (Math.Abs(origenY - destinoY) <= 5)
             {
-                if(PosicionRelativaCalle=='d')
-                {
-                    origen.Y = origen.Y + 15;
-                    destino.Y = origen.Y;
-                }
-                else if(PosicionRelativaCalle =='u')
-                {
-                    origen.Y = origen.Y - 15;
-                    destino.Y = origen.Y;
-                }
-                else
-                {
-                    destino.Y = origen.Y+10;
-                   origen.Y = origen.Y+10;
-                }
-
-               
+                origenY = destinoY;
             }
 
-            /*
-            if(CalleAbajo==false && origen.X != destino.X)
-            {
-                origen = new Point(origen.X - 15, origen.Y -10 );
-                destino = new Point(destino.X - 15, destino.Y - 10);
 
-            }
-            else if(origen.X != destino.X)
-            {
-                origen = new Point(origen.X - 15, origen.Y + 10);
-                destino = new Point(destino.X - 15, destino.Y + 10);
-            }
-
-            if(Math.Abs(origen.Y- destino.Y)<= 10)
-            {
-                origen.Y = destino.Y;
-                origen.X = origen.X + 15;
-                destino.X = destino.X +15;
-
-            }
-            */
-
+            
 
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
@@ -191,14 +198,14 @@ namespace SmartParking
                     {
                         CustomEndCap = bigArrow,
                         Alignment = PenAlignment.Center
-                    }, origen, destino);
-           
+                    },new Point(origenX, origenY), new Point(destinoX,destinoY));
+            return new Point(destinoX, destinoY);
         }
 
-        public Point PuntoEnFila( int posicion) //obtiene el punto en el que se encuentra un espacio de parqueo en la fila
+        public Point PuntoEnFila(int posicion) //obtiene el punto en el que se encuentra un espacio de parqueo en la fila
         {
-            int espacio = 18; // Espacio entre rectángulos
-            int anchura = 20;
+            int espacio = 10; // Espacio entre rectángulos
+            int anchura = 18;
             int x=0, y=0;
             for (int i = 0; i < posicion; i++)
             {
@@ -206,9 +213,10 @@ namespace SmartParking
                 y = Coordenada.Y;
             }
             Point Espacio = new Point(x+15, y);
+          
             return Espacio;
         }
-       
+
         public bool getHayDisponible() { return false; }
 
         public int DisponibleCercano() { return 0; }
