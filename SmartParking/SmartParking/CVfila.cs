@@ -188,9 +188,6 @@ namespace SmartParking
                 origenY = destinoY;
             }
 
-
-            
-
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
@@ -200,6 +197,21 @@ namespace SmartParking
                         Alignment = PenAlignment.Center
                     },new Point(origenX, origenY), new Point(destinoX,destinoY));
             return new Point(destinoX, destinoY);
+        }
+
+        //sobrecarga de dibujar calle que solo toma como argumento coordenadas, usar para dibujar la linea final hasta estacionamiento
+        public void DibujarCalle(Graphics g, Point origen, Point destino)
+        {
+          
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
+            bigArrow.BaseCap = LineCap.Triangle;
+            g.DrawLine(new Pen(new SolidBrush(Color.Gold), (float)8)
+            {
+                CustomEndCap = bigArrow,
+                Alignment = PenAlignment.Center
+            }, origen, destino);
+           
         }
 
         public Point PuntoEnFila(int posicion) //obtiene el punto en el que se encuentra un espacio de parqueo en la fila
