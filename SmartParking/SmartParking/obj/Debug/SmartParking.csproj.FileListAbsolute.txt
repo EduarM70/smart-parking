@@ -35,3 +35,16 @@ C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\D
 C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
 C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
 C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe.config
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.Login.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.PruebaDibujoForm.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Properties.Resources.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.GenerateResource.cache
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.exe
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
