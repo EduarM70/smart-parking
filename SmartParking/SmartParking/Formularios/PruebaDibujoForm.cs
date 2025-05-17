@@ -18,18 +18,17 @@ namespace SmartParking
             InitializeComponent();
            
             panel1.Paint += panel1_Paint;
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            // fila.DibujarFila(e.Graphics, fila.Coordenada);
-            //   Point punto = new Point(400, 85);
-            //    fila.DibujarCalle(e.Graphics, punto, fila.PuntoEnFila(3));
 
             CrearGrafoDePrueba(e.Graphics);
             List<CVfila> caminoPrueba = new List<CVfila>();
-
             grafo.DibujarCamino(e.Graphics, CrearGrafoDePrueba(e.Graphics));
+           
+            
         }
 
         public static List<CVfila> CrearGrafoDePrueba(Graphics e)

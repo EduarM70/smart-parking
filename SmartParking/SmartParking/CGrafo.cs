@@ -41,7 +41,7 @@ namespace SmartParking
             return false;
         }
 
-        public void DibujarCamino(Graphics g, List<CVfila> camino)
+        public void DibujarCamino(Graphics g, List<CVfila> camino) //no comprueba si hay camino en los nodos en la lista, mandarle solo lista con caminos                                                           //ya comprobados     
         {
             using (Pen lapiz = new Pen(Color.Black, 2))
             {
@@ -66,9 +66,15 @@ namespace SmartParking
             }
         }
 
-        public void ReestablecerColores(Graphics g) { }
 
-        public void Desmarcar() { }
+        public void Desmarcar() 
+        {
+            foreach (CVfila n in nodos)
+            {
+                n.Visitado = false;
+               
+            }
+        }
     }
 
    

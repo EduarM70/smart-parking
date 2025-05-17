@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -11,20 +12,19 @@ namespace SmartParking
 {
     public class CVfila
     {
-        public string BloqueFila; 
+        public string BloqueFila; //bloque fila esta solo para decirle al usuario a que bloque ir, no se usa en la busqueda
         public bool HayDisponibles;
         public List<CAcalle> ListaAdyacencia;
-        public CEspacioP[] espacios;
+        public CEspacioP[] espacios;//espacios de parqueo
         public bool Visitado;
         public Point Coordenada;
         public char PosicionRelativaCalle;  //hace referencia a si la calle esta arriba de la fila o abajo, o ninguna en el caso de entradas
-                                            // u: up (arriba) d: down (abajo), n : none(ninguno)
+                                            // u: up (arriba) d: down (abajo), n : none(ninguno) (para entradas)
 
        public CVfila(string bloqueFila, Point coordenada, char posicioncalle) //el array de espacios esta llenado asi de forma provisional por motivos de prueba, no es asi en defecto
         {
             Coordenada = coordenada;
             BloqueFila = bloqueFila;
-            HayDisponibles = getHayDisponible();
             ListaAdyacencia = new List<CAcalle>();
             espacios = new CEspacioP[5];
             espacios[0] = new CEspacioP
@@ -43,27 +43,27 @@ namespace SmartParking
 
             espacios[2] = new CEspacioP
             {
-                Disponible = true,
+                Disponible = false,
                 EspacioEspecial = false,
                 CodigoParqueado = null
             };
 
             espacios[3] = new CEspacioP
             {
-                Disponible = false,
+                Disponible = true,
                 EspacioEspecial = false,
                 CodigoParqueado = "XYZ789"
             };
 
             espacios[4] = new CEspacioP
             {
-                Disponible = true,
+                Disponible = false,
                 EspacioEspecial = true,
                 CodigoParqueado = null
             };
             Visitado = false;
             PosicionRelativaCalle = posicioncalle;
-
+            HayDisponibles = getHayDisponible();
         }
        //constructor de prueba
        public CVfila()
@@ -217,11 +217,58 @@ namespace SmartParking
             return Espacio;
         }
 
-        public bool getHayDisponible() { return false; }
+        public bool getHayDisponible()
+        { bool aux = false;
+            for(int i=0; i<5; i++)
+            {
+                if (espacios[i].Disponible == true)
+                {
+                    aux= true;
+                    break;
+                }  
+            }
+          return aux;
+        }
 
-        public int DisponibleCercano() { return 0; }
+        public int PosicionDisponibleCercano(Point origen) //si devuelve -1 es que no hay disponible cercano
+        {
+            int auxDistancia1 = int.MaxValue;
+            int auxDistancia2 = 0;
+            int auxNum=-1;
+            List<int> disponibles = new List<int>();
+            for (int i = 0; i < 5; i++)
+            {
+                if (espacios[i].Disponible == true)
+                {
+                    disponibles.Add(i);
+                    
+                }
+           
+            }
 
-        public void CambiarEstado(string Codigo) { }
+            foreach (int numeroEspacio in disponibles)
+            {
+                auxDistancia2 = Math.Abs(PuntoEnFila(numeroEspacio).X - origen.X);
+
+                if (auxDistancia2 < auxDistancia1)
+                {
+                    auxDistancia2 = auxDistancia1;
+                    auxNum = numeroEspacio;
+                }
+            }
+
+            return auxNum;
+        }
+
+        public void CambiarEstado(int posicion)
+        {
+            if (espacios[posicion].Disponible == true)
+                espacios[posicion].Disponible = false;
+            else
+            {
+                espacios[posicion].Disponible=true;
+            }
+        }
 
 
     }
