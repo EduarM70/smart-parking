@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\",
+  "WorkspaceRootPath": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\pc\\documents\\github\\smart-parking\\smartparking\\smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\smartparking\\formularios\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\smartparking\\formularios\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\smartparking\\cgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\cgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\cgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\smartparking\\cvfila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\michi\\onedrive\\escritorio\\smart-parking\\smartparking\\smartparking\\cvfila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\cvfila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\formularios\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\formularios\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\pruebadibujoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,48 +78,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CGrafo.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\CGrafo.cs",
-              "RelativeDocumentMoniker": "SmartParking\\CGrafo.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\CGrafo.cs",
-              "RelativeToolTip": "SmartParking\\CGrafo.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAAC8AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T20:12:17.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CVfila.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\CVfila.cs",
-              "RelativeDocumentMoniker": "SmartParking\\CVfila.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\CVfila.cs",
-              "RelativeToolTip": "SmartParking\\CVfila.cs",
-              "ViewState": "AQIAAKYAAAAAAAAAAAAAAKcAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T20:07:04.757Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "PruebaDibujoForm.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\PruebaDibujoForm.cs",
+              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\PruebaDibujoForm.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\PruebaDibujoForm.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\PruebaDibujoForm.cs",
+              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\PruebaDibujoForm.cs",
               "RelativeToolTip": "SmartParking\\Formularios\\PruebaDibujoForm.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAADkAAAAiAAAAAAAAAA==",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T20:06:53.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CGrafo.cs",
+              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CGrafo.cs",
+              "RelativeDocumentMoniker": "SmartParking\\CGrafo.cs",
+              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CGrafo.cs",
+              "RelativeToolTip": "SmartParking\\CGrafo.cs",
+              "ViewState": "AQIAAC0AAABAVbVBhWcvwEIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T20:12:17.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CVfila.cs",
+              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CVfila.cs",
+              "RelativeDocumentMoniker": "SmartParking\\CVfila.cs",
+              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\CVfila.cs",
+              "RelativeToolTip": "SmartParking\\CVfila.cs",
+              "ViewState": "AQIAAL4AAAAgx3EcO44bwNUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T20:07:04.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PruebaDibujoForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\PruebaDibujoForm.cs",
+              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\PruebaDibujoForm.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\PruebaDibujoForm.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\PruebaDibujoForm.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\PruebaDibujoForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "SmartParking\\Formularios\\PruebaDibujoForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T02:46:16.984Z",
@@ -127,24 +129,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
               "RelativeDocumentMoniker": "SmartParking\\Program.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
+              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
               "RelativeToolTip": "SmartParking\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T04:53:08.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T04:53:08.69Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
+              "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
               "RelativeToolTip": "SmartParking\\Formularios\\Login\\Login.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -154,10 +155,10 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\Login\\Login.cs",
               "ToolTip": "C:\\Users\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\michi\\OneDrive\\Escritorio\\smart-parking\\SmartParking\\SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SmartParking\\Formularios\\Login\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T04:30:18.449Z"
             }
