@@ -17,7 +17,7 @@ namespace SmartParking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PruebaDibujoForm());
+            Application.Run(new FormEntrada());
         }
     }
 }
