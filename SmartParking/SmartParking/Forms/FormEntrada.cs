@@ -52,7 +52,7 @@ namespace SmartParking.Forms
             conexionDB.ConectarBase();
             try
             {
-                string query = "INSERT INTO Registro_ingreso(codigo, fecha_ingreso)" +
+                string query = "INSERT INTO Registro_ingreso(codigo, Fecha_ingreso)" +
                     "VALUES(@cod, @fechaIngreso)";
                 SqlCommand cmd = new SqlCommand(query, conexionDB.ConectarBase());
                 cmd.Parameters.AddWithValue("@cod", id);

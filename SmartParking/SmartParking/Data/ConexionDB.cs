@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 
+
 namespace SmartParking.Data
 {
     internal class ConexionDB
