@@ -22,5 +22,6 @@ namespace SmartParking.Services
             nDestino = destino;
             Peso = peso;
         }
+
     }
 }

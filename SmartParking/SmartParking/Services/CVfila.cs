@@ -6,6 +6,7 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TheArtOfDevHtmlRenderer.Adapters;
 using static System.Windows.Forms.AxHost;
 
 namespace SmartParking.Services
@@ -16,49 +17,144 @@ namespace SmartParking.Services
         public string BloqueFila;
         public bool HayDisponibles;
         public List<CAcalle> ListaAdyacencia;
-        public CEspacioP[] espacios;
+        public CEspacioP[] espacios; //espacios de parqueo
+        private int cantidadEspacios;
         public bool Visitado;
         public Point Coordenada;
-        public char PosicionRelativaCalle;
+        public string zona;
+        public int[] numerosParqueos; // los numeros que deben llevar cada fila
+        public char PosicionRelativaCalle;  //hace referencia a si la calle esta arriba de la fila o abajo, o ninguna en el caso de entradas
+                                            // u: up (arriba) d: down (abajo), n : none(ninguno) (para entradas)
 
-        public CVfila(string bloqueFila, Point coordenada, char posicioncalle)
-        {
+       public CVfila(string bloqueFila, Point coordenada, char posicioncalle, string zonafila, int parqueos = 5) //el array de espacios esta llenado asi de forma provisional por motivos de prueba, no es asi en defecto
+       {
             Coordenada = coordenada;
             BloqueFila = bloqueFila;
+
             ListaAdyacencia = new List<CAcalle>();
-            espacios = new CEspacioP[5];
-            for (int i = 0; i < 5; i++)
+
+            cantidadEspacios = parqueos; // cantidad de parqueos que deben tener cada fila, para recorrer el arreglo
+
+            espacios = new CEspacioP[cantidadEspacios];
+
+            // asignar los numeros de los parqueos dependiendo de la fila y zona a la que perteneza
+
+            // Extraer la letra (primer carácter)
+            char zona = zonafila[0]; // 'A'
+
+            // Extraer el número (resto del string)
+            string numeroStr = zonafila.Substring(1); // "1"
+
+            int fila = int.Parse(numeroStr); // 1
+
+            switch (fila)
             {
-                espacios[i] = new CEspacioP { Disponible = false };
+                case 1:
+                    numerosParqueos = new int[] { 1, 2, 3, 4, 5, 6 };
+                    break;
+                case 2:
+                    numerosParqueos = new int[] { 7, 8, 9, 10, 11, 12, 13 };
+                    break;
+                case 3:
+                    numerosParqueos = new int[] { 14, 15, 16, 17, 18, 19, 20 };
+                    break;
+                case 4:
+                    numerosParqueos = new int[] { 21, 22, 23, 24, 25, 26, 27 };
+                    break;
             }
-            espacios[3].Disponible = true; // Por defecto activa uno en el centro
+
+            for (int i = 0; i < cantidadEspacios; i++)
+            {
+                espacios[i] = new CEspacioP()
+                {
+                    Disponible = true,
+                    EspacioEspecial = false,
+                    CodigoParqueado = null,
+                    numero = numerosParqueos[i]
+                };
+            }
+
+            //espacios[0] = new CEspacioP
+            //{
+            //    Disponible = true,
+            //    EspacioEspecial = false,
+            //    CodigoParqueado = null
+            //};
+
+            //espacios[1] = new CEspacioP
+            //{
+            //    Disponible = true,
+            //    EspacioEspecial = true,
+            //    CodigoParqueado = "ABC123"
+            //};
+
+            //espacios[2] = new CEspacioP
+            //{
+            //    Disponible = true,
+            //    EspacioEspecial = false,
+            //    CodigoParqueado = null
+            //};
+
+            //espacios[3] = new CEspacioP
+            //{
+            //    Disponible = true,
+            //    EspacioEspecial = false,
+            //    CodigoParqueado = "XYZ789"
+            //};
+
+            //espacios[4] = new CEspacioP
+            //{
+            //    Disponible = true,
+            //    EspacioEspecial = true,
+            //    CodigoParqueado = null
+            //};
+
+            //espacios[5] = new CEspacioP
+            //{
+            //    Disponible = true,
+            //    EspacioEspecial = false,
+            //    CodigoParqueado = null
+            //};
+
+            //espacios[6] = new CEspacioP
+            //{
+            //    Disponible = true,
+            //    EspacioEspecial = false,
+            //    CodigoParqueado = null
+            //};
+
             Visitado = false;
             PosicionRelativaCalle = posicioncalle;
             HayDisponibles = getHayDisponible();
-        }
+       }
 
-        public CVfila()
-        {
+       //constructor de prueba
+       public CVfila()
+       {
+           
             Coordenada = new Point(600, 130);
             PosicionRelativaCalle = 'n';
-            ListaAdyacencia = new List<CAcalle>();
-            espacios = new CEspacioP[5];
-            for (int i = 0; i < 5; i++)
-            {
-                espacios[i] = new CEspacioP { Disponible = false };
-            }
-            HayDisponibles = getHayDisponible();
+
+
+       }
+
+        // Constructor para Entradas
+        public CVfila(Point coordenada)
+        {
+            Coordenada = coordenada;
+            PosicionRelativaCalle = 'n';
         }
 
         public void DibujarFila(Graphics g, Point origen)
         {
             g.SmoothingMode = SmoothingMode.AntiAlias;
-            Color color = Color.Yellow;
+
+            Color color = Color.Yellow; //amarillo signifca que algo de el codigo no esta funcionando
             int anchura = 15;
             int altura = 15;
             int espacio = 5;
 
-            for (int i = 0; i < espacios.Count(); i++)
+            for (int i = 0; i < cantidadEspacios; i++)
             {
                 int x = origen.X + i * (anchura + espacio);
                 int y = origen.Y;
@@ -70,32 +166,76 @@ namespace SmartParking.Services
                 }
             }
         }
-
         public void DibujarFila(Graphics g)
         {
             g.SmoothingMode = SmoothingMode.AntiAlias;
-            if (espacios != null)
+
+            if (espacios!=null)
             {
-                Color color = Color.Yellow;
-                int anchura = 18;
-                int altura = 18;
-                int espacio = 10;
+                Color color = Color.Yellow; //amarillo signifca que algo de el codigo no esta funcionando
+                int anchura = 24;
+                int altura = 24;
+                int espacio = 18; // Espacio entre rectángulos
 
-                for (int i = 0; i < espacios.Count(); i++)
+                for (int i = 0; i < cantidadEspacios; i++)
                 {
-                    int x = Coordenada.X + i * (anchura + espacio);
-                    int y = Coordenada.Y;
-                    color = espacios[i].Disponible ? Color.Green : Color.Red;
+                    int x = (Coordenada.X + 8) + i * (anchura + espacio);
+                    int y = Coordenada.Y + 14;
 
-                    using (SolidBrush brush = new SolidBrush(color))
+                    if (espacios[i].Disponible == true)
+                        color = Color.Green;
+                    else
+                        color = Color.Red;
+
+                    //using (SolidBrush brush = new SolidBrush(color))
+                    //{
+                    //    g.FillRectangle(brush, x, y, anchura, altura);
+                    //}
+
+                    Rectangle rect = new Rectangle(x, y, anchura, altura);
+                    int borderRadius = 5;
+
+                    using (GraphicsPath path = CreateRoundedRectangle(rect, borderRadius))
                     {
-                        g.FillRectangle(brush, x, y, anchura, altura);
+                        using (SolidBrush brush = new SolidBrush(color))
+                        {
+                            g.FillPath(brush, path);
+                        }
+
+                        using (Pen pen = new Pen(color))
+                        {
+                            g.DrawPath(pen, path);
+                        }
                     }
+
+                    // Dibujar el texto centrado
+                    string number = espacios[i].numero.ToString();
+                    Font font = new Font("Poppins", 7, FontStyle.Bold);
+                    SizeF textSize = g.MeasureString(number, font);
+
+                    // Calcular posición para centrar
+                    float xtext = rect.Left + (rect.Width - textSize.Width) / 2;
+                    float ytext = rect.Top + (rect.Height - textSize.Height) / 2;
+
+                    g.DrawString(number, font, Brushes.White, xtext, ytext);
+
                 }
             }
         }
 
-        // ... (el resto del código permanece igual)
+        private GraphicsPath CreateRoundedRectangle(Rectangle rect, int borderRadius)
+        {
+            GraphicsPath path = new GraphicsPath();
+
+            path.AddArc(rect.X, rect.Y, borderRadius, borderRadius, 180, 90);
+            path.AddArc(rect.Right - borderRadius, rect.Y, borderRadius, borderRadius, 270, 90);
+            path.AddArc(rect.Right - borderRadius, rect.Bottom - borderRadius, borderRadius, borderRadius, 0, 90);
+            path.AddArc(rect.X, rect.Bottom - borderRadius, borderRadius, borderRadius, 90, 90);
+
+            path.CloseFigure();
+            return path;
+        }
+
         public Point DibujarCalle(Graphics g, CVfila origen, CVfila destino, Point DestinoAnt)//dibuja arcos, conexion entre 2 vertices(filas de parqueo)
         {
             int origenX = origen.Coordenada.X;                                  //si sdestino ant es 0,0 no lo toma, ese seria el valor por defecto
@@ -215,7 +355,7 @@ namespace SmartParking.Services
             int auxDistancia2 = 0;
             int auxNum = -1;
             List<int> disponibles = new List<int>();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < cantidadEspacios; i++)
             {
                 if (espacios[i].Disponible == true)
                 {
