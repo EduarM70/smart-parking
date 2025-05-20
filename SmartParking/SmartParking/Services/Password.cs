@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartParking
+namespace SmartParking.Services
 {
     internal class Password
     {

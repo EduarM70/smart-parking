@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-namespace SmartParking.Formularios
+using SmartParking.Data;
+using SmartParking.Services;
+
+namespace SmartParking.Forms
 {
     public partial class FormEntrada : Form
     {
