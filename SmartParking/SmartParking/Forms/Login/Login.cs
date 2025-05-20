@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SmartParking.Formularios
+namespace SmartParking.Forms
 {
     public partial class Login : Form
     {

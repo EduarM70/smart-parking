@@ -1,4 +1,4 @@
-﻿namespace SmartParking.Formularios
+﻿namespace SmartParking.Forms
 {
     partial class Login
     {
@@ -145,7 +145,7 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(140, 64);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(86, 23);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(91, 23);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.Size = new System.Drawing.Size(193, 76);
@@ -167,7 +167,7 @@
             this.Controls.Add(this.guna2Button1);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "7";
             this.ResumeLayout(false);
             this.PerformLayout();
 
