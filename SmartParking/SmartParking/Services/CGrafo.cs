@@ -19,9 +19,9 @@ namespace SmartParking.Services
 
         public int getTotalFilas() { return 0; }
 
-        public CVfila Agregarfila(string bloque, Point coordenadas, char posicionCalle)
+        public CVfila Agregarfila(string bloque, Point coordenadas, char posicionCalle, string zonaFila, int parqueos = 5)
         {
-            CVfila nodo = new CVfila(bloque, coordenadas, posicionCalle);
+            CVfila nodo = new CVfila(bloque, coordenadas, posicionCalle, zonaFila, parqueos);
             nodos.Add(nodo);
             return nodo;
         }
@@ -36,8 +36,10 @@ namespace SmartParking.Services
             if (origen.ListaAdyacencia.Find(v => v.nDestino == nDestino) == null)
             {
                 origen.ListaAdyacencia.Add(new CAcalle(nDestino, peso));
+
                 return true;
             }
+
             return false;
         }
 

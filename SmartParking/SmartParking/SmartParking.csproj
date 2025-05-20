@@ -211,6 +211,7 @@
     <Compile Include="Forms\PruebaDibujoForm.Designer.cs">
       <DependentUpon>PruebaDibujoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\Maps\ParkingMap.cs" />
     <Compile Include="Services\Password.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

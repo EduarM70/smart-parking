@@ -23,5 +23,6 @@ namespace SmartParking.Services
         {
             // Constructor vacío
         }
+
     }
 }

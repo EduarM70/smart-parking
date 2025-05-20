@@ -11,5 +11,6 @@ namespace SmartParking.Services
         public bool Disponible;
         public bool EspacioEspecial;
         public string CodigoParqueado;
+        public int numero;
     }
 }

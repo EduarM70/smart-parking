@@ -19,7 +19,7 @@ namespace SmartParking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Map1());
+            Application.Run(new Login());
         }
     }
 }
