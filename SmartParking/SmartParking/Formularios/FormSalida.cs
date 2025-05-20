@@ -103,7 +103,7 @@ namespace SmartParking.Formularios
             conexionDB.ConectarBase();
             try
             {
-                string query = "UPDATE Registro_ingreso SET Fecha_salida = @salida,Fiempo_estacionado = @tiempo," +
+                string query = "UPDATE Registro_ingreso SET Fecha_salida = @salida,Tiempo_estacionado = @tiempo," +
                     "Total_pagar = @cobro, Tarifa_aplicada = @cobro2 WHERE codigo = @cod";
                 SqlCommand cmd = new SqlCommand(query, conexionDB.ConectarBase());
                 cmd.Parameters.AddWithValue("@cod", txtCod.Text);

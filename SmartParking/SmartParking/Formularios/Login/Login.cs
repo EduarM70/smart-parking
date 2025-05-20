@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -19,6 +20,9 @@ namespace SmartParking.Formularios
 
         private Font interRegular;
         private Font interBold;
+
+        //llmar el metodo de conexion a la base de datos
+        ConexionDB conexionDB = new ConexionDB();
 
         public Login()
         {
@@ -44,7 +48,45 @@ namespace SmartParking.Formularios
             }
         }
 
-        
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string user = txtusuario.Text;
+            string pass = txtPass.Text;
 
+            if (string.IsNullOrWhiteSpace(user) || string.IsNullOrWhiteSpace(pass))
+            {
+                MessageBox.Show("los campos o uno de los campos esta vacio.");
+            }
+
+            conexionDB.ConectarBase();
+            try
+            {
+
+
+                string queryCliente = "SELECT COUNT(*) FROM Administrador WHERE usuario = @user AND Contrasena = @pass";
+                SqlCommand cmdCliente = new SqlCommand(queryCliente, conexionDB.ConectarBase());
+                cmdCliente.Parameters.AddWithValue("@user", user);
+                cmdCliente.Parameters.AddWithValue("@pass", pass);
+
+                int esCliente = (int)cmdCliente.ExecuteScalar();
+
+                if (esCliente > 0)
+                {
+                    MessageBox.Show($"Bienvenido {user}");
+                    this.Hide();
+                    PruebaDibujoForm frm1 = new PruebaDibujoForm();
+                    frm1.ShowDialog();
+                    this.Close();
+                    return;
+                }
+            }
+
+           
+            catch (Exception ex)
+            {
+                MessageBox.Show("error usuario no encontrado", ex.Message);
+            }
+
+        }
     }
 }
