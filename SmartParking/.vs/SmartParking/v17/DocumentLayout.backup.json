@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|c:\\users\\pc\\documents\\github\\smart-parking\\smartparking\\smartparking\\formularios\\formsalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\formularios\\formsalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -66,7 +69,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 22,
+=======
+          "SelectedChildIndex": 14,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,13 +113,46 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 1,
+>>>>>>> Stashed changes
               "Title": "FormSalida.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\FormSalida.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\FormSalida.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\FormSalida.cs",
               "RelativeToolTip": "SmartParking\\Formularios\\FormSalida.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+<<<<<<< Updated upstream
+=======
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T21:06:57.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormEntrada.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\FormEntrada.Designer.cs",
+              "RelativeDocumentMoniker": "SmartParking\\Formularios\\FormEntrada.Designer.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\FormEntrada.Designer.cs",
+              "RelativeToolTip": "SmartParking\\Formularios\\FormEntrada.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:37:15.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormEntrada.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\FormEntrada.cs",
+              "RelativeDocumentMoniker": "SmartParking\\Formularios\\FormEntrada.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\FormEntrada.cs",
+              "RelativeToolTip": "SmartParking\\Formularios\\FormEntrada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T21:06:57.675Z",
               "EditorCaption": ""
@@ -167,7 +207,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 0,
+>>>>>>> Stashed changes
               "Title": "FormSalida.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\FormSalida.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\FormSalida.cs",
@@ -179,7 +223,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "FormEntrada.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Formularios\\FormEntrada.cs",
               "RelativeDocumentMoniker": "SmartParking\\Formularios\\FormEntrada.cs",
@@ -237,7 +285,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\smart-parking\\SmartParking\\SmartParking\\Program.cs",
               "RelativeDocumentMoniker": "SmartParking\\Program.cs",
