@@ -20,8 +20,7 @@ namespace SmartParking
 
         bool entradaDerechaAgregada = false;
 
-
-
+        Floyd_Warshall floyd; //para llamar métodos de Floyd_Warshall
 
         public PruebaDibujoForm()
         {
@@ -33,18 +32,43 @@ namespace SmartParking
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+            /*  if (!grafoInicializado)
+              {
+
+                  InicializarGrafo(grafo);
+                  grafoInicializado = true;
+
+
+              }
+
+              grafo.DibujarGrafoPrueba(e.Graphics);
+              DibujarRutaEjemplo(grafo, e.Graphics); */
+
+            //---- Prueba
+            
+
             if (!grafoInicializado)
             {
-
                 InicializarGrafo(grafo);
                 grafoInicializado = true;
-
-
+                floyd = new Floyd_Warshall(grafo.nodos, grafo.GenerarMatrizAdyacencia()); //inicializando grafo
+                // Obtener los estacionamientos más cercanos desde la entrada izquierda
+                CVfila entradaIzquierda = grafo.nodos.Find(f => f.BloqueFila == "EntradaIzquierda");
+                if (entradaIzquierda != null)
+                {
+                    int indiceEntrada = grafo.nodos.IndexOf(entradaIzquierda);
+                    List<CVfila> estacionamientosCercanos = floyd.ObtenerFilasCercanas(indiceEntrada);
+                    // Aquí puedes hacer algo con la lista de estacionamientos cercanos
+                    foreach (var estacionamiento in estacionamientosCercanos)
+                    {
+                        // Por ejemplo, podrías dibujar un rectángulo alrededor de cada estacionamiento cercano
+                        // o simplemente imprimir sus nombres en la consola
+                        Console.WriteLine(estacionamiento.BloqueFila);
+                    }
+                }
             }
-
             grafo.DibujarGrafoPrueba(e.Graphics);
             DibujarRutaEjemplo(grafo, e.Graphics);
-
 
 
 
@@ -171,6 +195,7 @@ namespace SmartParking
 
         }
 
+      
 
 
         //Yo por aqui no paso...

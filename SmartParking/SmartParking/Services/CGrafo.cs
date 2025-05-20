@@ -77,6 +77,42 @@ namespace SmartParking.Services
             }
         }
 
+        //Matriz de prueba 
+        public int[,] GenerarMatrizAdyacencia()
+        {
+            int n = nodos.Count;
+            int[,] matriz = new int[n, n];
+
+            // Inicializamos la matriz con un valor "infinito"
+            int INF = int.MaxValue / 2; // Evita overflow
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (i == j)
+                        matriz[i, j] = 0;
+                    else
+                        matriz[i, j] = INF;
+                }
+            }
+
+            for (int i = 0; i < nodos.Count; i++)
+            {
+                CVfila origen = nodos[i];
+                foreach (CAcalle calle in origen.ListaAdyacencia)
+                {
+                    int j = nodos.IndexOf(calle.nDestino);
+                    if (j != -1)
+                    {
+                        matriz[i, j] = calle.Peso;
+                    }
+                }
+            }
+
+            return matriz;
+        }
+
 
         public void Desmarcar() 
         {
@@ -88,6 +124,5 @@ namespace SmartParking.Services
         }
     }
 
-   
 
 }
