@@ -9,19 +9,18 @@ namespace SmartParking
 {
     public class CAcalle
     {
-        public int peso;
-        public float grosor_flecha;
-        public Color color;
+        public int Peso;
         public CVfila nDestino;
 
         public CAcalle(CVfila destino)
         {
-            // Constructor vacío
+           nDestino = destino;
         }
 
         public CAcalle(CVfila destino, int peso)
         {
-            // Constructor vacío
+            nDestino = destino;
+            Peso = peso;
         }
     }
 }
