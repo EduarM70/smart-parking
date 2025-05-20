@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
-namespace SmartParking
+namespace SmartParking.Services
 {
     public class CGrafo
     {

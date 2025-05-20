@@ -1,4 +1,4 @@
-﻿namespace SmartParking.Formularios
+﻿namespace SmartParking.Forms
 {
     partial class FormEntrada
     {

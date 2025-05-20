@@ -103,6 +103,7 @@
       <HintPath>..\packages\System.ClientModel.1.0.0\lib\netstandard2.0\System.ClientModel.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
@@ -169,48 +170,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CAcalle.cs" />
-    <Compile Include="CEspacioP.cs" />
-    <Compile Include="CGrafo.cs" />
-    <Compile Include="ConexionDB.cs" />
-    <Compile Include="CVfila.cs" />
-    <Compile Include="Formularios\FormEntrada.cs">
+    <Compile Include="Forms\Dashboard\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FormEntrada.Designer.cs">
+    <Compile Include="Forms\Dashboard\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\CAcalle.cs" />
+    <Compile Include="Services\CEspacioP.cs" />
+    <Compile Include="Services\CGrafo.cs" />
+    <Compile Include="Data\ConexionDB.cs" />
+    <Compile Include="Services\CVfila.cs" />
+    <Compile Include="Forms\FormEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEntrada.Designer.cs">
       <DependentUpon>FormEntrada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FormSalida.cs">
+    <Compile Include="Forms\FormSalida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FormSalida.Designer.cs">
+    <Compile Include="Forms\FormSalida.Designer.cs">
       <DependentUpon>FormSalida.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Login\Login.cs">
+    <Compile Include="Forms\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Login\Login.Designer.cs">
+    <Compile Include="Forms\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\PruebaDibujoForm.cs">
+    <Compile Include="Forms\PruebaDibujoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\PruebaDibujoForm.Designer.cs">
+    <Compile Include="Forms\PruebaDibujoForm.Designer.cs">
       <DependentUpon>PruebaDibujoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Password.cs" />
+    <Compile Include="Services\Password.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\FormEntrada.resx">
+    <EmbeddedResource Include="Forms\Dashboard\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEntrada.resx">
       <DependentUpon>FormEntrada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FormSalida.resx">
+    <EmbeddedResource Include="Forms\FormSalida.resx">
       <DependentUpon>FormSalida.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Login\Login.resx">
+    <EmbeddedResource Include="Forms\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\PruebaDibujoForm.resx">
+    <EmbeddedResource Include="Forms\PruebaDibujoForm.resx">
       <DependentUpon>PruebaDibujoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -239,6 +249,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1000012057.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Clases\" />
+    <Folder Include="Resources\icons\" />
+    <Folder Include="Resources\Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

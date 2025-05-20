@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.AxHost;
 
-namespace SmartParking
+namespace SmartParking.Services
 {
     public class CVfila
     {

@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
-namespace SmartParking
+namespace SmartParking.Data
 {
     internal class ConexionDB
     {
         //cadena de conexion a la base de datos
-        public string Cadena = "Server=localhost;Database=SmartParkingDB;Trusted_Connection=True;TrustServerCertificate=True;";
-
+        public string Cadena = ConfigurationManager.AppSettings["DB_CONNECTION"];
 
         public SqlConnection ConectarBase()
         {
@@ -38,5 +38,6 @@ namespace SmartParking
                 conexion.Close();
             }
         }
+
     }
 }
