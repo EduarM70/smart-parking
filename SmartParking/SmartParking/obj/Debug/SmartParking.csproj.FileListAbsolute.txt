@@ -210,3 +210,4 @@ D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartPa
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormEntrada.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormSalida.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Login.resources
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Maps.Mapa_completo.resources

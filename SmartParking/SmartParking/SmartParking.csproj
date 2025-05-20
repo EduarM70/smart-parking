@@ -176,6 +176,12 @@
     <Compile Include="Forms\Dashboard\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Maps\Map1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maps\Map1.Designer.cs">
+      <DependentUpon>Map1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\CAcalle.cs" />
     <Compile Include="Services\CEspacioP.cs" />
     <Compile Include="Services\CGrafo.cs" />
@@ -220,6 +226,9 @@
     <EmbeddedResource Include="Forms\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maps\Map1.resx">
+      <DependentUpon>Map1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PruebaDibujoForm.resx">
       <DependentUpon>PruebaDibujoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,7 +260,7 @@
     <None Include="Resources\1000012057.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\Clases\" />
+    <Folder Include="Resources\Background\" />
     <Folder Include="Resources\icons\" />
     <Folder Include="Resources\Views\" />
   </ItemGroup>

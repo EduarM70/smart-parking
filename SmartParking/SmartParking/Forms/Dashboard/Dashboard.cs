@@ -43,5 +43,20 @@ namespace SmartParking.Forms.Dashboard
         {
 
         }
+
+        private void guna2ContainerControl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ContainerControl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel28_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
