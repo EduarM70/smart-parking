@@ -15,11 +15,14 @@ namespace SmartParking.Forms
     public partial class FormSalida : Form
     {
         double tiempototal;
-        ConexionDB conexionDB = new ConexionDB();
+        ConexionDB conexionDB;
         FormEntrada entrada = new FormEntrada();
         public FormSalida()
         {
             InitializeComponent();
+
+            conexionDB = new ConexionDB();
+
             lbsaludo.Visible = false;
             btnPagar.Enabled = false;
             btnSalir.Enabled = false;

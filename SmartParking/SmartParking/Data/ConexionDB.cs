@@ -13,7 +13,8 @@ namespace SmartParking.Data
     internal class ConexionDB
     {
         //cadena de conexion a la base de datos
-        public string Cadena = ConfigurationManager.AppSettings["DB_CONNECTION"];
+        //public string Cadena = ConfigurationManager.AppSettings["DB_CONNECTION"];
+        public string Cadena = @"Data Source=MYDESKTOPMARTIN\MYSQLSERVER;Initial Catalog=SmartParkingDB;Integrated Security=True";
 
         public SqlConnection ConectarBase()
         {
@@ -25,7 +26,7 @@ namespace SmartParking.Data
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+                MessageBox.Show("Error al conectar a la base de datos: " + ex.Message, "Error al conectarse a la Base de datos");
                 return null;
             }
 

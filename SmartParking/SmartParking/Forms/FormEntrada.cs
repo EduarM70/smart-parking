@@ -17,11 +17,12 @@ namespace SmartParking.Forms
     {
         public static DateTime horaEntrada;
         Password pass = new Password();
-        ConexionDB conexionDB = new ConexionDB();
+        ConexionDB conexionDB;
         public FormEntrada()
         {
             InitializeComponent();
             btnIngresar.Enabled = false;
+            conexionDB = new ConexionDB();
         }
 
         private void btnGenerar_Click(object sender, EventArgs e)

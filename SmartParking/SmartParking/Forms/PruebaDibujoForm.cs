@@ -26,20 +26,6 @@ namespace SmartParking
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            if (!grafoInicializado)
-            {
-
-                InicializarGrafo(grafo);
-                grafoInicializado = true;
-
-
-            }
-
-            grafo.DibujarGrafoPrueba(e.Graphics);
-            DibujarRutaEjemplo(grafo, e.Graphics);
-
-
-
 
             mapaParqueo.CrearGrafoDePrueba(e.Graphics);
 
