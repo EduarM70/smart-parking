@@ -1,5 +1,59 @@
 # Smart Parking
 
+
+<p align="center">
+    <img src="https://i.imgur.com/Lfo1sQJ.png" height="200px" width="450px">
+	<h1 align="center">Smart Parking</h1>
+	<p align="center"> Un sistema inteligente de Parqueo para llevarte al mejor lugar </p>
+
+
+
+<table align="center">
+  <tr>
+    <td align="center">
+        <a href="https://github.com/IsaiasSalac129">
+            <img src="https://avatars.githubusercontent.com/IsaiasSalac129" width="100px;" alt=""/>
+            <br />
+            <sub><b>Ángel Isaías Marinero Salamanca</b></sub>
+        </a>
+        <br />
+    </td>
+    <td align="center">
+        <a href="https://github.com/iliana-g">
+            <img src="https://avatars.githubusercontent.com/iliana-g" width="100px;" alt=""/>
+            <br />
+            <sub><b>Iliana Guadalupe Granados Hernández</b></sub>
+        </a>
+        <br />
+    </td>
+    <td align="center">
+        <a href="https://github.com/EduarM70">
+            <img src="https://avatars.githubusercontent.com/EduarM70" width="100px;" alt=""/>
+            <br />
+            <sub><b>Martín Eduardo Carbajal</b></sub>
+        </a>
+        <br />
+    </td>
+    <td align="center">
+        <a href="https://github.com/IselMetzi">
+            <img src="https://avatars.githubusercontent.com/IselMetzi" width="100px;" alt=""/>
+            <br />
+            <sub><b>Isel Metzí Carrillo Mejía</b></sub>
+        </a>
+        <br />
+    </td>
+	  <td align="center">
+        <a href="https://github.com/StevenRamirez25">
+            <img src="https://avatars.githubusercontent.com/StevenRamirez25" width="100px;" alt=""/>
+            <br />
+            <sub><b>Steven Alexander Ramírez Santos</b></sub>
+        </a>
+        <br />
+  </tr>
+</table>
+
+<hr />
+
 ## Proceso de Instalación 📦
 1. Clonar el repositorio
     ```bas
