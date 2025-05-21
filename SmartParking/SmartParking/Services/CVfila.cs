@@ -4,6 +4,7 @@ using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using TheArtOfDevHtmlRenderer.Adapters;
@@ -26,7 +27,8 @@ namespace SmartParking.Services
         public char PosicionRelativaCalle;  //hace referencia a si la calle esta arriba de la fila o abajo, o ninguna en el caso de entradas
                                             // u: up (arriba) d: down (abajo), n : none(ninguno) (para entradas)
 
-       public CVfila(string bloqueFila, Point coordenada, char posicioncalle, string zonafila, int parqueos = 5) //el array de espacios esta llenado asi de forma provisional por motivos de prueba, no es asi en defecto
+       static Random rnd = new Random();
+        public CVfila(string bloqueFila, Point coordenada, char posicioncalle, string zonafila, int parqueos = 5) //el array de espacios esta llenado asi de forma provisional por motivos de prueba, no es asi en defecto
        {
             Coordenada = coordenada;
             BloqueFila = bloqueFila;
@@ -65,14 +67,10 @@ namespace SmartParking.Services
 
             for (int i = 0; i < cantidadEspacios; i++)
             {
-                Random rnd = new Random();
-               
+
                 espacios[i] = new CEspacioP()
                 {
-                    //temp 
-                    Disponible = rnd.Next(2) == 0,
-                    //temp
-                    //Disponible = true,
+                    Disponible = random(),
                     EspacioEspecial = false,
                     CodigoParqueado = null,
                     numero = numerosParqueos[i]
@@ -95,8 +93,9 @@ namespace SmartParking.Services
        }
 
         // Constructor para Entradas
-        public CVfila(Point coordenada)
+        public CVfila(string bloquefila, Point coordenada)
         {
+            BloqueFila = bloquefila;
             Coordenada = coordenada;
             PosicionRelativaCalle = 'n';
             ListaAdyacencia = new List<CAcalle>();
@@ -361,6 +360,14 @@ namespace SmartParking.Services
             }
         }
 
+
+        public bool random ()
+        {
+           
+           bool Disponible = rnd.Next(2) == 0;
+
+            return Disponible;
+        }
         //Yo por aqui no paso
     }
 }
