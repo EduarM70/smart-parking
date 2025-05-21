@@ -297,7 +297,7 @@ namespace SmartParking.Services
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
-            g.DrawLine(new Pen(new SolidBrush(Color.Gold), (float)8)
+            g.DrawLine(new Pen(new SolidBrush(Color.DarkGreen), (float)4)
             {
                 CustomEndCap = bigArrow,
                 Alignment = PenAlignment.Center
@@ -312,7 +312,7 @@ namespace SmartParking.Services
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
-            g.DrawLine(new Pen(new SolidBrush(Color.Gold), (float)8)
+            g.DrawLine(new Pen(new SolidBrush(Color.DarkGreen), (float)8)
             {
                 CustomEndCap = bigArrow,
                 Alignment = PenAlignment.Center

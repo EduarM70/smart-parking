@@ -264,6 +264,17 @@ namespace SmartParking.Services.Maps
 
             return tot;
         }
+
+        public List<CVfila> prueba (CVfila a, CVfila b, CVfila c, CVfila d)
+        {
+            List<CVfila> p = new List<CVfila>();
+            p.Add(a);
+            p.Add(b);
+            p.Add(c);
+            p.Add(d);
+
+                return p;
+        }
     }
 
 
