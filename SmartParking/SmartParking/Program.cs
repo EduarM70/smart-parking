@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SmartParking.Formularios;
+using SmartParking.Forms;
+using SmartParking.Forms.Dashboard;
+using SmartParking.Forms.Maps;
 
 namespace SmartParking
 {

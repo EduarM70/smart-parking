@@ -10,3 +10,206 @@ C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO
 C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.Login.resources
 C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
 C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe.config
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.Login.resources
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Properties.Resources.resources
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.GenerateResource.cache
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.exe
+C:\Users\marti\OneDrive - Universidad Don Bosco\I CICLO UDB 2025\PED104\PROYECTO\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.AssemblyReference.cache
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.Login.resources
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.PruebaDibujoForm.resources
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Properties.Resources.resources
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.GenerateResource.cache
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.CoreCompileInputs.cache
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.exe
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe.config
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
+C:\Users\michi\OneDrive\Escritorio\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe.config
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.PruebaDibujoForm.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Properties.Resources.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.GenerateResource.cache
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.exe
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Azure.Core.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Azure.Identity.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Bcl.Cryptography.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Buffers.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.ClientModel.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Memory.Data.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Memory.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.AccessControl.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Json.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.ValueTuple.dll
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Azure.Core.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Azure.Identity.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Bcl.Cryptography.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Identity.Client.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Buffers.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.ClientModel.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Memory.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Memory.Data.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.AccessControl.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Json.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.ValueTuple.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe.config
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Azure.Core.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Azure.Identity.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Bcl.Cryptography.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Options.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Identity.Client.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Buffers.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.ClientModel.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Data.SqlClient.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.IO.FileSystem.AccessControl.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Memory.Data.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Memory.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Numerics.Vectors.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.AccessControl.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Cryptography.Pkcs.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Principal.Windows.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Encodings.Web.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Json.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.ValueTuple.dll
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Azure.Core.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Azure.Identity.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Bcl.Cryptography.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Options.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Identity.Client.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Buffers.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.ClientModel.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Data.SqlClient.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.IO.FileSystem.AccessControl.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Memory.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Memory.Data.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Numerics.Vectors.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.AccessControl.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Cryptography.Pkcs.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Security.Principal.Windows.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Encodings.Web.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Json.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\System.ValueTuple.xml
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.AssemblyReference.cache
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.PruebaDibujoForm.resources
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Properties.Resources.resources
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.GenerateResource.cache
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.CoreCompileInputs.cache
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.exe
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormEntrada.resources
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormSalida.resources
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Login.resources
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Maps.Map1.resources
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Dashboard.DashboardForm.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Dashboard.DashboardForm.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormEntrada.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormSalida.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Login.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Maps.Map1.resources

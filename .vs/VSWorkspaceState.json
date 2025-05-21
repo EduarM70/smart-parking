@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SmartParking",
+    "\\SmartParking\\SmartParking",
+    "\\SmartParking\\SmartParking\\Forms",
+    "\\SmartParking\\SmartParking\\Forms\\Dashboard",
+    "\\SmartParking\\SmartParking\\Formularios",
+    "\\SmartParking\\SmartParking\\Images",
+    "\\SmartParking\\SmartParking\\Properties",
+    "\\SmartParking\\SmartParking\\Resources",
+    "\\SmartParking\\SmartParking\\Services"
+  ],
+  "SelectedNode": "\\SmartParking\\SmartParking\\Forms\\PruebaDibujoForm.cs",
+  "PreviewInSolutionExplorer": false
+}
