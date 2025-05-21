@@ -134,7 +134,7 @@ namespace SmartParking.Services
            
             Coordenada = new Point(600, 130);
             PosicionRelativaCalle = 'n';
-
+            ListaAdyacencia = new List<CAcalle>();
 
        }
 
@@ -143,6 +143,7 @@ namespace SmartParking.Services
         {
             Coordenada = coordenada;
             PosicionRelativaCalle = 'n';
+            ListaAdyacencia = new List<CAcalle>();
         }
 
         public void DibujarFila(Graphics g, Point origen)
