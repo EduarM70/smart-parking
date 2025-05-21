@@ -50,8 +50,8 @@
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl5 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnZonaA = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbEntradaZA = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -61,9 +61,9 @@
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl6 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnZonaB = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbEntradaZB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -73,19 +73,19 @@
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl7 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnZonaC = new Guna.UI2.WinForms.Guna2Button();
+            this.cmdEntradasZC = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbEntradaZC = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel26 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl8 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnZonaD = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbEntradaZD = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel30 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -339,8 +339,8 @@
             // guna2ContainerControl5
             // 
             this.guna2ContainerControl5.BorderRadius = 15;
-            this.guna2ContainerControl5.Controls.Add(this.guna2Button1);
-            this.guna2ContainerControl5.Controls.Add(this.guna2ComboBox1);
+            this.guna2ContainerControl5.Controls.Add(this.btnZonaA);
+            this.guna2ContainerControl5.Controls.Add(this.cmbEntradaZA);
             this.guna2ContainerControl5.Controls.Add(this.guna2HtmlLabel19);
             this.guna2ContainerControl5.Controls.Add(this.guna2TextBox3);
             this.guna2ContainerControl5.Controls.Add(this.guna2HtmlLabel18);
@@ -357,41 +357,43 @@
             this.guna2ContainerControl5.Text = "guna2ContainerControl5";
             this.guna2ContainerControl5.Click += new System.EventHandler(this.guna2ContainerControl5_Click);
             // 
-            // guna2Button1
+            // btnZonaA
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(24, 95);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(155, 45);
-            this.guna2Button1.TabIndex = 21;
-            this.guna2Button1.Text = "Ver mapa";
+            this.btnZonaA.BackColor = System.Drawing.Color.Transparent;
+            this.btnZonaA.BorderRadius = 10;
+            this.btnZonaA.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnZonaA.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnZonaA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnZonaA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnZonaA.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.btnZonaA.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold);
+            this.btnZonaA.ForeColor = System.Drawing.Color.White;
+            this.btnZonaA.Image = ((System.Drawing.Image)(resources.GetObject("btnZonaA.Image")));
+            this.btnZonaA.Location = new System.Drawing.Point(24, 95);
+            this.btnZonaA.Name = "btnZonaA";
+            this.btnZonaA.Size = new System.Drawing.Size(155, 45);
+            this.btnZonaA.TabIndex = 21;
+            this.btnZonaA.Text = "Ver mapa";
+            this.btnZonaA.Click += new System.EventHandler(this.btnZonaA_Click);
             // 
-            // guna2ComboBox1
+            // cmbEntradaZA
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.cmbEntradaZA.BackColor = System.Drawing.Color.Transparent;
+            this.cmbEntradaZA.BorderRadius = 10;
+            this.cmbEntradaZA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbEntradaZA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEntradaZA.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEntradaZA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEntradaZA.Font = new System.Drawing.Font("Poppins", 9.75F);
+            this.cmbEntradaZA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbEntradaZA.ItemHeight = 30;
+            this.cmbEntradaZA.Items.AddRange(new object[] {
             "Entrada Norte",
-            "Entrada Noroeste"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(402, 104);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(176, 36);
-            this.guna2ComboBox1.TabIndex = 20;
+            "Entrada Este"});
+            this.cmbEntradaZA.Location = new System.Drawing.Point(402, 104);
+            this.cmbEntradaZA.Name = "cmbEntradaZA";
+            this.cmbEntradaZA.Size = new System.Drawing.Size(176, 36);
+            this.cmbEntradaZA.TabIndex = 20;
             // 
             // guna2HtmlLabel19
             // 
@@ -525,9 +527,9 @@
             // guna2ContainerControl6
             // 
             this.guna2ContainerControl6.BorderRadius = 15;
-            this.guna2ContainerControl6.Controls.Add(this.guna2Button2);
+            this.guna2ContainerControl6.Controls.Add(this.btnZonaB);
             this.guna2ContainerControl6.Controls.Add(this.guna2HtmlLabel15);
-            this.guna2ContainerControl6.Controls.Add(this.guna2ComboBox2);
+            this.guna2ContainerControl6.Controls.Add(this.cmbEntradaZB);
             this.guna2ContainerControl6.Controls.Add(this.guna2HtmlLabel20);
             this.guna2ContainerControl6.Controls.Add(this.guna2HtmlLabel23);
             this.guna2ContainerControl6.Controls.Add(this.guna2TextBox4);
@@ -543,23 +545,24 @@
             this.guna2ContainerControl6.Text = "guna2ContainerControl6";
             this.guna2ContainerControl6.Click += new System.EventHandler(this.guna2ContainerControl6_Click);
             // 
-            // guna2Button2
+            // btnZonaB
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.Location = new System.Drawing.Point(24, 101);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(156, 45);
-            this.guna2Button2.TabIndex = 30;
-            this.guna2Button2.Text = "Ver mapa";
+            this.btnZonaB.BackColor = System.Drawing.Color.Transparent;
+            this.btnZonaB.BorderRadius = 10;
+            this.btnZonaB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnZonaB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnZonaB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnZonaB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnZonaB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.btnZonaB.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZonaB.ForeColor = System.Drawing.Color.White;
+            this.btnZonaB.Image = ((System.Drawing.Image)(resources.GetObject("btnZonaB.Image")));
+            this.btnZonaB.Location = new System.Drawing.Point(24, 101);
+            this.btnZonaB.Name = "btnZonaB";
+            this.btnZonaB.Size = new System.Drawing.Size(156, 45);
+            this.btnZonaB.TabIndex = 30;
+            this.btnZonaB.Text = "Ver mapa";
+            this.btnZonaB.Click += new System.EventHandler(this.btnZonaB_Click);
             // 
             // guna2HtmlLabel15
             // 
@@ -572,23 +575,24 @@
             this.guna2HtmlLabel15.TabIndex = 4;
             this.guna2HtmlLabel15.Text = "B";
             // 
-            // guna2ComboBox2
+            // cmbEntradaZB
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Poppins", 9.75F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
-            "Entrada Oeste",
-            "Entrada Sur"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(401, 107);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(176, 36);
-            this.guna2ComboBox2.TabIndex = 29;
+            this.cmbEntradaZB.BackColor = System.Drawing.Color.Transparent;
+            this.cmbEntradaZB.BorderRadius = 10;
+            this.cmbEntradaZB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbEntradaZB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEntradaZB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEntradaZB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEntradaZB.Font = new System.Drawing.Font("Poppins", 9.75F);
+            this.cmbEntradaZB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbEntradaZB.ItemHeight = 30;
+            this.cmbEntradaZB.Items.AddRange(new object[] {
+            "Entrada Sur",
+            "Entrada Oeste"});
+            this.cmbEntradaZB.Location = new System.Drawing.Point(401, 107);
+            this.cmbEntradaZB.Name = "cmbEntradaZB";
+            this.cmbEntradaZB.Size = new System.Drawing.Size(176, 36);
+            this.cmbEntradaZB.TabIndex = 29;
             // 
             // guna2HtmlLabel20
             // 
@@ -720,12 +724,12 @@
             // guna2ContainerControl7
             // 
             this.guna2ContainerControl7.BorderRadius = 15;
-            this.guna2ContainerControl7.Controls.Add(this.guna2Button3);
-            this.guna2ContainerControl7.Controls.Add(this.guna2ComboBox3);
+            this.guna2ContainerControl7.Controls.Add(this.btnZonaC);
+            this.guna2ContainerControl7.Controls.Add(this.cmdEntradasZC);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel24);
             this.guna2ContainerControl7.Controls.Add(this.guna2TextBox7);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel25);
-            this.guna2ContainerControl7.Controls.Add(this.guna2TextBox8);
+            this.guna2ContainerControl7.Controls.Add(this.cmbEntradaZC);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel26);
             this.guna2ContainerControl7.Controls.Add(this.guna2TextBox9);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel27);
@@ -737,41 +741,43 @@
             this.guna2ContainerControl7.TabIndex = 22;
             this.guna2ContainerControl7.Text = "guna2ContainerControl7";
             // 
-            // guna2Button3
+            // btnZonaC
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.Location = new System.Drawing.Point(24, 95);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(155, 45);
-            this.guna2Button3.TabIndex = 21;
-            this.guna2Button3.Text = "Ver mapa";
+            this.btnZonaC.BackColor = System.Drawing.Color.Transparent;
+            this.btnZonaC.BorderRadius = 10;
+            this.btnZonaC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnZonaC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnZonaC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnZonaC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnZonaC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.btnZonaC.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZonaC.ForeColor = System.Drawing.Color.White;
+            this.btnZonaC.Image = ((System.Drawing.Image)(resources.GetObject("btnZonaC.Image")));
+            this.btnZonaC.Location = new System.Drawing.Point(24, 95);
+            this.btnZonaC.Name = "btnZonaC";
+            this.btnZonaC.Size = new System.Drawing.Size(155, 45);
+            this.btnZonaC.TabIndex = 21;
+            this.btnZonaC.Text = "Ver mapa";
+            this.btnZonaC.Click += new System.EventHandler(this.btnZonaC_Click);
             // 
-            // guna2ComboBox3
+            // cmdEntradasZC
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Items.AddRange(new object[] {
+            this.cmdEntradasZC.BackColor = System.Drawing.Color.Transparent;
+            this.cmdEntradasZC.BorderRadius = 10;
+            this.cmdEntradasZC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmdEntradasZC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmdEntradasZC.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmdEntradasZC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmdEntradasZC.Font = new System.Drawing.Font("Poppins", 9.75F);
+            this.cmdEntradasZC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmdEntradasZC.ItemHeight = 30;
+            this.cmdEntradasZC.Items.AddRange(new object[] {
             "Entrada Norte",
-            "Entrada Noroeste"});
-            this.guna2ComboBox3.Location = new System.Drawing.Point(402, 104);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.Size = new System.Drawing.Size(178, 36);
-            this.guna2ComboBox3.TabIndex = 20;
+            "Entrada Este"});
+            this.cmdEntradasZC.Location = new System.Drawing.Point(402, 103);
+            this.cmdEntradasZC.Name = "cmdEntradasZC";
+            this.cmdEntradasZC.Size = new System.Drawing.Size(178, 36);
+            this.cmdEntradasZC.TabIndex = 20;
             // 
             // guna2HtmlLabel24
             // 
@@ -819,29 +825,29 @@
             this.guna2HtmlLabel25.TabIndex = 17;
             this.guna2HtmlLabel25.Text = "Espacios ocupados";
             // 
-            // guna2TextBox8
+            // cmbEntradaZC
             // 
-            this.guna2TextBox8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox8.BorderRadius = 10;
-            this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "50";
-            this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.Enabled = false;
-            this.guna2TextBox8.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(402, 37);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox8.Name = "guna2TextBox8";
-            this.guna2TextBox8.PlaceholderText = "";
-            this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(178, 36);
-            this.guna2TextBox8.TabIndex = 16;
-            this.guna2TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cmbEntradaZC.BackColor = System.Drawing.Color.Transparent;
+            this.cmbEntradaZC.BorderRadius = 10;
+            this.cmbEntradaZC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cmbEntradaZC.DefaultText = "50";
+            this.cmbEntradaZC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cmbEntradaZC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cmbEntradaZC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cmbEntradaZC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cmbEntradaZC.Enabled = false;
+            this.cmbEntradaZC.FillColor = System.Drawing.SystemColors.Window;
+            this.cmbEntradaZC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEntradaZC.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEntradaZC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEntradaZC.Location = new System.Drawing.Point(402, 37);
+            this.cmbEntradaZC.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.cmbEntradaZC.Name = "cmbEntradaZC";
+            this.cmbEntradaZC.PlaceholderText = "";
+            this.cmbEntradaZC.SelectedText = "";
+            this.cmbEntradaZC.Size = new System.Drawing.Size(178, 36);
+            this.cmbEntradaZC.TabIndex = 16;
+            this.cmbEntradaZC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel26
             // 
@@ -904,8 +910,8 @@
             // guna2ContainerControl8
             // 
             this.guna2ContainerControl8.BorderRadius = 15;
-            this.guna2ContainerControl8.Controls.Add(this.guna2Button4);
-            this.guna2ContainerControl8.Controls.Add(this.guna2ComboBox4);
+            this.guna2ContainerControl8.Controls.Add(this.btnZonaD);
+            this.guna2ContainerControl8.Controls.Add(this.cmbEntradaZD);
             this.guna2ContainerControl8.Controls.Add(this.guna2HtmlLabel29);
             this.guna2ContainerControl8.Controls.Add(this.guna2TextBox10);
             this.guna2ContainerControl8.Controls.Add(this.guna2HtmlLabel30);
@@ -921,41 +927,43 @@
             this.guna2ContainerControl8.TabIndex = 22;
             this.guna2ContainerControl8.Text = "guna2ContainerControl8";
             // 
-            // guna2Button4
+            // btnZonaD
             // 
-            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.Location = new System.Drawing.Point(24, 95);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(155, 45);
-            this.guna2Button4.TabIndex = 21;
-            this.guna2Button4.Text = "Ver mapa";
+            this.btnZonaD.BackColor = System.Drawing.Color.Transparent;
+            this.btnZonaD.BorderRadius = 10;
+            this.btnZonaD.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnZonaD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnZonaD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnZonaD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnZonaD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.btnZonaD.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZonaD.ForeColor = System.Drawing.Color.White;
+            this.btnZonaD.Image = ((System.Drawing.Image)(resources.GetObject("btnZonaD.Image")));
+            this.btnZonaD.Location = new System.Drawing.Point(24, 95);
+            this.btnZonaD.Name = "btnZonaD";
+            this.btnZonaD.Size = new System.Drawing.Size(155, 45);
+            this.btnZonaD.TabIndex = 21;
+            this.btnZonaD.Text = "Ver mapa";
+            this.btnZonaD.Click += new System.EventHandler(this.btnZonaD_Click);
             // 
-            // guna2ComboBox4
+            // cmbEntradaZD
             // 
-            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.Items.AddRange(new object[] {
-            "Entrada Norte",
-            "Entrada Noroeste"});
-            this.guna2ComboBox4.Location = new System.Drawing.Point(402, 104);
-            this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.Size = new System.Drawing.Size(178, 36);
-            this.guna2ComboBox4.TabIndex = 20;
+            this.cmbEntradaZD.BackColor = System.Drawing.Color.Transparent;
+            this.cmbEntradaZD.BorderRadius = 10;
+            this.cmbEntradaZD.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbEntradaZD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEntradaZD.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEntradaZD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEntradaZD.Font = new System.Drawing.Font("Poppins", 9.75F);
+            this.cmbEntradaZD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbEntradaZD.ItemHeight = 30;
+            this.cmbEntradaZD.Items.AddRange(new object[] {
+            "Entrada Sur",
+            "Entrada Este"});
+            this.cmbEntradaZD.Location = new System.Drawing.Point(402, 104);
+            this.cmbEntradaZD.Name = "cmbEntradaZD";
+            this.cmbEntradaZD.Size = new System.Drawing.Size(178, 36);
+            this.cmbEntradaZD.TabIndex = 20;
             // 
             // guna2HtmlLabel29
             // 
@@ -1162,10 +1170,10 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbEntradaZA;
+        private Guna.UI2.WinForms.Guna2Button btnZonaA;
+        private Guna.UI2.WinForms.Guna2Button btnZonaB;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbEntradaZB;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
@@ -1174,19 +1182,19 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2Button btnZonaC;
+        private Guna.UI2.WinForms.Guna2ComboBox cmdEntradasZC;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
+        private Guna.UI2.WinForms.Guna2TextBox cmbEntradaZC;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel26;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel27;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel28;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
+        private Guna.UI2.WinForms.Guna2Button btnZonaD;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbEntradaZD;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel29;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel30;
