@@ -50,7 +50,8 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRecorrido = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRegresar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxMap)).BeginInit();
             this.guna2ContainerControl1.SuspendLayout();
@@ -260,11 +261,12 @@
             this.guna2Button2.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.Location = new System.Drawing.Point(44, 545);
+            this.guna2Button2.Location = new System.Drawing.Point(47, 622);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(270, 45);
             this.guna2Button2.TabIndex = 31;
             this.guna2Button2.Text = "Marca Entrada";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -280,43 +282,64 @@
             this.guna2Button1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(44, 600);
+            this.guna2Button1.Location = new System.Drawing.Point(47, 673);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(270, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(269, 45);
             this.guna2Button1.TabIndex = 32;
             this.guna2Button1.Text = "Marcar Salida";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // guna2Button3
+            // btnRecorrido
             // 
-            this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.BorderThickness = 2;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.Location = new System.Drawing.Point(45, 680);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(270, 45);
-            this.guna2Button3.TabIndex = 33;
-            this.guna2Button3.Text = "Regresar";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btnRecorrido.BackColor = System.Drawing.Color.Transparent;
+            this.btnRecorrido.BorderRadius = 10;
+            this.btnRecorrido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRecorrido.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRecorrido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRecorrido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRecorrido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.btnRecorrido.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecorrido.ForeColor = System.Drawing.Color.White;
+            this.btnRecorrido.Image = ((System.Drawing.Image)(resources.GetObject("btnRecorrido.Image")));
+            this.btnRecorrido.Location = new System.Drawing.Point(47, 541);
+            this.btnRecorrido.Name = "btnRecorrido";
+            this.btnRecorrido.Size = new System.Drawing.Size(270, 45);
+            this.btnRecorrido.TabIndex = 35;
+            this.btnRecorrido.Text = "Buscar Ruta más Cercana";
+            this.btnRecorrido.Click += new System.EventHandler(this.btnRecorrido_Click);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.btnRegresar.BorderRadius = 10;
+            this.btnRegresar.BorderThickness = 2;
+            this.btnRegresar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegresar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegresar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegresar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRegresar.FillColor = System.Drawing.Color.White;
+            this.btnRegresar.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.Location = new System.Drawing.Point(1048, 734);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(270, 45);
+            this.btnRegresar.TabIndex = 36;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // Map1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1343, 751);
-            this.Controls.Add(this.guna2Button3);
+            this.ClientSize = new System.Drawing.Size(1343, 802);
+            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.btnRecorrido);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.lblDate2);
@@ -368,6 +391,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Timer timer1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnRecorrido;
+        private Guna.UI2.WinForms.Guna2Button btnRegresar;
     }
 }

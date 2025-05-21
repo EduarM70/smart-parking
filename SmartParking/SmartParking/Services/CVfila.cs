@@ -16,6 +16,7 @@ namespace SmartParking.Services
     {
 
         public string BloqueFila;
+        public int filaNumero;
         public bool HayDisponibles;
         public List<CAcalle> ListaAdyacencia;
         public CEspacioP[] espacios; //espacios de parqueo
@@ -48,6 +49,8 @@ namespace SmartParking.Services
             string numeroStr = zonafila.Substring(1); // "1"
 
             int fila = int.Parse(numeroStr); // 1
+
+            filaNumero = fila;
 
             switch (fila)
             {
@@ -270,7 +273,7 @@ namespace SmartParking.Services
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
-            g.DrawLine(new Pen(new SolidBrush(Color.DarkGreen), (float)4)
+            g.DrawLine(new Pen(new SolidBrush(Color.Yellow), (float)4)
             {
                 CustomEndCap = bigArrow,
                 Alignment = PenAlignment.Center
@@ -285,7 +288,7 @@ namespace SmartParking.Services
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
-            g.DrawLine(new Pen(new SolidBrush(Color.DarkGreen), (float)4)
+            g.DrawLine(new Pen(new SolidBrush(Color.Yellow), (float)4)
             {
                 CustomEndCap = bigArrow,
                 Alignment = PenAlignment.Center
@@ -343,9 +346,10 @@ namespace SmartParking.Services
 
                 if (auxDistancia2 < auxDistancia1)
                 {
-                    auxDistancia2 = auxDistancia1;
+                    auxDistancia1 = auxDistancia2;
                     auxNum = numeroEspacio;
                 }
+
             }
 
             return auxNum;

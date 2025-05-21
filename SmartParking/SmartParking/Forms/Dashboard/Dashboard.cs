@@ -120,7 +120,7 @@ namespace SmartParking.Forms.Dashboard
                         entrada = "Norte";
                         break;
                     case 1:
-                        entrada = "Este";
+                        entrada = "Oeste";
                         break;
                 }
 
@@ -146,7 +146,7 @@ namespace SmartParking.Forms.Dashboard
 
             if (cmbEntradaZB.SelectedIndex != -1) // validar que el usuario seleccione una entrada
             {
-                int entradaZona = cmbEntradaZA.SelectedIndex;
+                int entradaZona = cmbEntradaZB.SelectedIndex;
 
                 switch (entradaZona)
                 {
@@ -179,7 +179,7 @@ namespace SmartParking.Forms.Dashboard
 
             if (cmdEntradasZC.SelectedIndex != -1) // validar que el usuario seleccione una entrada
             {
-                int entradaZona = cmbEntradaZA.SelectedIndex;
+                int entradaZona = cmdEntradasZC.SelectedIndex;
 
                 switch (entradaZona)
                 {
@@ -212,7 +212,7 @@ namespace SmartParking.Forms.Dashboard
 
             if (cmbEntradaZD.SelectedIndex != -1) // validar que el usuario seleccione una entrada
             {
-                int entradaZona = cmbEntradaZA.SelectedIndex;
+                int entradaZona = cmbEntradaZD.SelectedIndex;
 
                 switch (entradaZona)
                 {
@@ -299,6 +299,11 @@ namespace SmartParking.Forms.Dashboard
 
             progressBarLibres.Value = barIncrementeLibres;
             progressBarOcupados.Value = barIncrementeOcupados;
+
+            // Actualizar labels
+
+            lblPorcentajeDisponible.Text = $"Libres {barIncrementeLibres.ToString()}% del estacionamiento";
+            lblPorcentajeOcupa.Text = $"Ocupados {barIncrementeOcupados.ToString()}% del estacionamiento";
 
         }
 

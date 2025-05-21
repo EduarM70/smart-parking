@@ -13,6 +13,9 @@ using SmartParking.Services;
 using SmartParking.Models;
 using SmartParking.Services.User;
 using System.Runtime.InteropServices;
+using SmartParking.Services.Maps;
+using System.Text.RegularExpressions;
+using SmartParking.Services.RegistroParqueo;
 
 namespace SmartParking.Forms
 {
@@ -20,7 +23,8 @@ namespace SmartParking.Forms
     {
         public static DateTime horaEntrada;
         Password pass = new Password();
-        ConexionDB conexionDB;
+        
+        RegistroParqueoService registroParqueoService;
 
         // Para cargar fuentes desde recursos si es necesario
         [DllImport("gdi32.dll")]
@@ -28,29 +32,39 @@ namespace SmartParking.Forms
 
         private Font interRegular;
         private Font interBold;
-        public FormEntrada()
+
+        private ParkingMap map;
+        private PictureBox PictureBox;
+
+        public FormEntrada(ParkingMap mapaParqueo =  null, PictureBox pintureBox = null)
         {
             InitializeComponent();
             btnIngresar.Enabled = false;
-            conexionDB = new ConexionDB();
-        }
-        private void LoadCustomFont()
-        {
-            try
+
+            registroParqueoService = new RegistroParqueoService();
+
+            map = mapaParqueo;
+            PictureBox = pintureBox;
+
+            if (map != null)
             {
-                // Intenta cargar la fuente Inter (debe estar instalada en el sistema)
-                interRegular = new Font("Inter", 10f);
-                interBold = new Font("Inter", 12f, FontStyle.Bold);
+                List<CVfila> listaParqueos = mapaParqueo.ParqueosDisponibles();
+
+                foreach (CVfila parqueo in listaParqueos)
+                {
+                    for (int i = 0; i < parqueo.cantidadEspacios; i++)
+                    {
+                        if (parqueo.espacios[i].Disponible)
+                        {
+                            string nombre_parqueo = $"Zona: {parqueo.zona}, Fila: {parqueo.filaNumero} - {parqueo.espacios[i].numero}";
+                            cmbParqueos.Items.Add(nombre_parqueo);
+                        }
+                    }                    
+                }
             }
-            catch
-            {
-                // Fallback a fuentes estándar si Inter no está disponible
-                interRegular = new Font("Arial", 10f);
-                interBold = new Font("Arial", 12f, FontStyle.Bold);
-                MessageBox.Show("La fuente 'Inter' no está instalada en el sistema. Se usará Arial como alternativa.",
-                              "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+
         }
+
         private void btnGenerar_Click(object sender, EventArgs e)
         {
             lbCod.Text = pass.GenerarPassword();
@@ -65,7 +79,7 @@ namespace SmartParking.Forms
 
         }
 
-private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             lbCod.Text = pass.GenerarPassword();
             btnIngresar.Enabled = true;
@@ -78,31 +92,59 @@ private void guna2Button1_Click(object sender, EventArgs e)
             lbfechaentrada.Text = horaEntrada.ToString();
             MessageBox.Show("Bienvenido, a nuestro Estacionamiento");
 
-            FormSalida salida = new FormSalida();
-            salida.Show();
-            this.Hide();
-
-
+            //FormSalida salida = new FormSalida();
+            //salida.Show();
 
             // PARTE DE GUARDADO EN LA BASE DE DATOS
 
             string id = lbCod.Text;
 
-
-            conexionDB.ConectarBase();
             try
             {
-                string query = "INSERT INTO Registro_ingreso(codigo, Fecha_ingreso)" +
-                    "VALUES(@cod, @fechaIngreso)";
-                SqlCommand cmd = new SqlCommand(query, conexionDB.ConectarBase());
-                cmd.Parameters.AddWithValue("@cod", id);
-                cmd.Parameters.AddWithValue("@fechaIngreso", horaEntrada);
-                int filasAfectadas = cmd.ExecuteNonQuery();
+                if (cmbParqueos.SelectedIndex != -1)
+                {
+                    string parqueoSeleccionado = cmbParqueos.SelectedItem.ToString();
+
+                    // Patrón regex para capturar los componentes
+                    Match match = Regex.Match(parqueoSeleccionado, @"Zona:\s*([A-Za-z]),\s*Fila:\s*(\d+)\s*-\s*(\d+)");
+
+                    if (match.Success)
+                    {
+                        string zona = match.Groups[1].Value;    // "A"
+                        int filaInicio = int.Parse(match.Groups[2].Value); // 4
+                        int parqueo = int.Parse(match.Groups[3].Value);    // 7
+
+                        Parqueo parqueo1 = new Parqueo()
+                        {
+                            codigo = id,
+                            fechaIngreso = horaEntrada,
+                            zona = zona,
+                            fila = filaInicio,
+                            parqueo = parqueo
+                        };
+
+                        registroParqueoService.registrarEntrada(parqueo1);
+
+                        map.CambiarEstadoParqueos(zona, filaInicio, parqueo);
+
+                        PictureBox?.Refresh();
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Selecciona el parqueo al que deseas acceder", "Seleciona un parqueo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error en la DB");
             }
+
+            this.Close();
+
         }
     }
 }

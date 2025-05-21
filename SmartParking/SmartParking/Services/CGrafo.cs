@@ -65,7 +65,23 @@ namespace SmartParking.Services
                 }
                 else
                 {
+                    if (Math.Abs(camino[1].Coordenada.Y - camino[0].Coordenada.Y) <= 20)
+                    {
+                        if (camino[1].PosicionRelativaCalle == 'u')
+                        {
+                            camino[1].Coordenada.Y -= 40;
+                            camino[0].Coordenada.Y -= 40;
+                        }
+
+                        else if (camino[1].PosicionRelativaCalle == 'd')
+                        {
+                            camino[1].Coordenada.Y += 40;
+                            camino[0].Coordenada.Y += 40;
+                        }
+                    }                       
+
                     camino[0].DibujarCalle(g, camino[0].Coordenada, camino[1].PuntoEnFila(numEspacioFinal));
+
                 }
 
 
@@ -82,7 +98,7 @@ namespace SmartParking.Services
 
         public void DibujarGrafoPrueba(Graphics g) 
         { 
-         foreach(CVfila fila in nodos)
+            foreach(CVfila fila in nodos)
             {
                 fila.DibujarFila(g);
             }

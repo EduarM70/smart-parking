@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartParking.Models;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -15,8 +16,8 @@ namespace SmartParking.Services.Maps
 
         private List<CVfila> listaEntradas;
 
-        List<CVfila> rutaMasCercano;
-        int numEstacionamiento;
+        public List<CVfila> rutaMasCercano;
+        public int numEstacionamiento;
         bool grafoInicializado = false;
         bool caminoDibujar = false;
         Floyd_Warshall floyd; //para llamar métodos de Floyd_Warshall
@@ -79,24 +80,24 @@ namespace SmartParking.Services.Maps
             if (!IsGrafoGenerado)
             {
                 // Definir entradas, o nodos de puntos de partidas
-                CVfila entradaA_W = new CVfila("entradaA_W", new Point(121, 315));
-                CVfila entradaA_N = new CVfila("entradaA_N", new Point(445, 95));
+                CVfila entradaA_W = new CVfila("entradaA_Oeste", new Point(129, 339)); // 129; 339
+                CVfila entradaA_N = new CVfila("entradaA_Norte", new Point(465, 100)); // 465; 100
 
                 grafo.AgregarFila(entradaA_W);
                 grafo.AgregarFila(entradaA_N);
 
-                CVfila entradaB_W = new CVfila("entradaB_W", new Point(121, 367));
-                CVfila entradaB_S = new CVfila("entradaB_S", new Point(447, 624));
+                CVfila entradaB_W = new CVfila("entradaB_Oeste", new Point(129, 391));  // 129; 391
+                CVfila entradaB_S = new CVfila("entradaB_Sur", new Point(468, 626)); // 468; 626
                 grafo.AgregarFila(entradaB_W);
                 grafo.AgregarFila(entradaB_S);
 
-                CVfila entradaC_E = new CVfila("entradaC_E", new Point(850, 317));
-                CVfila entradaC_N = new CVfila("entradaC_N", new Point(850, 317));
+                CVfila entradaC_E = new CVfila("entradaC_Este", new Point(860, 339)); // 860; 339
+                CVfila entradaC_N = new CVfila("entradaC_Norte", new Point(516, 95)); // 516; 94
                 grafo.AgregarFila(entradaC_E);
                 grafo.AgregarFila(entradaC_N);
 
-                CVfila entradaD_E = new CVfila("entradaD_E", new Point(850, 367));
-                CVfila entradaD_S = new CVfila("entradaD_S", new Point(496, 624));
+                CVfila entradaD_E = new CVfila("entradaD_Este", new Point(860, 390)); // 860; 390
+                CVfila entradaD_S = new CVfila("entradaD_Sur", new Point(519, 625)); // 519; 625
                 grafo.AgregarFila(entradaD_E);
                 grafo.AgregarFila(entradaD_S);
 
@@ -260,10 +261,15 @@ namespace SmartParking.Services.Maps
 
             foreach (CVfila fila in listaZona)
             {
-                if (fila.HayDisponibles == true)
+
+                for (int i = 0; i < fila.cantidadEspacios; i++)
                 {
-                    disponibles = disponibles + fila.cantidadEspacios;
+                    if (fila.espacios[i].Disponible == true)
+                    {
+                        disponibles++;
+                    }
                 }
+
             }
 
             return disponibles;
@@ -286,6 +292,46 @@ namespace SmartParking.Services.Maps
             p.Add(d);
 
                 return p;
+        }
+
+        public List<CVfila> ParqueosDisponibles()
+        {
+            List<CVfila> aux = new List<CVfila>();
+            foreach (CVfila libre in grafo.nodos)
+            {
+                if (libre.HayDisponibles == true)
+                    aux.Add(libre);
+            }
+
+            return aux;
+        }
+
+        public void CambiarEstadoParqueos(string zona, int fila, int parqueo, bool estado = false)
+        {
+            foreach (CVfila filaNodo in grafo.nodos)
+            {
+                for (int i = 0; i < filaNodo.cantidadEspacios; i++)
+                {
+                    if (filaNodo.espacios[i].numero == parqueo && filaNodo.zona == zona && filaNodo.filaNumero == fila)
+                    {
+                        filaNodo.espacios[i].Disponible = estado;
+                    }
+                }
+            }
+        }
+
+        public void CambiarEstadoParqueos(Parqueo parqueo, bool estado = false)
+        {
+            foreach (CVfila filaNodo in grafo.nodos)
+            {
+                for (int i = 0; i < filaNodo.cantidadEspacios; i++)
+                {
+                    if (filaNodo.espacios[i].numero == parqueo.parqueo && filaNodo.zona == parqueo.zona && filaNodo.filaNumero == parqueo.fila)
+                    {
+                        filaNodo.espacios[i].Disponible = estado;
+                    }
+                }
+            }
         }
     }
 

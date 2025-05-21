@@ -9,27 +9,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmartParking.Data;
+using SmartParking.Models;
+using SmartParking.Services.Maps;
+using SmartParking.Services.RegistroParqueo;
 
 namespace SmartParking.Forms
 {
     public partial class FormSalida : Form
     {
         double tiempototal;
-        ConexionDB conexionDB;
+
+        RegistroParqueoService registroParqueo;
+        
         DateTime FechaEntrada;
         DateTime hora;
         TimeSpan HT;
         double TotalMin;
-        
-        public FormSalida()
+
+        private ParkingMap map;
+
+        private PictureBox PictureBox;
+
+        public FormSalida(ParkingMap mapaParqueo = null, PictureBox pintureBox = null)
         {
             InitializeComponent();
 
-            conexionDB = new ConexionDB();
+            registroParqueo = new RegistroParqueoService();
 
             lbsaludo.Visible = false;
             btnPagar.Enabled = false;
             btnSalir.Enabled = false;
+
+            map = mapaParqueo;
+            PictureBox = pintureBox;
         }
 
 
@@ -91,16 +103,18 @@ namespace SmartParking.Forms
         {
             try
             {
-                conexionDB.ConectarBase();
-                string query = "SELECT Fecha_ingreso FROM Registro_ingreso WHERE codigo = @codigo";
 
-                SqlCommand cmd = new SqlCommand(query, conexionDB.ConectarBase());
-                cmd.Parameters.AddWithValue("@codigo", txtCod.Text);
-                object resultado = cmd.ExecuteScalar();
-                FechaEntrada = Convert.ToDateTime(resultado);
-                HT = hora - FechaEntrada;
-                TotalMin = Math.Round(HT.TotalMinutes, 2);
+                FechaEntrada = registroParqueo.getRegistroParqueoByCodigo(txtCod.Text).fechaIngreso;
 
+                if (FechaEntrada != null)
+                {
+                    HT = hora - FechaEntrada;
+                    TotalMin = Math.Round(HT.TotalMinutes, 2);
+                }
+                else
+                {
+                    MessageBox.Show("Codigo no encontrado", "Error en el registro de salida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
             catch (Exception ex)
@@ -112,13 +126,9 @@ namespace SmartParking.Forms
 
             try
             {
-                string queryCliente = "SELECT COUNT(*) FROM Registro_ingreso WHERE codigo = @cod";
-                SqlCommand cmdCliente = new SqlCommand(queryCliente, conexionDB.ConectarBase());
-                cmdCliente.Parameters.AddWithValue("@cod", txtCod.Text);
+                Parqueo validateParqueo = registroParqueo.getRegistroParqueoByCodigo(txtCod.Text);
 
-                int esCliente = (int)cmdCliente.ExecuteScalar();
-
-                if (esCliente > 0)
+                if (validateParqueo != null)
                 {
 
                     DateTime horaSalida = DateTime.Now;
@@ -136,7 +146,7 @@ namespace SmartParking.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Codigo no encontrado");
+                    MessageBox.Show("Codigo no encontrado", "Error en el registro de salida", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -147,7 +157,7 @@ namespace SmartParking.Forms
 
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
@@ -156,24 +166,22 @@ namespace SmartParking.Forms
             TimeSpan total = hora - FechaEntrada;
             double minutos = total.TotalMinutes;
 
-            conexionDB.ConectarBase();
-            try
-            {
-                string query = "UPDATE Registro_ingreso SET Fecha_salida = @salida,Tiempo_estacionado = @tiempo," +
-                    "Total_pagar = @cobro, Tarifa_aplicada = @cobro2 WHERE codigo = @cod";
-                SqlCommand cmd = new SqlCommand(query, conexionDB.ConectarBase());
-                cmd.Parameters.AddWithValue("@cod", txtCod.Text);
-                cmd.Parameters.AddWithValue("@salida", hora);
-                cmd.Parameters.AddWithValue("@tiempo", total);
-                cmd.Parameters.AddWithValue("@cobro", TotPagar(minutos));
-                cmd.Parameters.AddWithValue("@cobro2", TotPagar(minutos));
+            Parqueo parqueoToUpdate = registroParqueo.getRegistroParqueoByCodigo(txtCod.Text);
 
-                int filasAfectadas = cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
+            parqueoToUpdate.fechaSalida = hora;
+            parqueoToUpdate.totalPago = TotPagar(minutos);
+            parqueoToUpdate.tarifaAplicada = TotPagar(minutos);
+
+            if (parqueoToUpdate != null)
             {
-                MessageBox.Show(ex.Message, "Error en la DB");
+                registroParqueo.registrarSalida(parqueoToUpdate);
+
+                map.CambiarEstadoParqueos(parqueoToUpdate, true);
+
+                PictureBox?.Refresh();
+
             }
+
 
             lbsaludo.Visible = true;
             btnSalir.Enabled = true;

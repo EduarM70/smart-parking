@@ -43,12 +43,12 @@
             this.guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.progressBarLibres = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPorcentajeDisponible = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTotalLibres = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl4 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.progressBarOcupados = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPorcentajeOcupa = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTotalOcupados = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl5 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnZonaA = new Guna.UI2.WinForms.Guna2Button();
@@ -225,7 +225,7 @@
             this.guna2ContainerControl2.BorderRadius = 20;
             this.guna2ContainerControl2.Controls.Add(this.progressBarLibres);
             this.guna2ContainerControl2.Controls.Add(this.guna2HtmlLabel7);
-            this.guna2ContainerControl2.Controls.Add(this.guna2HtmlLabel9);
+            this.guna2ContainerControl2.Controls.Add(this.lblPorcentajeDisponible);
             this.guna2ContainerControl2.Controls.Add(this.lblTotalLibres);
             this.guna2ContainerControl2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(148)))), ((int)(((byte)(136)))));
             this.guna2ContainerControl2.Location = new System.Drawing.Point(675, 137);
@@ -257,16 +257,16 @@
             this.guna2HtmlLabel7.TabIndex = 3;
             this.guna2HtmlLabel7.Text = "Estacionamientos libres";
             // 
-            // guna2HtmlLabel9
+            // lblPorcentajeDisponible
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Poppins", 8F);
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(26, 91);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(176, 21);
-            this.guna2HtmlLabel9.TabIndex = 3;
-            this.guna2HtmlLabel9.Text = "Libres 70% del estacionamiento";
+            this.lblPorcentajeDisponible.BackColor = System.Drawing.Color.Transparent;
+            this.lblPorcentajeDisponible.Font = new System.Drawing.Font("Poppins", 8F);
+            this.lblPorcentajeDisponible.ForeColor = System.Drawing.Color.White;
+            this.lblPorcentajeDisponible.Location = new System.Drawing.Point(26, 91);
+            this.lblPorcentajeDisponible.Name = "lblPorcentajeDisponible";
+            this.lblPorcentajeDisponible.Size = new System.Drawing.Size(176, 21);
+            this.lblPorcentajeDisponible.TabIndex = 3;
+            this.lblPorcentajeDisponible.Text = "Libres 70% del estacionamiento";
             // 
             // lblTotalLibres
             // 
@@ -284,7 +284,7 @@
             this.guna2ContainerControl4.BorderRadius = 20;
             this.guna2ContainerControl4.Controls.Add(this.progressBarOcupados);
             this.guna2ContainerControl4.Controls.Add(this.guna2HtmlLabel10);
-            this.guna2ContainerControl4.Controls.Add(this.guna2HtmlLabel11);
+            this.guna2ContainerControl4.Controls.Add(this.lblPorcentajeOcupa);
             this.guna2ContainerControl4.Controls.Add(this.lblTotalOcupados);
             this.guna2ContainerControl4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(105)))), ((int)(((byte)(52)))));
             this.guna2ContainerControl4.Location = new System.Drawing.Point(991, 137);
@@ -316,16 +316,16 @@
             this.guna2HtmlLabel10.TabIndex = 3;
             this.guna2HtmlLabel10.Text = "Estacionamientos ocupados";
             // 
-            // guna2HtmlLabel11
+            // lblPorcentajeOcupa
             // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Poppins", 8F);
-            this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(26, 91);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(176, 21);
-            this.guna2HtmlLabel11.TabIndex = 3;
-            this.guna2HtmlLabel11.Text = "Libres 70% del estacionamiento";
+            this.lblPorcentajeOcupa.BackColor = System.Drawing.Color.Transparent;
+            this.lblPorcentajeOcupa.Font = new System.Drawing.Font("Poppins", 8F);
+            this.lblPorcentajeOcupa.ForeColor = System.Drawing.Color.White;
+            this.lblPorcentajeOcupa.Location = new System.Drawing.Point(26, 91);
+            this.lblPorcentajeOcupa.Name = "lblPorcentajeOcupa";
+            this.lblPorcentajeOcupa.Size = new System.Drawing.Size(176, 21);
+            this.lblPorcentajeOcupa.TabIndex = 3;
+            this.lblPorcentajeOcupa.Text = "Libres 70% del estacionamiento";
             // 
             // lblTotalOcupados
             // 
@@ -1155,14 +1155,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalCarros;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPorcentajeDisponible;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalLibres;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2ProgressBar progressBarLibres;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl4;
         private Guna.UI2.WinForms.Guna2ProgressBar progressBarOcupados;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPorcentajeOcupa;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalOcupados;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl5;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl6;

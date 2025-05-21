@@ -23,6 +23,8 @@ namespace SmartParking.Forms.Maps
 
         private DashboardForm formularioAnterior;
 
+        private bool dibujarRuta = false;
+
         public Map1(DashboardForm formularioAnterior)
         {
             InitializeComponent();
@@ -87,9 +89,11 @@ namespace SmartParking.Forms.Maps
         {
             mapaParqueo.MapaCompleto(e.Graphics);
 
-            //List<CVfila> caminoPrueba = new List<CVfila>();
+            if (dibujarRuta)
+            {
+                mapaParqueo.grafo.DibujarCamino(e.Graphics, mapaParqueo.rutaMasCercano, mapaParqueo.numEstacionamiento);
 
-            //mapaParqueo.Grafo.DibujarCamino(e.Graphics, mapaParqueo.CrearGrafoDePrueba(e.Graphics));
+            }
         }
 
         public void ActualizarParqueos()
@@ -104,17 +108,44 @@ namespace SmartParking.Forms.Maps
 
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+
+        private void guna2Button2_Click(object sender, EventArgs e) // Boton de registro de entrada
         {
-            
+            FormEntrada entrada = new FormEntrada(mapaParqueo, PictureBoxMap);
+
+            entrada.ShowDialog();
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e) // Boton para registrar salida
+        {
+            FormSalida salida = new FormSalida(mapaParqueo, PictureBoxMap);
+
+            salida.ShowDialog();
+        }
+
+        private void btnRecorrido_Click(object sender, EventArgs e)
+        {
+            string nombre_entrada = $"entrada{Zona.ToString().ToUpper()}_{Entrada}";
+
+            MessageBox.Show(nombre_entrada);
+
+            mapaParqueo.RutaMasCorta(nombre_entrada); // "entradaA_W"
+
+            dibujarRuta = true;
+
+            PictureBoxMap.Refresh();
+
+            dibujarRuta = false;
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
             Login loginForm = new Login();
 
             this.Hide();
 
             loginForm.ShowDialog(formularioAnterior);
-
-            
-
         }
     }
 }
