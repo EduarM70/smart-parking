@@ -17,6 +17,7 @@ namespace SmartParking.Services.Maps
         List<CVfila> rutaMasCercano;
         int numEstacionamiento;
         bool grafoInicializado = false;
+        bool caminoDibujar = false;
         Floyd_Warshall floyd; //para llamar métodos de Floyd_Warshall
 
         public ParkingMap() {
@@ -159,7 +160,7 @@ namespace SmartParking.Services.Maps
             CVfila cercano = grafo.nodos[IdMasCercano];
             numEstacionamiento = cercano.PosicionDisponibleCercano(entradaIzquierda.Coordenada);
             caminoDibujar = true;
-            panel1.Refresh();
+            //panel1.Refresh();
         }
 
         public int[,] ObtenerMatrizAdyacencia()
