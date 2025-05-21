@@ -43,23 +43,32 @@ namespace SmartParking.Services
             return false;
         }
 
-        public void DibujarCamino(Graphics g, List<CVfila> camino, int numEspacioFinal=1) //no comprueba si hay camino en los nodos en la lista, mandarle solo lista con caminos                                                           //ya comprobados     
+        public void DibujarCamino(Graphics g, List<CVfila> camino, int numEspacioFinal = 1) //no comprueba si hay camino en los nodos en la lista, mandarle solo lista con caminos                                                           //ya comprobados     
         {
-            
+
             using (Pen lapiz = new Pen(Color.Black, 2))
             {
                 Point destinoAnt = new Point(0, 0);
-                // Dibujamos las calles entre los vértices
-                for (int i = 0; i < camino.Count - 1; i++)
+                if (camino.Count - 1 != 1)
                 {
-                   CVfila verticeOrigen = camino[i];
-                   CVfila verticeDestino = camino[i + 1];
-                    destinoAnt = verticeOrigen.DibujarCalle(g, verticeOrigen, verticeDestino, destinoAnt);
+                    // Dibujamos las calles entre los vértices
+                    for (int i = 0; i < camino.Count - 1; i++)
+                    {
+                        CVfila verticeOrigen = camino[i];
+                        CVfila verticeDestino = camino[i + 1];
+                        destinoAnt = verticeOrigen.DibujarCalle(g, verticeOrigen, verticeDestino, destinoAnt);
 
+                    }
+                    CVfila ultimafila = camino[camino.Count - 1];
+                    if (destinoAnt != new Point(0, 0))
+                        DibujarLineaFinal(g, ultimafila, numEspacioFinal, destinoAnt);
                 }
-               CVfila ultimafila= camino[camino.Count-1];
-                if(destinoAnt!= new Point(0,0))
-                DibujarLineaFinal(g, ultimafila, numEspacioFinal, destinoAnt);
+                else
+                {
+                    camino[0].DibujarCalle(g, camino[0].Coordenada, camino[1].PuntoEnFila(numEspacioFinal));
+                }
+
+
             }
         }
 

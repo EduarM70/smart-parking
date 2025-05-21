@@ -295,14 +295,13 @@ namespace SmartParking.Services
 
         public Point PuntoEnFila(int posicion) //obtiene el punto en el que se encuentra un espacio de parqueo en la fila
         {
-            int espacio = 10; // Espacio entre rectángulos
-            int anchura = 18;
+            int espacio = 18; // Espacio entre rectángulos
+            int anchura = 24;
             int x = 0, y = 0;
-            for (int i = 0; i < posicion; i++)
-            {
-                x = Coordenada.X + i * (anchura + espacio);
-                y = Coordenada.Y;
-            }
+
+            x = (Coordenada.X + 8) + posicion * (anchura + espacio);
+            y = Coordenada.Y + 14;
+
             Point Espacio = new Point(x + 15, y);
 
             return Espacio;
