@@ -16,7 +16,11 @@ namespace SmartParking.Forms
     {
         double tiempototal;
         ConexionDB conexionDB;
-        FormEntrada entrada = new FormEntrada();
+        DateTime FechaEntrada;
+        DateTime hora;
+        TimeSpan HT;
+        double TotalMin;
+        
         public FormSalida()
         {
             InitializeComponent();
@@ -28,43 +32,13 @@ namespace SmartParking.Forms
             btnSalir.Enabled = false;
         }
 
+
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            //CONSULTA A LA BASE
-            conexionDB.ConectarBase();
-            try
-            {
-                string queryCliente = "SELECT COUNT(*) FROM Registro_ingreso WHERE codigo = @cod";
-                SqlCommand cmdCliente = new SqlCommand(queryCliente, conexionDB.ConectarBase());
-                cmdCliente.Parameters.AddWithValue("@cod", txtCod.Text);
 
-                int esCliente = (int)cmdCliente.ExecuteScalar();
+           
 
-                if (esCliente > 0)
-                {
 
-                    DateTime horaSalida = DateTime.Now;
-                    TimeSpan HoraTotal = horaSalida - FormEntrada.horaEntrada;
-                    double TiempoTotal = Math.Round(HoraTotal.TotalMinutes, 2);
-
-                    lbtiempoE.Text = FormEntrada.horaEntrada.ToString();
-                    lbtiempoS.Text = horaSalida.ToString();
-                    lbTimeTot.Text = Math.Round(HoraTotal.TotalMinutes, 2).ToString() + " minutos";
-
-                    TotPagar(TiempoTotal);
-                    txtCod.Enabled = false;
-                    btnConfirmar.Enabled = false;
-                    return;
-                }
-                else
-                {
-                    MessageBox.Show("Codigo no encontrado");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error en la Base", ex.Message);
-            }
         }
         public double TotPagar(double lbTiempo)
         {
@@ -93,6 +67,7 @@ namespace SmartParking.Forms
                 Tarifa = 10.00;
                 lbtotP.Text = "$10.00";
                 txtPago.Text = lbtotP.Text;
+                btnPagar.Enabled = true;
 
             }
             return Tarifa;
@@ -100,8 +75,85 @@ namespace SmartParking.Forms
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            DateTime hora = DateTime.Now;
-            TimeSpan total = hora - FormEntrada.horaEntrada;
+            
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FormSalida_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conexionDB.ConectarBase();
+                string query = "SELECT Fecha_ingreso FROM Registro_ingreso WHERE codigo = @codigo";
+
+                SqlCommand cmd = new SqlCommand(query, conexionDB.ConectarBase());
+                cmd.Parameters.AddWithValue("@codigo", txtCod.Text);
+                object resultado = cmd.ExecuteScalar();
+                FechaEntrada = Convert.ToDateTime(resultado);
+                HT = hora - FechaEntrada;
+                TotalMin = Math.Round(HT.TotalMinutes, 2);
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error", ex.Message);
+            }
+
+            //CONSULTA A LA BASE
+
+            try
+            {
+                string queryCliente = "SELECT COUNT(*) FROM Registro_ingreso WHERE codigo = @cod";
+                SqlCommand cmdCliente = new SqlCommand(queryCliente, conexionDB.ConectarBase());
+                cmdCliente.Parameters.AddWithValue("@cod", txtCod.Text);
+
+                int esCliente = (int)cmdCliente.ExecuteScalar();
+
+                if (esCliente > 0)
+                {
+
+                    DateTime horaSalida = DateTime.Now;
+                    TimeSpan HoraTotal = horaSalida - FechaEntrada;
+                    double TiempoTotal = Math.Round(HoraTotal.TotalMinutes, 2);
+
+                    lbtiempoE.Text = FechaEntrada.ToString();
+                    lbtiempoS.Text = horaSalida.ToString();
+                    lbTimeTot.Text = TiempoTotal.ToString() + " minutos";
+
+                    TotPagar(TiempoTotal);
+                    txtCod.Enabled = false;
+                    btnConfirmar.Enabled = false;
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Codigo no encontrado");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la Base", ex.Message);
+            }
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            hora = DateTime.Now;
+            TimeSpan total = hora - FechaEntrada;
             double minutos = total.TotalMinutes;
 
             conexionDB.ConectarBase();
@@ -128,9 +180,19 @@ namespace SmartParking.Forms
             btnPagar.Enabled = false;
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void txtCod_TextChanged(object sender, EventArgs e)
         {
-            Application.Exit();
+
+        }
+
+        private void txtCod_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPago_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
