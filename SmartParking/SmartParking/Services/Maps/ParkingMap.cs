@@ -14,6 +14,11 @@ namespace SmartParking.Services.Maps
 
         private List<CVfila> listaEntradas;
 
+        List<CVfila> rutaMasCercano;
+        int numEstacionamiento;
+        bool grafoInicializado = false;
+        Floyd_Warshall floyd; //para llamar métodos de Floyd_Warshall
+
         public ParkingMap() {
             grafo= new CGrafo();
             listaEntradas = new List<CVfila>();
@@ -117,6 +122,67 @@ namespace SmartParking.Services.Maps
             grafo.DibujarGrafoPrueba(e);
 
 
+        }
+
+        public void RutaMasCorta(string entrada)
+        {
+            floyd = new Floyd_Warshall(grafo.nodos, ObtenerMatrizAdyacencia());
+            int distanciaAnt = int.MaxValue;
+            int distancia;
+            int IdMasCercano = -1;
+            int IdCercano = -1;
+            CVfila entradaIzquierda = grafo.nodos.Find(f => f.BloqueFila == "EntradaIzquierda");
+            int indiceEntrada = grafo.nodos.IndexOf(entradaIzquierda);
+
+            foreach (CVfila fila in grafo.nodos)
+            {
+                if (fila != entradaIzquierda)
+                {
+                    if (fila.HayDisponibles == true)
+                    {
+                        IdCercano = grafo.nodos.IndexOf(fila);
+                        distancia = floyd.ObtenerDistancia(indiceEntrada, IdCercano);
+
+                        if (distancia < distanciaAnt)
+                        {
+                            IdMasCercano = IdCercano;
+                            distanciaAnt = distancia;
+                        }
+                    }
+                }
+
+            }
+
+
+
+            rutaMasCercano = floyd.ObtenerRuta(indiceEntrada, IdMasCercano);
+            CVfila cercano = grafo.nodos[IdMasCercano];
+            numEstacionamiento = cercano.PosicionDisponibleCercano(entradaIzquierda.Coordenada);
+            caminoDibujar = true;
+            panel1.Refresh();
+        }
+
+        public int[,] ObtenerMatrizAdyacencia()
+        {
+
+            int n = grafo.nodos.Count;
+            int[,] matriz = new int[n, n];
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    matriz[i, j] = 0; // Sin conexión
+                }
+
+                foreach (CAcalle arco in grafo.nodos[i].ListaAdyacencia)
+                {
+                    int j = grafo.nodos.IndexOf(arco.nDestino);
+                    matriz[i, j] = arco.Peso;
+                }
+            }
+
+            return matriz;
         }
     }
 
