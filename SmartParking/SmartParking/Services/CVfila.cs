@@ -65,63 +65,19 @@ namespace SmartParking.Services
 
             for (int i = 0; i < cantidadEspacios; i++)
             {
+                Random rnd = new Random();
+               
                 espacios[i] = new CEspacioP()
                 {
-                    Disponible = true,
+                    //temp 
+                    Disponible = rnd.Next(2) == 0,
+                    //temp
+                    //Disponible = true,
                     EspacioEspecial = false,
                     CodigoParqueado = null,
                     numero = numerosParqueos[i]
                 };
             }
-
-            //espacios[0] = new CEspacioP
-            //{
-            //    Disponible = true,
-            //    EspacioEspecial = false,
-            //    CodigoParqueado = null
-            //};
-
-            //espacios[1] = new CEspacioP
-            //{
-            //    Disponible = true,
-            //    EspacioEspecial = true,
-            //    CodigoParqueado = "ABC123"
-            //};
-
-            //espacios[2] = new CEspacioP
-            //{
-            //    Disponible = true,
-            //    EspacioEspecial = false,
-            //    CodigoParqueado = null
-            //};
-
-            //espacios[3] = new CEspacioP
-            //{
-            //    Disponible = true,
-            //    EspacioEspecial = false,
-            //    CodigoParqueado = "XYZ789"
-            //};
-
-            //espacios[4] = new CEspacioP
-            //{
-            //    Disponible = true,
-            //    EspacioEspecial = true,
-            //    CodigoParqueado = null
-            //};
-
-            //espacios[5] = new CEspacioP
-            //{
-            //    Disponible = true,
-            //    EspacioEspecial = false,
-            //    CodigoParqueado = null
-            //};
-
-            //espacios[6] = new CEspacioP
-            //{
-            //    Disponible = true,
-            //    EspacioEspecial = false,
-            //    CodigoParqueado = null
-            //};
 
             Visitado = false;
             PosicionRelativaCalle = posicioncalle;
@@ -245,9 +201,10 @@ namespace SmartParking.Services
             int destinoY = destino.Coordenada.Y;
             bool ExisteAnt = false;
             //se asegura de conectar con la linea anterior si hubo
+
             if (DestinoAnt != new Point(0, 0))
             {
-                origenX = DestinoAnt.X + 5;
+                origenX = DestinoAnt.X;
                 origenY = DestinoAnt.Y;
                 ExisteAnt = true;
             }
@@ -259,42 +216,56 @@ namespace SmartParking.Services
 
             }
             else
-            {
-                origenX -= 15;
-                destinoX -= 15;
-            }
-
-            //ubica las coordenadas sobre la calle
-            if (destino.PosicionRelativaCalle == 'd')
-                destinoY = destinoY + 35;
-            else if (destino.PosicionRelativaCalle == 'u')
-            {
-                destinoY = destinoY - 15;
-            }
-
-            if (!ExisteAnt) //si se tomaron las coordenadas de ant no se necesita ajustar 
-            {
-                if (origen.PosicionRelativaCalle == 'd')
-                    origenY = origenY + 35;
-                else if (origen.PosicionRelativaCalle == 'u')
+            { 
+                if(!ExisteAnt)
                 {
-                    origenY = origenY - 15;
+                    origenX -= 15;
                 }
+                destinoX -= 15;
             }
 
 
             //revisa si la linea es vertical
-            if (Math.Abs(origenX - destinoX) < 15)
+            if (Math.Abs(origenX - destinoX) <= 15)
             {
                 destinoX = origenX;
+               
+               destinoY -= 15;
             }
 
             //revisa si la linea es horizontal
-            if (Math.Abs(origenY - destinoY) <= 5)
+            if (Math.Abs(origenY - destinoY) <= 15)
             {
-                origenY = destinoY;
-            }
 
+                if (!ExisteAnt) //si se tomaron las coordenadas de ant no se necesita ajustar 
+                
+                    if (origen.PosicionRelativaCalle == 'd')
+                        origenY = origenY + 35;
+                    else if (origen.PosicionRelativaCalle == 'u')
+                    {
+                        origenY = origenY - 15;
+                    }
+
+                    
+                    if (destino.PosicionRelativaCalle == 'd')
+                        destinoY = destinoY + 35;
+                    else if (destino.PosicionRelativaCalle == 'u')
+                    {
+                        destinoY = destinoY - 15;
+                    }
+
+                    origenY = destinoY;
+                
+
+            }
+          /* if (DestinoAnt != new Point(0, 0))
+            {
+                origenX = DestinoAnt.X;
+                origenY = DestinoAnt.Y;
+                ExisteAnt = true;
+            }
+          */
+            
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
@@ -313,7 +284,7 @@ namespace SmartParking.Services
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
-            g.DrawLine(new Pen(new SolidBrush(Color.DarkGreen), (float)8)
+            g.DrawLine(new Pen(new SolidBrush(Color.DarkGreen), (float)4)
             {
                 CustomEndCap = bigArrow,
                 Alignment = PenAlignment.Center
