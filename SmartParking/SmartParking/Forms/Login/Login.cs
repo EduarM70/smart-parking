@@ -33,12 +33,15 @@ namespace SmartParking.Forms
         // clase de autentificacion
         AuthService authService = new AuthService();
 
-        public Login()
+        // anterior Dashboard
+        private DashboardForm formularioAnteriorDash;
+
+        public Login(DashboardForm formularioAnteriorDash = null)
         {
             InitializeComponent();
             LoadCustomFont();
             
-            
+            this.formularioAnteriorDash = formularioAnteriorDash;
         }
 
         private void LoadCustomFont()
@@ -78,9 +81,17 @@ namespace SmartParking.Forms
                 // abrir pantalla de dashboard
                 this.Hide();
 
-                DashboardForm dashboard = new DashboardForm();
+                
 
-                dashboard.ShowDialog();
+                if (formularioAnteriorDash != null)
+                {
+                    formularioAnteriorDash.ShowDialog();
+                }
+                else
+                {
+                    DashboardForm dashboard = new DashboardForm();
+                    dashboard.ShowDialog();
+                }                
 
                 this.Close();
 
