@@ -122,7 +122,51 @@ namespace SmartParking.Services.Maps
 
             grafo.DibujarGrafoPrueba(e);
 
+            //calles
 
+             //bloques a y b
+
+            grafo.AgregarCalle(fila1, fila2, 0);
+            grafo.AgregarCalle(fila2, fila3, 2);
+            grafo.AgregarCalle(fila3, fila4, 0);
+            grafo.AgregarCalle(fila4, fila5, 2);
+            grafo.AgregarCalle(fila5, fila6, 0);
+            grafo.AgregarCalle(fila6, fila7, 2);
+            grafo.AgregarCalle(fila7, fila8, 0);
+
+             //bloques c y d
+
+            grafo.AgregarCalle(fila9, fila10, 0);
+            grafo.AgregarCalle(fila10, fila11, 2);
+            grafo.AgregarCalle(fila11, fila12, 0);
+            grafo.AgregarCalle(fila12, fila13, 2);
+            grafo.AgregarCalle(fila13, fila14, 0);
+            grafo.AgregarCalle(fila14, fila15, 2);
+            grafo.AgregarCalle(fila15, fila16, 0);
+
+            //entre bloques
+
+            grafo.AgregarCalle(fila1, fila9, 7);
+            grafo.AgregarCalle(fila3, fila11, 7);
+            grafo.AgregarCalle(fila5, fila13, 7);
+            grafo.AgregarCalle(fila7, fila15, 7);
+
+            //con las entradas
+            grafo.AgregarCalle(entradaA_W, fila4, 1);
+            grafo.AgregarCalle(entradaB_W, fila5, 1);
+
+            grafo.AgregarCalle(entradaA_N, fila1, 1);
+            grafo.AgregarCalle(entradaA_N, fila10, 2);
+            grafo.AgregarCalle(entradaC_N, fila10, 1);
+            grafo.AgregarCalle(entradaC_N, fila1, 2);
+
+            grafo.AgregarCalle(entradaB_S, fila7, 1);
+            grafo.AgregarCalle(entradaB_S, fila15, 2);
+            grafo.AgregarCalle(entradaD_S, fila15, 1);
+            grafo.AgregarCalle(entradaD_S, fila7, 2);
+
+            grafo.AgregarCalle(entradaC_E, fila12, 1);
+            grafo.AgregarCalle(entradaD_E, fila13, 1);
         }
 
         public void RutaMasCorta(string entrada)
@@ -184,6 +228,41 @@ namespace SmartParking.Services.Maps
             }
 
             return matriz;
+        }
+
+        public int totZona(string zona)
+        {
+            int tot = 0;
+            List<CVfila> listaZona = grafo.nodos.Where(n => n.zona.StartsWith("zona")).ToList();
+            foreach (CVfila fila in listaZona)
+            {
+                tot = tot + fila.cantidadEspacios;
+            }
+            return tot;
+        }
+
+        public int totDisponiblesZona(string zona)
+        {
+            int disponibles = 0;
+            List<CVfila> listaZona = grafo.nodos.Where(n => n.zona.StartsWith("zona")).ToList();
+
+            foreach (CVfila fila in listaZona)
+            {
+                if (fila.HayDisponibles == true)
+                {
+                    disponibles = disponibles + fila.cantidadEspacios;
+                }
+            }
+
+            return disponibles;
+        }
+        public int totOcupadosZona(string zona)
+        {
+            int tot = 0;
+
+            tot = totZona(zona) - totDisponiblesZona(zona);
+
+            return tot;
         }
     }
 
