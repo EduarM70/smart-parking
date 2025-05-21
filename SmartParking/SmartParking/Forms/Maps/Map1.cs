@@ -17,6 +17,9 @@ namespace SmartParking.Forms.Maps
     {
         public ParkingMap mapaParqueo = new ParkingMap();
 
+        public char Entrada { get; set; }
+        public char Zona { get; set; }
+
         public Map1()
         {
             InitializeComponent();

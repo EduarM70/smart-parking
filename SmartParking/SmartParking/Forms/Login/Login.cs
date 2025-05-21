@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmartParking.Data;
 using SmartParking.Forms.Dashboard;
+using SmartParking.Forms.Maps;
 using SmartParking.Models;
 using SmartParking.Services.User;
 
@@ -35,7 +36,9 @@ namespace SmartParking.Forms
         public Login()
         {
             InitializeComponent();
-            LoadCustomFont();            
+            LoadCustomFont();
+            
+            
         }
 
         private void LoadCustomFont()
