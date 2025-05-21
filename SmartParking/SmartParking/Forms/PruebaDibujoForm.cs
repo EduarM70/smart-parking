@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmartParking.Services;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace SmartParking
 {
@@ -17,76 +18,71 @@ namespace SmartParking
 
         //Solución a la duplicación de  nodod:
         bool grafoInicializado = false;
-
-        bool entradaDerechaAgregada = false;
-
         Floyd_Warshall floyd; //para llamar métodos de Floyd_Warshall
 
         public PruebaDibujoForm()
         {
             InitializeComponent();
-
+            InicializarGrafo();
             panel1.Paint += panel1_Paint;
 
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            /*  if (!grafoInicializado)
-              {
-
-                  InicializarGrafo(grafo);
-                  grafoInicializado = true;
-
-
-              }
-
-              grafo.DibujarGrafoPrueba(e.Graphics);
-              DibujarRutaEjemplo(grafo, e.Graphics); */
-
-            //---- Prueba
-            
-
-            if (!grafoInicializado)
+            InicializarGrafo();
+            if (grafoInicializado) 
             {
-                InicializarGrafo(grafo);
-                grafoInicializado = true;
-                floyd = new Floyd_Warshall(grafo.nodos, grafo.GenerarMatrizAdyacencia()); //inicializando grafo
-                // Obtener los estacionamientos más cercanos desde la entrada izquierda
-                CVfila entradaIzquierda = grafo.nodos.Find(f => f.BloqueFila == "EntradaIzquierda");
-                if (entradaIzquierda != null)
-                {
-                    int indiceEntrada = grafo.nodos.IndexOf(entradaIzquierda);
-                    List<CVfila> estacionamientosCercanos = floyd.ObtenerFilasCercanas(indiceEntrada);
-                    // Aquí puedes hacer algo con la lista de estacionamientos cercanos
-                    foreach (var estacionamiento in estacionamientosCercanos)
-                    {
-                        // Por ejemplo, podrías dibujar un rectángulo alrededor de cada estacionamiento cercano
-                        // o simplemente imprimir sus nombres en la consola
-                        Console.WriteLine(estacionamiento.BloqueFila);
-                    }
-                }
+              
             }
-            grafo.DibujarGrafoPrueba(e.Graphics);
-            DibujarRutaEjemplo(grafo, e.Graphics);
-
-
 
         }
 
+        public void RutaMasCorta(string entrada, Graphics g)
+        {
+            floyd = new Floyd_Warshall(grafo.nodos, ObtenerMatrizAdyacencia());
+            int distanciaAnt = int.MaxValue;
+            int distancia;
+            int IdMasCercano = -1;
+            int IdCercano = -1;
+            CVfila entradaIzquierda = grafo.nodos.Find(f => f.BloqueFila == "EntradaIzquierda");
+            int indiceEntrada = grafo.nodos.IndexOf(entradaIzquierda);
 
-        //Metodo para el bloque derechO:
+            foreach (CVfila fila in grafo.nodos)
+            {
+                if (fila != entradaIzquierda)
+                {
+                    if (fila.HayDisponibles == true)
+                    {
+                        IdCercano = grafo.nodos.IndexOf(fila);
+                        distancia = floyd.ObtenerDistancia(indiceEntrada, IdCercano);
+
+                        if (distancia < distanciaAnt)
+                        {
+                            IdMasCercano = IdCercano;
+                            distanciaAnt = distancia;
+                        }
+                    }
+                }
+
+            }
+
+
+
+            List<CVfila> rutaMasCercano = floyd.ObtenerRuta(indiceEntrada, IdMasCercano);
+            CVfila cercano = grafo.nodos[IdMasCercano];
+            int numEstacionamiento = cercano.PosicionDisponibleCercano(entradaIzquierda.Coordenada);
+            grafo.DibujarGrafoPrueba(g);
+            grafo.DibujarCamino(g, rutaMasCercano, numEstacionamiento);
+        }
+
+       
         // Construye el bloque derecho (bloque C o D) del estacionamiento con 6 filas y 5 espacios por fila
         // Ajuste final del bloque derecho con más espacio entre filas intermedias e inferiores
         // Reconstrucción final del bloque derecho con nodo entrada conectado visualmente
         // Reconstrucción final del bloque derecho con UN solo nodo de entrada correctamente posicionado y conectado
-        public static void InicializarGrafo(CGrafo grafo)
+        public static void InicializarGrafo()
         {
-
-            // Nodo de entrada único ubicado frente al pasillo derecho
-            //CVfila entrada = new CVfila("Entrada", new Point(510, 160), 'n');
-            //grafo.AgregarFila(entrada);
-
             // Filas del bloque derecho
             CVfila f1d = grafo.Agregarfila("F1_D", new Point(390, 70), 'u');
             CVfila f2d = grafo.Agregarfila("F2_D", new Point(390, 95), 'd');
@@ -115,6 +111,18 @@ namespace SmartParking
             grafo.AgregarCalle(f3i, f4i, 1);
             grafo.AgregarCalle(f4i, f5i, 0);
             grafo.AgregarCalle(f5i, f6i, 1);
+
+            grafo.AgregarCalle(f2d, f1d, 1);
+            grafo.AgregarCalle(f3d, f2d, 0);
+            grafo.AgregarCalle(f4d, f3d, 1);
+            grafo.AgregarCalle(f5d, f4d, 0);
+            grafo.AgregarCalle(f6d, f5d, 1);
+
+            grafo.AgregarCalle(f2i, f1i, 1);
+            grafo.AgregarCalle(f3i, f2i, 0);
+            grafo.AgregarCalle(f4i, f3i, 1);
+            grafo.AgregarCalle(f5i, f4i, 0);
+            grafo.AgregarCalle(f6i, f5i, 1);
 
             //AGREGAR NODO DE LA ENTRADA DERECHA
 
@@ -150,9 +158,6 @@ namespace SmartParking
             grafo.AgregarCalle(f5i, f5d, 10);
         }
 
-
-
-        // // // // // // // // // //
         //PARTE DE CAMINOS Y RUTA MÁS CORTA:
 
         // Dibuja un camino desde una entrada hacia una fila destino por Dijkstra (simulado manualmente)
@@ -188,15 +193,28 @@ namespace SmartParking
             }
         }
 
-
-
-        private void PruebaDibujoForm_Load(object sender, EventArgs e)
+        public int[,] ObtenerMatrizAdyacencia()
         {
 
+            int n = grafo.nodos.Count;
+            int[,] matriz = new int[n, n];
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    matriz[i, j] = 0; // Sin conexión
+                }
+
+                foreach (CAcalle arco in grafo.nodos[i].ListaAdyacencia)
+                {
+                    int j = grafo.nodos.IndexOf(arco.nDestino);
+                    matriz[i, j] = arco.Peso;
+                }
+            }
+
+            return matriz;
         }
-
-      
-
 
         //Yo por aqui no paso...
     }
