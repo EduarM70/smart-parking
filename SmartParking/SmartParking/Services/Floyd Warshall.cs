@@ -76,7 +76,7 @@ namespace SmartParking
             {
         
                 int origen = origenValor;
-                int destino = destinoValor;
+            int destino = destinoValor;
                 List<CVfila> ruta = new List<CVfila>();
 
                 if (origen == -1 || destino == -1 || distancias[origen, destino] == int.MaxValue / 2)
@@ -109,7 +109,7 @@ namespace SmartParking
                 //ruta.Add(nodos[intermedio]);
                 // Hay un nodo intermedio, se construye recursivamente
                 ConstruirRuta(origen, intermedio, ruta);
-                ruta.RemoveAt(ruta.Count - 1); // Evita duplicar el nodo intermedio
+               ruta.RemoveAt(ruta.Count - 1); // Evita duplicar el nodo intermedio
                 ConstruirRuta(intermedio, destino, ruta);
                 
             }
@@ -151,13 +151,7 @@ namespace SmartParking
                 filasCercanas.Add(nodos[distanciasConIndices[i].indice] as CVfila);
             }
 
-            CVfila filas = filasCercanas[0];
-            filas.BloqueFila = filasCercanas[0].BloqueFila;
-            filas.BloqueFila = filasCercanas[2].BloqueFila;
-            filas.BloqueFila = filasCercanas[3].BloqueFila;
             return filasCercanas;
-
-           
         }
 
 
