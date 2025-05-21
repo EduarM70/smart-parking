@@ -18,7 +18,7 @@ namespace SmartParking.Services
         public bool HayDisponibles;
         public List<CAcalle> ListaAdyacencia;
         public CEspacioP[] espacios; //espacios de parqueo
-        private int cantidadEspacios;
+        public int cantidadEspacios;
         public bool Visitado;
         public Point Coordenada;
         public string zona;
@@ -134,7 +134,7 @@ namespace SmartParking.Services
            
             Coordenada = new Point(600, 130);
             PosicionRelativaCalle = 'n';
-
+            ListaAdyacencia = new List<CAcalle>();
 
        }
 
@@ -143,6 +143,7 @@ namespace SmartParking.Services
         {
             Coordenada = coordenada;
             PosicionRelativaCalle = 'n';
+            ListaAdyacencia = new List<CAcalle>();
         }
 
         public void DibujarFila(Graphics g, Point origen)
@@ -297,7 +298,7 @@ namespace SmartParking.Services
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
-            g.DrawLine(new Pen(new SolidBrush(Color.Gold), (float)8)
+            g.DrawLine(new Pen(new SolidBrush(Color.DarkGreen), (float)4)
             {
                 CustomEndCap = bigArrow,
                 Alignment = PenAlignment.Center
@@ -312,7 +313,7 @@ namespace SmartParking.Services
             g.SmoothingMode = SmoothingMode.AntiAlias;
             AdjustableArrowCap bigArrow = new AdjustableArrowCap(2, 2, true);
             bigArrow.BaseCap = LineCap.Triangle;
-            g.DrawLine(new Pen(new SolidBrush(Color.Gold), (float)8)
+            g.DrawLine(new Pen(new SolidBrush(Color.DarkGreen), (float)8)
             {
                 CustomEndCap = bigArrow,
                 Alignment = PenAlignment.Center
