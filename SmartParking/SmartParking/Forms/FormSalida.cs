@@ -16,7 +16,11 @@ namespace SmartParking.Forms
     {
         double tiempototal;
         ConexionDB conexionDB;
-        FormEntrada entrada = new FormEntrada();
+        DateTime FechaEntrada;
+        DateTime hora;
+        TimeSpan HT;
+        double TotalMin;
+        
         public FormSalida()
         {
             InitializeComponent();
@@ -28,10 +32,31 @@ namespace SmartParking.Forms
             btnSalir.Enabled = false;
         }
 
+
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+
+            try
+            {
+                conexionDB.ConectarBase();
+                string query = "SELECT Fecha_ingreso FROM Registro_ingreso WHERE codigo = @codigo";
+
+                SqlCommand cmd = new SqlCommand(query, conexionDB.ConectarBase());
+                cmd.Parameters.AddWithValue("@codigo", txtCod.Text);
+                object resultado = cmd.ExecuteScalar();
+                FechaEntrada = Convert.ToDateTime(resultado);
+                HT = hora - FechaEntrada;
+                TotalMin = Math.Round(HT.TotalMinutes,2); 
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error", ex.Message);
+            }
+
             //CONSULTA A LA BASE
-            conexionDB.ConectarBase();
+
             try
             {
                 string queryCliente = "SELECT COUNT(*) FROM Registro_ingreso WHERE codigo = @cod";
@@ -44,12 +69,12 @@ namespace SmartParking.Forms
                 {
 
                     DateTime horaSalida = DateTime.Now;
-                    TimeSpan HoraTotal = horaSalida - FormEntrada.horaEntrada;
+                    TimeSpan HoraTotal = horaSalida - FechaEntrada;
                     double TiempoTotal = Math.Round(HoraTotal.TotalMinutes, 2);
 
-                    lbtiempoE.Text = FormEntrada.horaEntrada.ToString();
+                    lbtiempoE.Text = FechaEntrada.ToString();
                     lbtiempoS.Text = horaSalida.ToString();
-                    lbTimeTot.Text = Math.Round(HoraTotal.TotalMinutes, 2).ToString() + " minutos";
+                    lbTimeTot.Text = TiempoTotal.ToString() + " minutos";
 
                     TotPagar(TiempoTotal);
                     txtCod.Enabled = false;
@@ -65,6 +90,8 @@ namespace SmartParking.Forms
             {
                 MessageBox.Show("Error en la Base", ex.Message);
             }
+
+
         }
         public double TotPagar(double lbTiempo)
         {
@@ -93,6 +120,7 @@ namespace SmartParking.Forms
                 Tarifa = 10.00;
                 lbtotP.Text = "$10.00";
                 txtPago.Text = lbtotP.Text;
+                btnPagar.Enabled = true;
 
             }
             return Tarifa;
@@ -100,8 +128,8 @@ namespace SmartParking.Forms
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            DateTime hora = DateTime.Now;
-            TimeSpan total = hora - FormEntrada.horaEntrada;
+             hora = DateTime.Now;
+            TimeSpan total = hora - FechaEntrada;
             double minutos = total.TotalMinutes;
 
             conexionDB.ConectarBase();
@@ -132,5 +160,10 @@ namespace SmartParking.Forms
         {
             Application.Exit();
         }
+
+        private void FormSalida_Load(object sender, EventArgs e)
+        {
+        }
+    
     }
 }

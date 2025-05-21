@@ -40,7 +40,6 @@ C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\S
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\Guna.UI2.dll
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.AssemblyReference.cache
-C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.Login.resources
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.PruebaDibujoForm.resources
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Properties.Resources.resources
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.csproj.GenerateResource.cache
@@ -120,8 +119,6 @@ C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\S
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Text.Json.xml
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\bin\Debug\System.ValueTuple.xml
-C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.FormEntrada.resources
-C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Formularios.FormSalida.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe.config
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.exe
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\bin\Debug\SmartParking.pdb
@@ -211,3 +208,8 @@ D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartPa
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Login.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Maps.Map1.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Dashboard.DashboardForm.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Dashboard.DashboardForm.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormEntrada.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormSalida.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Login.resources
+C:\Users\PC\Documents\GitHub\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Maps.Map1.resources

@@ -14,7 +14,7 @@ namespace SmartParking.Data
     {
         //cadena de conexion a la base de datos
         //public string Cadena = ConfigurationManager.AppSettings["DB_CONNECTION"];
-        public string Cadena = @"Data Source=MYDESKTOPMARTIN\MYSQLSERVER;Initial Catalog=SmartParkingDB;Integrated Security=True";
+        public string Cadena = "Server=localhost;Database=SmartParkingDB;Trusted_Connection=True;TrustServerCertificate=True;";
 
         public SqlConnection ConectarBase()
         {
