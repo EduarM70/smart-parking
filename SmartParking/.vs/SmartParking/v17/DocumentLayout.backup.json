@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\smartparking\\forms\\formsalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|d:\\mis archivos eduar\\i ciclo udb 2025\\ped104\\smart-parking\\smartparking\\smartparking\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|d:\\mis archivos eduar\\i ciclo udb 2025\\ped104\\smart-parking\\smartparking\\smartparking\\data\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\data\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|d:\\mis archivos eduar\\i ciclo udb 2025\\ped104\\smart-parking\\smartparking\\smartparking\\forms\\formsalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\forms\\formsalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\services\\registroparqueo\\registroparqueoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|d:\\mis archivos eduar\\i ciclo udb 2025\\ped104\\smart-parking\\smartparking\\smartparking\\forms\\dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\smartparking\\forms\\dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F93F929A-793C-4EEF-BB95-2C47170960E9}|SmartParking\\SmartParking.csproj|solutionrelative:smartparking\\forms\\dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -74,15 +82,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\App.config",
+              "RelativeDocumentMoniker": "SmartParking\\App.config",
+              "ToolTip": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\App.config",
+              "RelativeToolTip": "SmartParking\\App.config",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-21T21:17:33.703Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
+              "Title": "ConexionDB.cs",
+              "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Data\\ConexionDB.cs",
+              "RelativeDocumentMoniker": "SmartParking\\Data\\ConexionDB.cs",
+              "ToolTip": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Data\\ConexionDB.cs*",
+              "RelativeToolTip": "SmartParking\\Data\\ConexionDB.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAACDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T21:17:36.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "CVfila.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Services\\CVfila.cs",
               "RelativeDocumentMoniker": "SmartParking\\Services\\CVfila.cs",
@@ -94,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "CGrafo.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Services\\CGrafo.cs",
               "RelativeDocumentMoniker": "SmartParking\\Services\\CGrafo.cs",
@@ -106,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FormSalida.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\FormSalida.cs",
               "RelativeDocumentMoniker": "SmartParking\\Forms\\FormSalida.cs",
@@ -119,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ParkingMap.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Services\\Maps\\ParkingMap.cs",
               "RelativeDocumentMoniker": "SmartParking\\Services\\Maps\\ParkingMap.cs",
@@ -131,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "RegistroParqueoService.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Services\\RegistroParqueo\\RegistroParqueoService.cs",
               "RelativeDocumentMoniker": "SmartParking\\Services\\RegistroParqueo\\RegistroParqueoService.cs",
@@ -139,12 +173,11 @@
               "RelativeToolTip": "SmartParking\\Services\\RegistroParqueo\\RegistroParqueoService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAGEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T17:58:29.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T17:58:29.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Map1.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\Maps\\Map1.cs",
               "RelativeDocumentMoniker": "SmartParking\\Forms\\Maps\\Map1.cs",
@@ -152,12 +185,11 @@
               "RelativeToolTip": "SmartParking\\Forms\\Maps\\Map1.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAkwHkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T07:58:18.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T07:58:18.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Services\\User\\AuthService.cs",
               "RelativeDocumentMoniker": "SmartParking\\Services\\User\\AuthService.cs",
@@ -169,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Parqueo.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Models\\Parqueo.cs",
               "RelativeDocumentMoniker": "SmartParking\\Models\\Parqueo.cs",
@@ -177,12 +209,11 @@
               "RelativeToolTip": "SmartParking\\Models\\Parqueo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T17:59:55.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T17:59:55.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FormSalida.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\FormSalida.cs",
               "RelativeDocumentMoniker": "SmartParking\\Forms\\FormSalida.cs",
@@ -194,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Dashboard.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\Dashboard\\Dashboard.cs",
               "RelativeDocumentMoniker": "SmartParking\\Forms\\Dashboard\\Dashboard.cs",
@@ -202,24 +233,22 @@
               "RelativeToolTip": "SmartParking\\Forms\\Dashboard\\Dashboard.cs",
               "ViewState": "AgIAAAwBAAAAAAAAAIAwwDEBAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T18:51:20.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T18:51:20.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Map1.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\Maps\\Map1.cs",
               "RelativeDocumentMoniker": "SmartParking\\Forms\\Maps\\Map1.cs",
               "ToolTip": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\Maps\\Map1.cs [Dise\u00F1o]",
               "RelativeToolTip": "SmartParking\\Forms\\Maps\\Map1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T06:25:08.542Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-20T06:25:08.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Dashboard.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\Dashboard\\Dashboard.cs",
               "RelativeDocumentMoniker": "SmartParking\\Forms\\Dashboard\\Dashboard.cs",
@@ -230,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "FormEntrada.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\FormEntrada.cs",
               "RelativeDocumentMoniker": "SmartParking\\Forms\\FormEntrada.cs",
@@ -242,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "FormEntrada.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Forms\\FormEntrada.cs",
               "RelativeDocumentMoniker": "SmartParking\\Forms\\FormEntrada.cs",
@@ -253,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Models\\User.cs",
               "RelativeDocumentMoniker": "SmartParking\\Models\\User.cs",
@@ -265,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Session.cs",
               "DocumentMoniker": "D:\\Mis Archivos Eduar\\I CICLO UDB 2025\\PED104\\smart-parking\\SmartParking\\SmartParking\\Models\\Session.cs",
               "RelativeDocumentMoniker": "SmartParking\\Models\\Session.cs",
