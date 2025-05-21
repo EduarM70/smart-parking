@@ -74,24 +74,24 @@ namespace SmartParking.Services.Maps
             // Crear el grafo para mapa completo
             
             // Definir entradas, o nodos de puntos de partidas
-            CVfila entradaA_W = new CVfila(new Point(121, 315));
-            CVfila entradaA_N = new CVfila(new Point(445, 95));
+            CVfila entradaA_W = new CVfila("entradaA_W",new Point(121, 315));
+            CVfila entradaA_N = new CVfila("entradaA_N", new Point(445, 95));
 
             grafo.AgregarFila(entradaA_W);
             grafo.AgregarFila(entradaA_N);
 
-            CVfila entradaB_W = new CVfila(new Point(121, 367));
-            CVfila entradaB_S = new CVfila(new Point(447, 624));
+            CVfila entradaB_W = new CVfila("entradaB_W", new Point(121, 367));
+            CVfila entradaB_S = new CVfila("entradaB_S", new Point(447, 624));
             grafo.AgregarFila(entradaB_W);
             grafo.AgregarFila(entradaB_S);
 
-            CVfila entradaC_E = new CVfila(new Point(850, 317));
-            CVfila entradaC_N = new CVfila(new Point(850, 317));
+            CVfila entradaC_E = new CVfila("entradaC_E", new Point(850, 317));
+            CVfila entradaC_N = new CVfila("entradaC_N", new Point(850, 317));
             grafo.AgregarFila(entradaC_E);
             grafo.AgregarFila(entradaC_N);
 
-            CVfila entradaD_E = new CVfila(new Point(850, 367));
-            CVfila entradaD_S = new CVfila(new Point(496, 624));
+            CVfila entradaD_E = new CVfila("entradaD_E", new Point(850, 367));
+            CVfila entradaD_S = new CVfila("entradaD_S", new Point(496, 624));
             grafo.AgregarFila(entradaD_E);
             grafo.AgregarFila(entradaD_S);
 
@@ -170,6 +170,8 @@ namespace SmartParking.Services.Maps
 
             grafo.AgregarCalle(entradaC_E, fila12, 1);
             grafo.AgregarCalle(entradaD_E, fila13, 1);
+            RutaMasCorta("entradaC_E");
+            grafo.DibujarCamino(e, rutaMasCercano, numEstacionamiento);
         }
 
         public void RutaMasCorta(string entrada)
@@ -179,12 +181,12 @@ namespace SmartParking.Services.Maps
             int distancia;
             int IdMasCercano = -1;
             int IdCercano = -1;
-            CVfila entradaIzquierda = grafo.nodos.Find(f => f.BloqueFila == "EntradaIzquierda");
-            int indiceEntrada = grafo.nodos.IndexOf(entradaIzquierda);
+            CVfila cvEntrada = grafo.nodos.Find(f => f.BloqueFila == entrada);
+            int indiceEntrada = grafo.nodos.IndexOf(cvEntrada);
 
             foreach (CVfila fila in grafo.nodos)
             {
-                if (fila != entradaIzquierda)
+                if (fila != cvEntrada)
                 {
                     if (fila.HayDisponibles == true)
                     {
@@ -201,11 +203,9 @@ namespace SmartParking.Services.Maps
 
             }
 
-
-
             rutaMasCercano = floyd.ObtenerRuta(indiceEntrada, IdMasCercano);
             CVfila cercano = grafo.nodos[IdMasCercano];
-            numEstacionamiento = cercano.PosicionDisponibleCercano(entradaIzquierda.Coordenada);
+            numEstacionamiento = cercano.PosicionDisponibleCercano(cvEntrada.Coordenada);
             caminoDibujar = true;
             //panel1.Refresh();
         }
