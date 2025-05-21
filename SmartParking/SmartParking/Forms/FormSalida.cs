@@ -36,6 +36,59 @@ namespace SmartParking.Forms
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
+           
+
+
+        }
+        public double TotPagar(double lbTiempo)
+        {
+            double Tarifa = 0;
+
+            double Thetime = lbTiempo;
+
+            if (Thetime < 01.00 && Thetime > 00.00)
+            {
+                lbtotP.Text = "$0.00";
+                txtPago.Text = lbtotP.Text;
+                btnPagar.Enabled = true;
+                Tarifa = 0.00;
+
+            }
+            if (Thetime > 01.00 && Thetime < 02.00)
+            {
+
+                lbtotP.Text = "$5.00";
+                txtPago.Text = lbtotP.Text;
+                btnPagar.Enabled = true;
+                Tarifa = 5.00;
+            }
+            if (Thetime > 02.00)
+            {
+                Tarifa = 10.00;
+                lbtotP.Text = "$10.00";
+                txtPago.Text = lbtotP.Text;
+                btnPagar.Enabled = true;
+
+            }
+            return Tarifa;
+        }
+
+        private void btnPagar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FormSalida_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
             try
             {
                 conexionDB.ConectarBase();
@@ -46,7 +99,7 @@ namespace SmartParking.Forms
                 object resultado = cmd.ExecuteScalar();
                 FechaEntrada = Convert.ToDateTime(resultado);
                 HT = hora - FechaEntrada;
-                TotalMin = Math.Round(HT.TotalMinutes,2); 
+                TotalMin = Math.Round(HT.TotalMinutes, 2);
 
 
             }
@@ -90,45 +143,16 @@ namespace SmartParking.Forms
             {
                 MessageBox.Show("Error en la Base", ex.Message);
             }
-
-
-        }
-        public double TotPagar(double lbTiempo)
-        {
-            double Tarifa = 0;
-
-            double Thetime = lbTiempo;
-
-            if (Thetime < 01.00 && Thetime > 00.00)
-            {
-                lbtotP.Text = "$0.00";
-                txtPago.Text = lbtotP.Text;
-                btnPagar.Enabled = true;
-                Tarifa = 0.00;
-
-            }
-            if (Thetime > 01.00 && Thetime < 02.00)
-            {
-
-                lbtotP.Text = "$5.00";
-                txtPago.Text = lbtotP.Text;
-                btnPagar.Enabled = true;
-                Tarifa = 5.00;
-            }
-            if (Thetime > 02.00)
-            {
-                Tarifa = 10.00;
-                lbtotP.Text = "$10.00";
-                txtPago.Text = lbtotP.Text;
-                btnPagar.Enabled = true;
-
-            }
-            return Tarifa;
         }
 
-        private void btnPagar_Click(object sender, EventArgs e)
+        private void btnSalir_Click_1(object sender, EventArgs e)
         {
-             hora = DateTime.Now;
+            Application.Exit();
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            hora = DateTime.Now;
             TimeSpan total = hora - FechaEntrada;
             double minutos = total.TotalMinutes;
 
@@ -156,14 +180,19 @@ namespace SmartParking.Forms
             btnPagar.Enabled = false;
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void txtCod_TextChanged(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void FormSalida_Load(object sender, EventArgs e)
+        private void txtCod_TextChanged_1(object sender, EventArgs e)
         {
+
         }
-    
+
+        private void txtPago_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
