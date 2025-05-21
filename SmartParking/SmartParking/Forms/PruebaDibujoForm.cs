@@ -16,6 +16,11 @@ namespace SmartParking
     {
         public ParkingMap mapaParqueo = new ParkingMap();
 
+        int numEstacionamiento;
+        List<CVfila> rutaMasCercano;
+        bool caminoDibujar = false;
+        bool grafoInicializado = false;
+ 
         public PruebaDibujoForm()
         {
             InitializeComponent();
@@ -31,10 +36,23 @@ namespace SmartParking
 
             List<CVfila> caminoPrueba = new List<CVfila>();
             
-            mapaParqueo.Grafo.DibujarCamino(e.Graphics, mapaParqueo.CrearGrafoDePrueba(e.Graphics));           
-            
+
+            if (!grafoInicializado)
+            {
+                mapaParqueo.grafo.DibujarGrafoPrueba(e.Graphics);
+                grafoInicializado = true;
+            }
+            if (caminoDibujar)
+            {
+                mapaParqueo.grafo.DibujarCamino(e.Graphics, rutaMasCercano, numEstacionamiento);
+                caminoDibujar = false;
+            }
+
         }
 
-        
+      
+
+       
+
     }
 }
