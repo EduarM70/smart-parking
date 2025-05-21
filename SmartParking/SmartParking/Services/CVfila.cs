@@ -18,7 +18,7 @@ namespace SmartParking.Services
         public bool HayDisponibles;
         public List<CAcalle> ListaAdyacencia;
         public CEspacioP[] espacios; //espacios de parqueo
-        private int cantidadEspacios;
+        public int cantidadEspacios;
         public bool Visitado;
         public Point Coordenada;
         public string zona;

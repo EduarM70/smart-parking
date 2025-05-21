@@ -185,6 +185,41 @@ namespace SmartParking.Services.Maps
 
             return matriz;
         }
+
+        public int totZona(string zona)
+        {
+            int tot = 0;
+            List<CVfila> listaZona = grafo.nodos.Where(n => n.zona.StartsWith("zona")).ToList();
+            foreach (CVfila fila in listaZona)
+            {
+                tot = tot + fila.cantidadEspacios;
+            }
+            return tot;
+        }
+
+        public int totDisponiblesZona(string zona)
+        {
+            int disponibles = 0;
+            List<CVfila> listaZona = grafo.nodos.Where(n => n.zona.StartsWith("zona")).ToList();
+
+            foreach (CVfila fila in listaZona)
+            {
+                if (fila.HayDisponibles == true)
+                {
+                    disponibles = disponibles + fila.cantidadEspacios;
+                }
+            }
+
+            return disponibles;
+        }
+        public int totOcupadosZona(string zona)
+        {
+            int tot = 0;
+
+            tot = totZona(zona) - totDisponiblesZona(zona);
+
+            return tot;
+        }
     }
 
 
