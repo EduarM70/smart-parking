@@ -25,14 +25,16 @@ namespace SmartParking.Forms.Dashboard
         {
             InitializeComponent();
 
-            if (Session.CurrentUser.Id != 0)
+            if (Session.CurrentUser != null && Session.CurrentUser.Id != 0)
             {
                 welcomeUser.Text = $"Bienvenido {Session.CurrentUser.Nombre}";
                 mapaCompleto = new Map1();
+
             }
             else
             {
                 MessageBox.Show("Deber iniciar Sesión para contar el acceso", "No tienes acceso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Close();
             }
 
             
@@ -47,6 +49,7 @@ namespace SmartParking.Forms.Dashboard
             string nombreMes = cultura.DateTimeFormat.GetMonthName(fechaActual.Month).ToLower();
 
             lblDate.Text = $"Hoy {nombreDia} {fechaActual.Day} de {nombreMes} de {fechaActual.Year}";
+
         }
 
         private void guna2HtmlLabel6_Click(object sender, EventArgs e)

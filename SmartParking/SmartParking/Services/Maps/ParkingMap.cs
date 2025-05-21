@@ -69,7 +69,7 @@ namespace SmartParking.Services.Maps
 
         }
 
-        public void MapaCompleto(Graphics e)
+        public void MapaCompleto(Graphics e = null)
         {
             // Crear el grafo para mapa completo
             
@@ -120,11 +120,14 @@ namespace SmartParking.Services.Maps
             CVfila fila16 = grafo.Agregarfila("Fila16", new Point(555, 623), 'u', "D1", 6); // 557; 624
 
 
-            grafo.DibujarGrafoPrueba(e);
+            if (e != null)
+            {
+                grafo.DibujarGrafoPrueba(e);
+            }
 
             //calles
 
-             //bloques a y b
+            //bloques a y b
 
             grafo.AgregarCalle(fila1, fila2, 0);
             grafo.AgregarCalle(fila2, fila3, 2);

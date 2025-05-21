@@ -31,6 +31,8 @@ namespace SmartParking.Forms.Maps
 
             // Mostrar fecha y hora al cargar el formulario
             ActualizarFechaYHora();
+
+            mapaParqueo.MapaCompleto(); // solo crea el grafo pero no lo dibuja la inicio
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace SmartParking.Forms.Maps
             lblDate2.Text = $"Hoy {nombreDia} {fechaActual.Day} de {nombreMes} de {fechaActual.Year}";
         }
 
-        private void PictureBoxMap_Paint(object sender, PaintEventArgs e)
+        public void PictureBoxMap_Paint(object sender, PaintEventArgs e)
         {
             mapaParqueo.MapaCompleto(e.Graphics);
 
