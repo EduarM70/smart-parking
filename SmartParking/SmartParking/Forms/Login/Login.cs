@@ -10,6 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmartParking.Data;
+using SmartParking.Forms.Dashboard;
+using SmartParking.Models;
+using SmartParking.Services.User;
 
 
 namespace SmartParking.Forms
@@ -25,6 +28,9 @@ namespace SmartParking.Forms
 
         //llmar el metodo de conexion a la base de datos
         ConexionDB conexionDB = new ConexionDB();
+
+        // clase de autentificacion
+        AuthService authService = new AuthService();
 
         public Login()
         {
@@ -60,34 +66,25 @@ namespace SmartParking.Forms
                 MessageBox.Show("los campos o uno de los campos esta vacio.");
             }
 
-            conexionDB.ConectarBase();
-            try
+            if (authService.Login(user, pass))
             {
+                User authUser = authService.ObtenerUsuario(user);
 
+                Session.CurrentUser = authUser; // usuario autentificado
 
-                string queryCliente = "SELECT COUNT(*) FROM Administrador WHERE usuario = @user AND Contrasena = @pass";
-                SqlCommand cmdCliente = new SqlCommand(queryCliente, conexionDB.ConectarBase());
-                cmdCliente.Parameters.AddWithValue("@user", user);
-                cmdCliente.Parameters.AddWithValue("@pass", pass);
+                // abrir pantalla de dashboard
+                this.Hide();
 
-                int esCliente = (int)cmdCliente.ExecuteScalar();
+                DashboardForm dashboard = new DashboardForm();
 
-                if (esCliente > 0)
-                {
-                    MessageBox.Show($"Bienvenido {user}");
-                    this.Hide();
-                    PruebaDibujoForm frm1 = new PruebaDibujoForm();
-                    frm1.ShowDialog();
-                    this.Close();
-                    return;
-                }
+                dashboard.ShowDialog();
+
+                this.Close();
+
+                return;
             }
 
-           
-            catch (Exception ex)
-            {
-                MessageBox.Show("error usuario no encontrado", ex.Message);
-            }
+            MessageBox.Show("El usuario o la contraseña son incorrectas", "Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
     }

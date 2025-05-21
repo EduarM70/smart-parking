@@ -206,8 +206,8 @@ D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartPa
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartPar.7BB15B14.Up2Date
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.exe
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.pdb
-D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Dashboard.Dashboard.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormEntrada.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.FormSalida.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Login.resources
 D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Maps.Map1.resources
+D:\Mis Archivos Eduar\I CICLO UDB 2025\PED104\smart-parking\SmartParking\SmartParking\obj\Debug\SmartParking.Forms.Dashboard.DashboardForm.resources

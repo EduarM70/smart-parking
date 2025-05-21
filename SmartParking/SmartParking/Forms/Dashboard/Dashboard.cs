@@ -8,14 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using SmartParking.Models;
 
 namespace SmartParking.Forms.Dashboard
 {
-    public partial class Dashboard : Form
+    public partial class DashboardForm : Form
     {
-        public Dashboard()
+        public DashboardForm()
         {
             InitializeComponent();
+
+            if (Session.CurrentUser.Id != 0)
+            {
+                welcomeUser.Text = $"Bienvenido {Session.CurrentUser.Nombre}";
+            }
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
