@@ -179,12 +179,12 @@ namespace SmartParking.Services.Maps
             int distancia;
             int IdMasCercano = -1;
             int IdCercano = -1;
-            CVfila entradaIzquierda = grafo.nodos.Find(f => f.BloqueFila == "EntradaIzquierda");
-            int indiceEntrada = grafo.nodos.IndexOf(entradaIzquierda);
+            CVfila cvEntrada = grafo.nodos.Find(f => f.BloqueFila == entrada);
+            int indiceEntrada = grafo.nodos.IndexOf(cvEntrada);
 
             foreach (CVfila fila in grafo.nodos)
             {
-                if (fila != entradaIzquierda)
+                if (fila != cvEntrada)
                 {
                     if (fila.HayDisponibles == true)
                     {
@@ -205,7 +205,7 @@ namespace SmartParking.Services.Maps
 
             rutaMasCercano = floyd.ObtenerRuta(indiceEntrada, IdMasCercano);
             CVfila cercano = grafo.nodos[IdMasCercano];
-            numEstacionamiento = cercano.PosicionDisponibleCercano(entradaIzquierda.Coordenada);
+            numEstacionamiento = cercano.PosicionDisponibleCercano(cvEntrada.Coordenada);
             caminoDibujar = true;
             //panel1.Refresh();
         }
