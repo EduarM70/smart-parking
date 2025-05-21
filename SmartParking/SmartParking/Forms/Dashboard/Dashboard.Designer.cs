@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardForm));
             this.welcomeUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -35,29 +36,29 @@
             this.guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTotalParqueos = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl3 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTotalCarros = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.progressBarLibres = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTotalLibres = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl4 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.guna2ProgressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.progressBarOcupados = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTotalOcupados = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl5 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnZonaA = new Guna.UI2.WinForms.Guna2Button();
             this.cmbEntradaZA = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtOcupadosA = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZADisponibles = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZonaATotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl6 = new Guna.UI2.WinForms.Guna2ContainerControl();
@@ -66,34 +67,35 @@
             this.cmbEntradaZB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtOcupadosB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZonaBTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZBDisponibles = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl7 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnZonaC = new Guna.UI2.WinForms.Guna2Button();
             this.cmdEntradasZC = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtOcupadosC = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cmbEntradaZC = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZCDisponibles = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel26 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZonaCTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl8 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.btnZonaD = new Guna.UI2.WinForms.Guna2Button();
             this.cmbEntradaZD = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtOcupadosD = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel30 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZDDisponibles = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel31 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox12 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZonaDTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel32 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel33 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2ContainerControl1.SuspendLayout();
             this.guna2ContainerControl3.SuspendLayout();
             this.guna2ContainerControl2.SuspendLayout();
@@ -142,7 +144,7 @@
             this.guna2ContainerControl1.BorderRadius = 20;
             this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel3);
+            this.guna2ContainerControl1.Controls.Add(this.lblTotalParqueos);
             this.guna2ContainerControl1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
             this.guna2ContainerControl1.Location = new System.Drawing.Point(48, 137);
             this.guna2ContainerControl1.Name = "guna2ContainerControl1";
@@ -172,22 +174,22 @@
             this.guna2HtmlLabel4.TabIndex = 2;
             this.guna2HtmlLabel4.Text = "Estacionamientos entre todas las zonas";
             // 
-            // guna2HtmlLabel3
+            // lblTotalParqueos
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(25, 32);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(75, 78);
-            this.guna2HtmlLabel3.TabIndex = 1;
-            this.guna2HtmlLabel3.Text = "100";
+            this.lblTotalParqueos.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalParqueos.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Bold);
+            this.lblTotalParqueos.ForeColor = System.Drawing.Color.White;
+            this.lblTotalParqueos.Location = new System.Drawing.Point(25, 32);
+            this.lblTotalParqueos.Name = "lblTotalParqueos";
+            this.lblTotalParqueos.Size = new System.Drawing.Size(75, 78);
+            this.lblTotalParqueos.TabIndex = 1;
+            this.lblTotalParqueos.Text = "100";
             // 
             // guna2ContainerControl3
             // 
             this.guna2ContainerControl3.BorderRadius = 20;
             this.guna2ContainerControl3.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2ContainerControl3.Controls.Add(this.guna2HtmlLabel5);
+            this.guna2ContainerControl3.Controls.Add(this.lblTotalCarros);
             this.guna2ContainerControl3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(182)))), ((int)(((byte)(198)))));
             this.guna2ContainerControl3.Location = new System.Drawing.Point(362, 137);
             this.guna2ContainerControl3.Name = "guna2ContainerControl3";
@@ -207,24 +209,24 @@
             this.guna2HtmlLabel6.Text = "Automóviles ingresados";
             this.guna2HtmlLabel6.Click += new System.EventHandler(this.guna2HtmlLabel6_Click);
             // 
-            // guna2HtmlLabel5
+            // lblTotalCarros
             // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(25, 32);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(54, 78);
-            this.guna2HtmlLabel5.TabIndex = 3;
-            this.guna2HtmlLabel5.Text = "70";
+            this.lblTotalCarros.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalCarros.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Bold);
+            this.lblTotalCarros.ForeColor = System.Drawing.Color.White;
+            this.lblTotalCarros.Location = new System.Drawing.Point(25, 32);
+            this.lblTotalCarros.Name = "lblTotalCarros";
+            this.lblTotalCarros.Size = new System.Drawing.Size(54, 78);
+            this.lblTotalCarros.TabIndex = 3;
+            this.lblTotalCarros.Text = "70";
             // 
             // guna2ContainerControl2
             // 
             this.guna2ContainerControl2.BorderRadius = 20;
-            this.guna2ContainerControl2.Controls.Add(this.guna2ProgressBar1);
+            this.guna2ContainerControl2.Controls.Add(this.progressBarLibres);
             this.guna2ContainerControl2.Controls.Add(this.guna2HtmlLabel7);
             this.guna2ContainerControl2.Controls.Add(this.guna2HtmlLabel9);
-            this.guna2ContainerControl2.Controls.Add(this.guna2HtmlLabel8);
+            this.guna2ContainerControl2.Controls.Add(this.lblTotalLibres);
             this.guna2ContainerControl2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(148)))), ((int)(((byte)(136)))));
             this.guna2ContainerControl2.Location = new System.Drawing.Point(675, 137);
             this.guna2ContainerControl2.Name = "guna2ContainerControl2";
@@ -232,17 +234,17 @@
             this.guna2ContainerControl2.TabIndex = 7;
             this.guna2ContainerControl2.Text = "guna2ContainerControl2";
             // 
-            // guna2ProgressBar1
+            // progressBarLibres
             // 
-            this.guna2ProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.guna2ProgressBar1.Location = new System.Drawing.Point(25, 112);
-            this.guna2ProgressBar1.Name = "guna2ProgressBar1";
-            this.guna2ProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(47)))), ((int)(((byte)(46)))));
-            this.guna2ProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(47)))), ((int)(((byte)(46)))));
-            this.guna2ProgressBar1.Size = new System.Drawing.Size(239, 6);
-            this.guna2ProgressBar1.TabIndex = 8;
-            this.guna2ProgressBar1.Text = "guna2ProgressBar1";
-            this.guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progressBarLibres.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.progressBarLibres.Location = new System.Drawing.Point(25, 112);
+            this.progressBarLibres.Name = "progressBarLibres";
+            this.progressBarLibres.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(47)))), ((int)(((byte)(46)))));
+            this.progressBarLibres.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(47)))), ((int)(((byte)(46)))));
+            this.progressBarLibres.Size = new System.Drawing.Size(239, 6);
+            this.progressBarLibres.TabIndex = 8;
+            this.progressBarLibres.Text = "guna2ProgressBar1";
+            this.progressBarLibres.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
             // guna2HtmlLabel7
             // 
@@ -251,9 +253,9 @@
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(25, 16);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(85, 21);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(136, 21);
             this.guna2HtmlLabel7.TabIndex = 3;
-            this.guna2HtmlLabel7.Text = "Total Parqueos";
+            this.guna2HtmlLabel7.Text = "Estacionamientos libres";
             // 
             // guna2HtmlLabel9
             // 
@@ -266,24 +268,24 @@
             this.guna2HtmlLabel9.TabIndex = 3;
             this.guna2HtmlLabel9.Text = "Libres 70% del estacionamiento";
             // 
-            // guna2HtmlLabel8
+            // lblTotalLibres
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(25, 32);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(75, 78);
-            this.guna2HtmlLabel8.TabIndex = 3;
-            this.guna2HtmlLabel8.Text = "100";
+            this.lblTotalLibres.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalLibres.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Bold);
+            this.lblTotalLibres.ForeColor = System.Drawing.Color.White;
+            this.lblTotalLibres.Location = new System.Drawing.Point(25, 32);
+            this.lblTotalLibres.Name = "lblTotalLibres";
+            this.lblTotalLibres.Size = new System.Drawing.Size(75, 78);
+            this.lblTotalLibres.TabIndex = 3;
+            this.lblTotalLibres.Text = "100";
             // 
             // guna2ContainerControl4
             // 
             this.guna2ContainerControl4.BorderRadius = 20;
-            this.guna2ContainerControl4.Controls.Add(this.guna2ProgressBar2);
+            this.guna2ContainerControl4.Controls.Add(this.progressBarOcupados);
             this.guna2ContainerControl4.Controls.Add(this.guna2HtmlLabel10);
             this.guna2ContainerControl4.Controls.Add(this.guna2HtmlLabel11);
-            this.guna2ContainerControl4.Controls.Add(this.guna2HtmlLabel12);
+            this.guna2ContainerControl4.Controls.Add(this.lblTotalOcupados);
             this.guna2ContainerControl4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(105)))), ((int)(((byte)(52)))));
             this.guna2ContainerControl4.Location = new System.Drawing.Point(991, 137);
             this.guna2ContainerControl4.Name = "guna2ContainerControl4";
@@ -291,17 +293,17 @@
             this.guna2ContainerControl4.TabIndex = 9;
             this.guna2ContainerControl4.Text = "guna2ContainerControl4";
             // 
-            // guna2ProgressBar2
+            // progressBarOcupados
             // 
-            this.guna2ProgressBar2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(215)))), ((int)(((byte)(170)))));
-            this.guna2ProgressBar2.Location = new System.Drawing.Point(25, 112);
-            this.guna2ProgressBar2.Name = "guna2ProgressBar2";
-            this.guna2ProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(45)))), ((int)(((byte)(18)))));
-            this.guna2ProgressBar2.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(45)))), ((int)(((byte)(18)))));
-            this.guna2ProgressBar2.Size = new System.Drawing.Size(239, 7);
-            this.guna2ProgressBar2.TabIndex = 8;
-            this.guna2ProgressBar2.Text = "guna2ProgressBar2";
-            this.guna2ProgressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progressBarOcupados.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(215)))), ((int)(((byte)(170)))));
+            this.progressBarOcupados.Location = new System.Drawing.Point(25, 112);
+            this.progressBarOcupados.Name = "progressBarOcupados";
+            this.progressBarOcupados.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(45)))), ((int)(((byte)(18)))));
+            this.progressBarOcupados.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(45)))), ((int)(((byte)(18)))));
+            this.progressBarOcupados.Size = new System.Drawing.Size(239, 7);
+            this.progressBarOcupados.TabIndex = 8;
+            this.progressBarOcupados.Text = "guna2ProgressBar2";
+            this.progressBarOcupados.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
             // guna2HtmlLabel10
             // 
@@ -310,9 +312,9 @@
             this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel10.Location = new System.Drawing.Point(25, 16);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(85, 21);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(161, 21);
             this.guna2HtmlLabel10.TabIndex = 3;
-            this.guna2HtmlLabel10.Text = "Total Parqueos";
+            this.guna2HtmlLabel10.Text = "Estacionamientos ocupados";
             // 
             // guna2HtmlLabel11
             // 
@@ -325,16 +327,16 @@
             this.guna2HtmlLabel11.TabIndex = 3;
             this.guna2HtmlLabel11.Text = "Libres 70% del estacionamiento";
             // 
-            // guna2HtmlLabel12
+            // lblTotalOcupados
             // 
-            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(25, 27);
-            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(75, 78);
-            this.guna2HtmlLabel12.TabIndex = 3;
-            this.guna2HtmlLabel12.Text = "100";
+            this.lblTotalOcupados.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalOcupados.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Bold);
+            this.lblTotalOcupados.ForeColor = System.Drawing.Color.White;
+            this.lblTotalOcupados.Location = new System.Drawing.Point(25, 27);
+            this.lblTotalOcupados.Name = "lblTotalOcupados";
+            this.lblTotalOcupados.Size = new System.Drawing.Size(75, 78);
+            this.lblTotalOcupados.TabIndex = 3;
+            this.lblTotalOcupados.Text = "100";
             // 
             // guna2ContainerControl5
             // 
@@ -342,11 +344,11 @@
             this.guna2ContainerControl5.Controls.Add(this.btnZonaA);
             this.guna2ContainerControl5.Controls.Add(this.cmbEntradaZA);
             this.guna2ContainerControl5.Controls.Add(this.guna2HtmlLabel19);
-            this.guna2ContainerControl5.Controls.Add(this.guna2TextBox3);
+            this.guna2ContainerControl5.Controls.Add(this.txtOcupadosA);
             this.guna2ContainerControl5.Controls.Add(this.guna2HtmlLabel18);
-            this.guna2ContainerControl5.Controls.Add(this.guna2TextBox2);
+            this.guna2ContainerControl5.Controls.Add(this.txtZADisponibles);
             this.guna2ContainerControl5.Controls.Add(this.guna2HtmlLabel17);
-            this.guna2ContainerControl5.Controls.Add(this.guna2TextBox1);
+            this.guna2ContainerControl5.Controls.Add(this.txtZonaATotal);
             this.guna2ContainerControl5.Controls.Add(this.guna2HtmlLabel16);
             this.guna2ContainerControl5.Controls.Add(this.guna2HtmlLabel14);
             this.guna2ContainerControl5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
@@ -407,29 +409,29 @@
             this.guna2HtmlLabel19.Text = "Seleccionar Entrada";
             this.guna2HtmlLabel19.Click += new System.EventHandler(this.guna2HtmlLabel19_Click);
             // 
-            // guna2TextBox3
+            // txtOcupadosA
             // 
-            this.guna2TextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox3.BorderRadius = 10;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "50";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.Enabled = false;
-            this.guna2TextBox3.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(207, 103);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(159, 36);
-            this.guna2TextBox3.TabIndex = 18;
-            this.guna2TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtOcupadosA.BackColor = System.Drawing.Color.Transparent;
+            this.txtOcupadosA.BorderRadius = 10;
+            this.txtOcupadosA.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOcupadosA.DefaultText = "50";
+            this.txtOcupadosA.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtOcupadosA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtOcupadosA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOcupadosA.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOcupadosA.Enabled = false;
+            this.txtOcupadosA.FillColor = System.Drawing.SystemColors.Window;
+            this.txtOcupadosA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOcupadosA.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOcupadosA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOcupadosA.Location = new System.Drawing.Point(207, 103);
+            this.txtOcupadosA.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtOcupadosA.Name = "txtOcupadosA";
+            this.txtOcupadosA.PlaceholderText = "";
+            this.txtOcupadosA.SelectedText = "";
+            this.txtOcupadosA.Size = new System.Drawing.Size(159, 36);
+            this.txtOcupadosA.TabIndex = 18;
+            this.txtOcupadosA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel18
             // 
@@ -443,29 +445,29 @@
             this.guna2HtmlLabel18.Text = "Espacios ocupados";
             this.guna2HtmlLabel18.Click += new System.EventHandler(this.guna2HtmlLabel18_Click);
             // 
-            // guna2TextBox2
+            // txtZADisponibles
             // 
-            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.BorderRadius = 10;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "50";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.Enabled = false;
-            this.guna2TextBox2.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(402, 37);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(176, 36);
-            this.guna2TextBox2.TabIndex = 16;
-            this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZADisponibles.BackColor = System.Drawing.Color.Transparent;
+            this.txtZADisponibles.BorderRadius = 10;
+            this.txtZADisponibles.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZADisponibles.DefaultText = "50";
+            this.txtZADisponibles.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZADisponibles.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZADisponibles.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZADisponibles.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZADisponibles.Enabled = false;
+            this.txtZADisponibles.FillColor = System.Drawing.SystemColors.Window;
+            this.txtZADisponibles.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZADisponibles.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZADisponibles.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZADisponibles.Location = new System.Drawing.Point(402, 37);
+            this.txtZADisponibles.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtZADisponibles.Name = "txtZADisponibles";
+            this.txtZADisponibles.PlaceholderText = "";
+            this.txtZADisponibles.SelectedText = "";
+            this.txtZADisponibles.Size = new System.Drawing.Size(176, 36);
+            this.txtZADisponibles.TabIndex = 16;
+            this.txtZADisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel17
             // 
@@ -478,29 +480,29 @@
             this.guna2HtmlLabel17.TabIndex = 15;
             this.guna2HtmlLabel17.Text = "Espacios disponibles";
             // 
-            // guna2TextBox1
+            // txtZonaATotal
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 10;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "50";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.Enabled = false;
-            this.guna2TextBox1.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(207, 37);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(159, 36);
-            this.guna2TextBox1.TabIndex = 14;
-            this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZonaATotal.BackColor = System.Drawing.Color.Transparent;
+            this.txtZonaATotal.BorderRadius = 10;
+            this.txtZonaATotal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZonaATotal.DefaultText = "50";
+            this.txtZonaATotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZonaATotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZonaATotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZonaATotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZonaATotal.Enabled = false;
+            this.txtZonaATotal.FillColor = System.Drawing.SystemColors.Window;
+            this.txtZonaATotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZonaATotal.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZonaATotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZonaATotal.Location = new System.Drawing.Point(207, 37);
+            this.txtZonaATotal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtZonaATotal.Name = "txtZonaATotal";
+            this.txtZonaATotal.PlaceholderText = "";
+            this.txtZonaATotal.SelectedText = "";
+            this.txtZonaATotal.Size = new System.Drawing.Size(159, 36);
+            this.txtZonaATotal.TabIndex = 14;
+            this.txtZonaATotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel16
             // 
@@ -532,11 +534,11 @@
             this.guna2ContainerControl6.Controls.Add(this.cmbEntradaZB);
             this.guna2ContainerControl6.Controls.Add(this.guna2HtmlLabel20);
             this.guna2ContainerControl6.Controls.Add(this.guna2HtmlLabel23);
-            this.guna2ContainerControl6.Controls.Add(this.guna2TextBox4);
-            this.guna2ContainerControl6.Controls.Add(this.guna2TextBox6);
+            this.guna2ContainerControl6.Controls.Add(this.txtOcupadosB);
+            this.guna2ContainerControl6.Controls.Add(this.txtZonaBTotal);
             this.guna2ContainerControl6.Controls.Add(this.guna2HtmlLabel21);
             this.guna2ContainerControl6.Controls.Add(this.guna2HtmlLabel22);
-            this.guna2ContainerControl6.Controls.Add(this.guna2TextBox5);
+            this.guna2ContainerControl6.Controls.Add(this.txtZBDisponibles);
             this.guna2ContainerControl6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
             this.guna2ContainerControl6.Location = new System.Drawing.Point(49, 526);
             this.guna2ContainerControl6.Name = "guna2ContainerControl6";
@@ -616,53 +618,53 @@
             this.guna2HtmlLabel23.TabIndex = 22;
             this.guna2HtmlLabel23.Text = "Total Espacios";
             // 
-            // guna2TextBox4
+            // txtOcupadosB
             // 
-            this.guna2TextBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox4.BorderRadius = 10;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "50";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.Enabled = false;
-            this.guna2TextBox4.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(209, 107);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(159, 39);
-            this.guna2TextBox4.TabIndex = 27;
-            this.guna2TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtOcupadosB.BackColor = System.Drawing.Color.Transparent;
+            this.txtOcupadosB.BorderRadius = 10;
+            this.txtOcupadosB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOcupadosB.DefaultText = "50";
+            this.txtOcupadosB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtOcupadosB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtOcupadosB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOcupadosB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOcupadosB.Enabled = false;
+            this.txtOcupadosB.FillColor = System.Drawing.SystemColors.Window;
+            this.txtOcupadosB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOcupadosB.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOcupadosB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOcupadosB.Location = new System.Drawing.Point(209, 107);
+            this.txtOcupadosB.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtOcupadosB.Name = "txtOcupadosB";
+            this.txtOcupadosB.PlaceholderText = "";
+            this.txtOcupadosB.SelectedText = "";
+            this.txtOcupadosB.Size = new System.Drawing.Size(159, 39);
+            this.txtOcupadosB.TabIndex = 27;
+            this.txtOcupadosB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2TextBox6
+            // txtZonaBTotal
             // 
-            this.guna2TextBox6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox6.BorderRadius = 10;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "50";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.Enabled = false;
-            this.guna2TextBox6.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(206, 38);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(159, 39);
-            this.guna2TextBox6.TabIndex = 23;
-            this.guna2TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZonaBTotal.BackColor = System.Drawing.Color.Transparent;
+            this.txtZonaBTotal.BorderRadius = 10;
+            this.txtZonaBTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZonaBTotal.DefaultText = "50";
+            this.txtZonaBTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZonaBTotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZonaBTotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZonaBTotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZonaBTotal.Enabled = false;
+            this.txtZonaBTotal.FillColor = System.Drawing.SystemColors.Window;
+            this.txtZonaBTotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZonaBTotal.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZonaBTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZonaBTotal.Location = new System.Drawing.Point(206, 38);
+            this.txtZonaBTotal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtZonaBTotal.Name = "txtZonaBTotal";
+            this.txtZonaBTotal.PlaceholderText = "";
+            this.txtZonaBTotal.SelectedText = "";
+            this.txtZonaBTotal.Size = new System.Drawing.Size(159, 39);
+            this.txtZonaBTotal.TabIndex = 23;
+            this.txtZonaBTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel21
             // 
@@ -686,29 +688,29 @@
             this.guna2HtmlLabel22.TabIndex = 24;
             this.guna2HtmlLabel22.Text = "Espacios disponibles";
             // 
-            // guna2TextBox5
+            // txtZBDisponibles
             // 
-            this.guna2TextBox5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox5.BorderRadius = 10;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "50";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.Enabled = false;
-            this.guna2TextBox5.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(401, 38);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(176, 39);
-            this.guna2TextBox5.TabIndex = 25;
-            this.guna2TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZBDisponibles.BackColor = System.Drawing.Color.Transparent;
+            this.txtZBDisponibles.BorderRadius = 10;
+            this.txtZBDisponibles.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZBDisponibles.DefaultText = "50";
+            this.txtZBDisponibles.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZBDisponibles.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZBDisponibles.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZBDisponibles.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZBDisponibles.Enabled = false;
+            this.txtZBDisponibles.FillColor = System.Drawing.SystemColors.Window;
+            this.txtZBDisponibles.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZBDisponibles.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZBDisponibles.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZBDisponibles.Location = new System.Drawing.Point(401, 38);
+            this.txtZBDisponibles.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtZBDisponibles.Name = "txtZBDisponibles";
+            this.txtZBDisponibles.PlaceholderText = "";
+            this.txtZBDisponibles.SelectedText = "";
+            this.txtZBDisponibles.Size = new System.Drawing.Size(176, 39);
+            this.txtZBDisponibles.TabIndex = 25;
+            this.txtZBDisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel13
             // 
@@ -727,11 +729,11 @@
             this.guna2ContainerControl7.Controls.Add(this.btnZonaC);
             this.guna2ContainerControl7.Controls.Add(this.cmdEntradasZC);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel24);
-            this.guna2ContainerControl7.Controls.Add(this.guna2TextBox7);
+            this.guna2ContainerControl7.Controls.Add(this.txtOcupadosC);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel25);
-            this.guna2ContainerControl7.Controls.Add(this.cmbEntradaZC);
+            this.guna2ContainerControl7.Controls.Add(this.txtZCDisponibles);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel26);
-            this.guna2ContainerControl7.Controls.Add(this.guna2TextBox9);
+            this.guna2ContainerControl7.Controls.Add(this.txtZonaCTotal);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel27);
             this.guna2ContainerControl7.Controls.Add(this.guna2HtmlLabel28);
             this.guna2ContainerControl7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
@@ -790,29 +792,29 @@
             this.guna2HtmlLabel24.TabIndex = 19;
             this.guna2HtmlLabel24.Text = "Seleccionar Entrada";
             // 
-            // guna2TextBox7
+            // txtOcupadosC
             // 
-            this.guna2TextBox7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox7.BorderRadius = 10;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "50";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.Enabled = false;
-            this.guna2TextBox7.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(207, 103);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(159, 36);
-            this.guna2TextBox7.TabIndex = 18;
-            this.guna2TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtOcupadosC.BackColor = System.Drawing.Color.Transparent;
+            this.txtOcupadosC.BorderRadius = 10;
+            this.txtOcupadosC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOcupadosC.DefaultText = "50";
+            this.txtOcupadosC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtOcupadosC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtOcupadosC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOcupadosC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOcupadosC.Enabled = false;
+            this.txtOcupadosC.FillColor = System.Drawing.SystemColors.Window;
+            this.txtOcupadosC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOcupadosC.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOcupadosC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOcupadosC.Location = new System.Drawing.Point(207, 103);
+            this.txtOcupadosC.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtOcupadosC.Name = "txtOcupadosC";
+            this.txtOcupadosC.PlaceholderText = "";
+            this.txtOcupadosC.SelectedText = "";
+            this.txtOcupadosC.Size = new System.Drawing.Size(159, 36);
+            this.txtOcupadosC.TabIndex = 18;
+            this.txtOcupadosC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel25
             // 
@@ -825,29 +827,29 @@
             this.guna2HtmlLabel25.TabIndex = 17;
             this.guna2HtmlLabel25.Text = "Espacios ocupados";
             // 
-            // cmbEntradaZC
+            // txtZCDisponibles
             // 
-            this.cmbEntradaZC.BackColor = System.Drawing.Color.Transparent;
-            this.cmbEntradaZC.BorderRadius = 10;
-            this.cmbEntradaZC.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cmbEntradaZC.DefaultText = "50";
-            this.cmbEntradaZC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cmbEntradaZC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cmbEntradaZC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cmbEntradaZC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cmbEntradaZC.Enabled = false;
-            this.cmbEntradaZC.FillColor = System.Drawing.SystemColors.Window;
-            this.cmbEntradaZC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbEntradaZC.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEntradaZC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbEntradaZC.Location = new System.Drawing.Point(402, 37);
-            this.cmbEntradaZC.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.cmbEntradaZC.Name = "cmbEntradaZC";
-            this.cmbEntradaZC.PlaceholderText = "";
-            this.cmbEntradaZC.SelectedText = "";
-            this.cmbEntradaZC.Size = new System.Drawing.Size(178, 36);
-            this.cmbEntradaZC.TabIndex = 16;
-            this.cmbEntradaZC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZCDisponibles.BackColor = System.Drawing.Color.Transparent;
+            this.txtZCDisponibles.BorderRadius = 10;
+            this.txtZCDisponibles.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZCDisponibles.DefaultText = "50";
+            this.txtZCDisponibles.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZCDisponibles.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZCDisponibles.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZCDisponibles.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZCDisponibles.Enabled = false;
+            this.txtZCDisponibles.FillColor = System.Drawing.SystemColors.Window;
+            this.txtZCDisponibles.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZCDisponibles.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZCDisponibles.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZCDisponibles.Location = new System.Drawing.Point(402, 37);
+            this.txtZCDisponibles.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtZCDisponibles.Name = "txtZCDisponibles";
+            this.txtZCDisponibles.PlaceholderText = "";
+            this.txtZCDisponibles.SelectedText = "";
+            this.txtZCDisponibles.Size = new System.Drawing.Size(178, 36);
+            this.txtZCDisponibles.TabIndex = 16;
+            this.txtZCDisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel26
             // 
@@ -860,29 +862,29 @@
             this.guna2HtmlLabel26.TabIndex = 15;
             this.guna2HtmlLabel26.Text = "Espacios disponibles";
             // 
-            // guna2TextBox9
+            // txtZonaCTotal
             // 
-            this.guna2TextBox9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox9.BorderRadius = 10;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "50";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.Enabled = false;
-            this.guna2TextBox9.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(207, 37);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PlaceholderText = "";
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.Size = new System.Drawing.Size(159, 36);
-            this.guna2TextBox9.TabIndex = 14;
-            this.guna2TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZonaCTotal.BackColor = System.Drawing.Color.Transparent;
+            this.txtZonaCTotal.BorderRadius = 10;
+            this.txtZonaCTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZonaCTotal.DefaultText = "50";
+            this.txtZonaCTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZonaCTotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZonaCTotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZonaCTotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZonaCTotal.Enabled = false;
+            this.txtZonaCTotal.FillColor = System.Drawing.SystemColors.Window;
+            this.txtZonaCTotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZonaCTotal.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZonaCTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZonaCTotal.Location = new System.Drawing.Point(207, 37);
+            this.txtZonaCTotal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtZonaCTotal.Name = "txtZonaCTotal";
+            this.txtZonaCTotal.PlaceholderText = "";
+            this.txtZonaCTotal.SelectedText = "";
+            this.txtZonaCTotal.Size = new System.Drawing.Size(159, 36);
+            this.txtZonaCTotal.TabIndex = 14;
+            this.txtZonaCTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel27
             // 
@@ -913,11 +915,11 @@
             this.guna2ContainerControl8.Controls.Add(this.btnZonaD);
             this.guna2ContainerControl8.Controls.Add(this.cmbEntradaZD);
             this.guna2ContainerControl8.Controls.Add(this.guna2HtmlLabel29);
-            this.guna2ContainerControl8.Controls.Add(this.guna2TextBox10);
+            this.guna2ContainerControl8.Controls.Add(this.txtOcupadosD);
             this.guna2ContainerControl8.Controls.Add(this.guna2HtmlLabel30);
-            this.guna2ContainerControl8.Controls.Add(this.guna2TextBox11);
+            this.guna2ContainerControl8.Controls.Add(this.txtZDDisponibles);
             this.guna2ContainerControl8.Controls.Add(this.guna2HtmlLabel31);
-            this.guna2ContainerControl8.Controls.Add(this.guna2TextBox12);
+            this.guna2ContainerControl8.Controls.Add(this.txtZonaDTotal);
             this.guna2ContainerControl8.Controls.Add(this.guna2HtmlLabel32);
             this.guna2ContainerControl8.Controls.Add(this.guna2HtmlLabel33);
             this.guna2ContainerControl8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
@@ -976,29 +978,29 @@
             this.guna2HtmlLabel29.TabIndex = 19;
             this.guna2HtmlLabel29.Text = "Seleccionar Entrada";
             // 
-            // guna2TextBox10
+            // txtOcupadosD
             // 
-            this.guna2TextBox10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox10.BorderRadius = 10;
-            this.guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox10.DefaultText = "50";
-            this.guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.Enabled = false;
-            this.guna2TextBox10.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Location = new System.Drawing.Point(207, 103);
-            this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox10.Name = "guna2TextBox10";
-            this.guna2TextBox10.PlaceholderText = "";
-            this.guna2TextBox10.SelectedText = "";
-            this.guna2TextBox10.Size = new System.Drawing.Size(159, 36);
-            this.guna2TextBox10.TabIndex = 18;
-            this.guna2TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtOcupadosD.BackColor = System.Drawing.Color.Transparent;
+            this.txtOcupadosD.BorderRadius = 10;
+            this.txtOcupadosD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOcupadosD.DefaultText = "50";
+            this.txtOcupadosD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtOcupadosD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtOcupadosD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOcupadosD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOcupadosD.Enabled = false;
+            this.txtOcupadosD.FillColor = System.Drawing.SystemColors.Window;
+            this.txtOcupadosD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOcupadosD.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOcupadosD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOcupadosD.Location = new System.Drawing.Point(207, 103);
+            this.txtOcupadosD.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtOcupadosD.Name = "txtOcupadosD";
+            this.txtOcupadosD.PlaceholderText = "";
+            this.txtOcupadosD.SelectedText = "";
+            this.txtOcupadosD.Size = new System.Drawing.Size(159, 36);
+            this.txtOcupadosD.TabIndex = 18;
+            this.txtOcupadosD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel30
             // 
@@ -1011,29 +1013,29 @@
             this.guna2HtmlLabel30.TabIndex = 17;
             this.guna2HtmlLabel30.Text = "Espacios ocupados";
             // 
-            // guna2TextBox11
+            // txtZDDisponibles
             // 
-            this.guna2TextBox11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox11.BorderRadius = 10;
-            this.guna2TextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox11.DefaultText = "50";
-            this.guna2TextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.Enabled = false;
-            this.guna2TextBox11.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Location = new System.Drawing.Point(402, 37);
-            this.guna2TextBox11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox11.Name = "guna2TextBox11";
-            this.guna2TextBox11.PlaceholderText = "";
-            this.guna2TextBox11.SelectedText = "";
-            this.guna2TextBox11.Size = new System.Drawing.Size(178, 36);
-            this.guna2TextBox11.TabIndex = 16;
-            this.guna2TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZDDisponibles.BackColor = System.Drawing.Color.Transparent;
+            this.txtZDDisponibles.BorderRadius = 10;
+            this.txtZDDisponibles.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZDDisponibles.DefaultText = "50";
+            this.txtZDDisponibles.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZDDisponibles.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZDDisponibles.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZDDisponibles.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZDDisponibles.Enabled = false;
+            this.txtZDDisponibles.FillColor = System.Drawing.SystemColors.Window;
+            this.txtZDDisponibles.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZDDisponibles.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZDDisponibles.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZDDisponibles.Location = new System.Drawing.Point(402, 37);
+            this.txtZDDisponibles.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtZDDisponibles.Name = "txtZDDisponibles";
+            this.txtZDDisponibles.PlaceholderText = "";
+            this.txtZDDisponibles.SelectedText = "";
+            this.txtZDDisponibles.Size = new System.Drawing.Size(178, 36);
+            this.txtZDDisponibles.TabIndex = 16;
+            this.txtZDDisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel31
             // 
@@ -1046,29 +1048,29 @@
             this.guna2HtmlLabel31.TabIndex = 15;
             this.guna2HtmlLabel31.Text = "Espacios disponibles";
             // 
-            // guna2TextBox12
+            // txtZonaDTotal
             // 
-            this.guna2TextBox12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox12.BorderRadius = 10;
-            this.guna2TextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox12.DefaultText = "50";
-            this.guna2TextBox12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox12.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox12.Enabled = false;
-            this.guna2TextBox12.FillColor = System.Drawing.SystemColors.Window;
-            this.guna2TextBox12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox12.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Location = new System.Drawing.Point(207, 37);
-            this.guna2TextBox12.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox12.Name = "guna2TextBox12";
-            this.guna2TextBox12.PlaceholderText = "";
-            this.guna2TextBox12.SelectedText = "";
-            this.guna2TextBox12.Size = new System.Drawing.Size(159, 36);
-            this.guna2TextBox12.TabIndex = 14;
-            this.guna2TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtZonaDTotal.BackColor = System.Drawing.Color.Transparent;
+            this.txtZonaDTotal.BorderRadius = 10;
+            this.txtZonaDTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZonaDTotal.DefaultText = "50";
+            this.txtZonaDTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZonaDTotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZonaDTotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZonaDTotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZonaDTotal.Enabled = false;
+            this.txtZonaDTotal.FillColor = System.Drawing.SystemColors.Window;
+            this.txtZonaDTotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZonaDTotal.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZonaDTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtZonaDTotal.Location = new System.Drawing.Point(207, 37);
+            this.txtZonaDTotal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtZonaDTotal.Name = "txtZonaDTotal";
+            this.txtZonaDTotal.PlaceholderText = "";
+            this.txtZonaDTotal.SelectedText = "";
+            this.txtZonaDTotal.Size = new System.Drawing.Size(159, 36);
+            this.txtZonaDTotal.TabIndex = 14;
+            this.txtZonaDTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel32
             // 
@@ -1091,6 +1093,10 @@
             this.guna2HtmlLabel33.Size = new System.Drawing.Size(50, 115);
             this.guna2HtmlLabel33.TabIndex = 3;
             this.guna2HtmlLabel33.Text = "D";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // DashboardForm
             // 
@@ -1142,32 +1148,32 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalParqueos;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalCarros;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalLibres;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar1;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBarLibres;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl4;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar2;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBarOcupados;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalOcupados;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl5;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtZonaATotal;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox txtOcupadosA;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtZADisponibles;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
         private Guna.UI2.WinForms.Guna2ComboBox cmbEntradaZA;
@@ -1176,32 +1182,33 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbEntradaZB;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2TextBox txtOcupadosB;
+        private Guna.UI2.WinForms.Guna2TextBox txtZonaBTotal;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel21;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox txtZBDisponibles;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl7;
         private Guna.UI2.WinForms.Guna2Button btnZonaC;
         private Guna.UI2.WinForms.Guna2ComboBox cmdEntradasZC;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2TextBox txtOcupadosC;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
-        private Guna.UI2.WinForms.Guna2TextBox cmbEntradaZC;
+        private Guna.UI2.WinForms.Guna2TextBox txtZCDisponibles;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel26;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
+        private Guna.UI2.WinForms.Guna2TextBox txtZonaCTotal;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel27;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel28;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl8;
         private Guna.UI2.WinForms.Guna2Button btnZonaD;
         private Guna.UI2.WinForms.Guna2ComboBox cmbEntradaZD;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel29;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox10;
+        private Guna.UI2.WinForms.Guna2TextBox txtOcupadosD;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel30;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
+        private Guna.UI2.WinForms.Guna2TextBox txtZDDisponibles;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel31;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox12;
+        private Guna.UI2.WinForms.Guna2TextBox txtZonaDTotal;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel32;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel33;
+        private System.Windows.Forms.Timer timer1;
     }
 }

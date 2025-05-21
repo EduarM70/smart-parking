@@ -10989,4 +10989,17 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="guna2Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAABGdBTUEAALGPC/xhBQAAAPdJREFUeF7t
+        2bFOwmAUhuGODkY6qKyMphOXwP3fjKOjtuQ3kaQUvpNABJ4nOUP/djlv0i7tAAAAgAe0eh8+X9bDV7tk
+        yRRrtR6+pxHthL+xRDthLtZ+xvP2CL/ECogVECsgVkCsgFgBsQJiBcQKiBUQKyBWQKyAWAGxAmIFxAqI
+        FTgaa5zn14/df59us3lqq1zeUqxbmf5t2LZ1LuseYk0jWDhXCzbxShbc+ke/77d9W+V6jkXzx3qBaAWi
+        FYhWIFqBaAWiFYhWIFqBaAWiFYhWIFqBaAWiFYhWIFqBaAWiFcxGG8/abeYcRBPrPPtoYgEAAMAj6rof
+        h7a5rydqdswAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>31</value>
+  </metadata>
 </root>

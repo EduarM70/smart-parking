@@ -36,20 +36,21 @@
             this.lblDate2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.PictureBoxMap = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblZona = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblEntraZona = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTotalEspacios = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblDisponibles = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblOcupados = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxMap)).BeginInit();
             this.guna2ContainerControl1.SuspendLayout();
@@ -119,69 +120,69 @@
             this.PictureBoxMap.TabStop = false;
             this.PictureBoxMap.Paint += new System.Windows.Forms.PaintEventHandler(this.PictureBoxMap_Paint);
             // 
-            // guna2HtmlLabel3
+            // lblZona
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Poppins", 75F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(45, 221);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(77, 179);
-            this.guna2HtmlLabel3.TabIndex = 6;
-            this.guna2HtmlLabel3.Text = "A";
+            this.lblZona.BackColor = System.Drawing.Color.Transparent;
+            this.lblZona.Font = new System.Drawing.Font("Poppins", 75F, System.Drawing.FontStyle.Bold);
+            this.lblZona.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
+            this.lblZona.Location = new System.Drawing.Point(45, 211);
+            this.lblZona.Name = "lblZona";
+            this.lblZona.Size = new System.Drawing.Size(77, 179);
+            this.lblZona.TabIndex = 6;
+            this.lblZona.Text = "A";
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(141, 258);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(141, 248);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(59, 25);
             this.guna2HtmlLabel4.TabIndex = 7;
             this.guna2HtmlLabel4.Text = "Entrada:";
             // 
-            // guna2HtmlLabel5
+            // lblEntraZona
             // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(141, 279);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(131, 30);
-            this.guna2HtmlLabel5.TabIndex = 8;
-            this.guna2HtmlLabel5.Text = "Entrada Norte A";
+            this.lblEntraZona.BackColor = System.Drawing.Color.Transparent;
+            this.lblEntraZona.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.lblEntraZona.ForeColor = System.Drawing.Color.Black;
+            this.lblEntraZona.Location = new System.Drawing.Point(141, 269);
+            this.lblEntraZona.Name = "lblEntraZona";
+            this.lblEntraZona.Size = new System.Drawing.Size(131, 30);
+            this.lblEntraZona.TabIndex = 8;
+            this.lblEntraZona.Text = "Entrada Norte A";
             // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(141, 315);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(141, 305);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(86, 30);
             this.guna2HtmlLabel6.TabIndex = 9;
             this.guna2HtmlLabel6.Text = "ESPACIOS:";
             // 
-            // guna2HtmlLabel7
+            // lblTotalEspacios
             // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Poppins SemiBold", 16F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(242, 311);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(30, 39);
-            this.guna2HtmlLabel7.TabIndex = 10;
-            this.guna2HtmlLabel7.Text = "38";
-            this.guna2HtmlLabel7.Click += new System.EventHandler(this.guna2HtmlLabel7_Click);
+            this.lblTotalEspacios.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalEspacios.Font = new System.Drawing.Font("Poppins SemiBold", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTotalEspacios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
+            this.lblTotalEspacios.Location = new System.Drawing.Point(242, 301);
+            this.lblTotalEspacios.Name = "lblTotalEspacios";
+            this.lblTotalEspacios.Size = new System.Drawing.Size(30, 39);
+            this.lblTotalEspacios.TabIndex = 10;
+            this.lblTotalEspacios.Text = "38";
+            this.lblTotalEspacios.Click += new System.EventHandler(this.guna2HtmlLabel7_Click);
             // 
             // guna2ContainerControl1
             // 
             this.guna2ContainerControl1.BorderRadius = 10;
             this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel10);
-            this.guna2ContainerControl1.Controls.Add(this.guna2HtmlLabel9);
+            this.guna2ContainerControl1.Controls.Add(this.lblDisponibles);
             this.guna2ContainerControl1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
-            this.guna2ContainerControl1.Location = new System.Drawing.Point(45, 387);
+            this.guna2ContainerControl1.Location = new System.Drawing.Point(45, 355);
             this.guna2ContainerControl1.Name = "guna2ContainerControl1";
             this.guna2ContainerControl1.Size = new System.Drawing.Size(270, 70);
             this.guna2ContainerControl1.TabIndex = 11;
@@ -198,17 +199,17 @@
             this.guna2HtmlLabel10.TabIndex = 13;
             this.guna2HtmlLabel10.Text = "Espacios Disponibles";
             // 
-            // guna2HtmlLabel9
+            // lblDisponibles
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(36, 13);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(36, 50);
-            this.guna2HtmlLabel9.TabIndex = 14;
-            this.guna2HtmlLabel9.Text = "25";
-            this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDisponibles.BackColor = System.Drawing.Color.Transparent;
+            this.lblDisponibles.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Bold);
+            this.lblDisponibles.ForeColor = System.Drawing.Color.White;
+            this.lblDisponibles.Location = new System.Drawing.Point(36, 13);
+            this.lblDisponibles.Name = "lblDisponibles";
+            this.lblDisponibles.Size = new System.Drawing.Size(36, 50);
+            this.lblDisponibles.TabIndex = 14;
+            this.lblDisponibles.Text = "25";
+            this.lblDisponibles.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2ContainerControl2
             // 
@@ -216,8 +217,8 @@
             this.guna2ContainerControl2.BorderRadius = 10;
             this.guna2ContainerControl2.BorderThickness = 2;
             this.guna2ContainerControl2.Controls.Add(this.guna2HtmlLabel11);
-            this.guna2ContainerControl2.Controls.Add(this.guna2HtmlLabel8);
-            this.guna2ContainerControl2.Location = new System.Drawing.Point(45, 469);
+            this.guna2ContainerControl2.Controls.Add(this.lblOcupados);
+            this.guna2ContainerControl2.Location = new System.Drawing.Point(45, 437);
             this.guna2ContainerControl2.Name = "guna2ContainerControl2";
             this.guna2ContainerControl2.Size = new System.Drawing.Size(269, 71);
             this.guna2ContainerControl2.TabIndex = 12;
@@ -234,18 +235,18 @@
             this.guna2HtmlLabel11.TabIndex = 15;
             this.guna2HtmlLabel11.Text = "Espacios Ocupados";
             // 
-            // guna2HtmlLabel8
+            // lblOcupados
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(45, 11);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(18, 50);
-            this.guna2HtmlLabel8.TabIndex = 13;
-            this.guna2HtmlLabel8.Text = "2";
-            this.guna2HtmlLabel8.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
+            this.lblOcupados.BackColor = System.Drawing.Color.Transparent;
+            this.lblOcupados.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Bold);
+            this.lblOcupados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(16)))), ((int)(((byte)(101)))));
+            this.lblOcupados.Location = new System.Drawing.Point(45, 11);
+            this.lblOcupados.Name = "lblOcupados";
+            this.lblOcupados.Size = new System.Drawing.Size(18, 50);
+            this.lblOcupados.TabIndex = 13;
+            this.lblOcupados.Text = "2";
+            this.lblOcupados.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOcupados.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
             // 
             // guna2Button2
             // 
@@ -259,7 +260,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.Location = new System.Drawing.Point(45, 592);
+            this.guna2Button2.Location = new System.Drawing.Point(44, 545);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(270, 45);
             this.guna2Button2.TabIndex = 31;
@@ -279,7 +280,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(45, 655);
+            this.guna2Button1.Location = new System.Drawing.Point(44, 600);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(270, 45);
             this.guna2Button1.TabIndex = 32;
@@ -289,27 +290,49 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.guna2Button3.BorderRadius = 10;
+            this.guna2Button3.BorderThickness = 2;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.White;
+            this.guna2Button3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
+            this.guna2Button3.Location = new System.Drawing.Point(45, 680);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(270, 45);
+            this.guna2Button3.TabIndex = 33;
+            this.guna2Button3.Text = "Regresar";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
             // Map1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1343, 751);
+            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.lblDate2);
             this.Controls.Add(this.guna2ContainerControl2);
             this.Controls.Add(this.guna2ContainerControl1);
-            this.Controls.Add(this.guna2HtmlLabel7);
+            this.Controls.Add(this.lblTotalEspacios);
             this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.guna2HtmlLabel5);
+            this.Controls.Add(this.lblEntraZona);
             this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.guna2HtmlLabel3);
+            this.Controls.Add(this.lblZona);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.Bienvenido);
             this.Name = "Map1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mapa Completo";
             this.Load += new System.EventHandler(this.Map1_Load);
             this.guna2Panel1.ResumeLayout(false);
@@ -331,19 +354,20 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDate2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox PictureBoxMap;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblZona;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblEntraZona;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalEspacios;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblDisponibles;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblOcupados;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

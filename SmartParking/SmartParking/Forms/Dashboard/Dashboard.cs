@@ -16,10 +16,12 @@ namespace SmartParking.Forms.Dashboard
     public partial class DashboardForm : Form
     {
         public char zona;
-        public char entrada;
+        public string entrada;
 
         // Pantalla del MapaCompleto
         public Map1 mapaCompleto;
+
+        // 
 
         public DashboardForm()
         {
@@ -28,8 +30,24 @@ namespace SmartParking.Forms.Dashboard
             if (Session.CurrentUser != null && Session.CurrentUser.Id != 0)
             {
                 welcomeUser.Text = $"Bienvenido {Session.CurrentUser.Nombre}";
-                mapaCompleto = new Map1();
 
+                mapaCompleto = new Map1(this);
+
+                // Configurar el Timer
+                timer1.Interval = 5000; // cada 5 segundo
+                timer1.Tick += timer1_Tick;
+                timer1.Start();
+
+                // barras de progreso
+                progressBarLibres.Minimum = 0;
+                progressBarLibres.Maximum = 100;
+                progressBarLibres.Value = 0;
+                progressBarLibres.Increment(1);
+
+                progressBarOcupados.Minimum = 0;
+                progressBarOcupados.Maximum = 100;
+                progressBarOcupados.Value = 0;
+                progressBarOcupados.Increment(1);
             }
             else
             {
@@ -49,6 +67,12 @@ namespace SmartParking.Forms.Dashboard
             string nombreMes = cultura.DateTimeFormat.GetMonthName(fechaActual.Month).ToLower();
 
             lblDate.Text = $"Hoy {nombreDia} {fechaActual.Day} de {nombreMes} de {fechaActual.Year}";
+
+            // otbnener las cantidades actualizadas de un 
+            if (mapaCompleto != null)
+            {
+                actualizarEstadoZonas();
+            }
 
         }
 
@@ -93,10 +117,10 @@ namespace SmartParking.Forms.Dashboard
                 switch (entradaZona)
                 {
                     case 0:
-                        entrada = 'N';
+                        entrada = "Norte";
                         break;
                     case 1:
-                        entrada = 'E';
+                        entrada = "Este";
                         break;
                 }
 
@@ -127,10 +151,10 @@ namespace SmartParking.Forms.Dashboard
                 switch (entradaZona)
                 {
                     case 0:
-                        entrada = 'S';
+                        entrada = "Sur";
                         break;
                     case 1:
-                        entrada = 'E';
+                        entrada = "Oeste";
                         break;
                 }
 
@@ -160,10 +184,10 @@ namespace SmartParking.Forms.Dashboard
                 switch (entradaZona)
                 {
                     case 0:
-                        entrada = 'N';
+                        entrada = "Norte";
                         break;
                     case 1:
-                        entrada = 'E';
+                        entrada = "Este";
                         break;
                 }
 
@@ -193,10 +217,10 @@ namespace SmartParking.Forms.Dashboard
                 switch (entradaZona)
                 {
                     case 0:
-                        entrada = 'S';
+                        entrada = "Sur";
                         break;
                     case 1:
-                        entrada = 'E';
+                        entrada = "Este";
                         break;
                 }
 
@@ -213,6 +237,74 @@ namespace SmartParking.Forms.Dashboard
             {
                 MessageBox.Show("Debes seleccionar una entreda para identificar la posición del mapa");
             }
+        }
+
+        private void actualizarEstadoZonas()
+        {
+            // Para zona A
+            int totalZonaA = mapaCompleto.mapaParqueo.totZona("A");
+            txtZonaATotal.Text = totalZonaA.ToString();
+
+            int espaciosDisponiblesA = mapaCompleto.mapaParqueo.totDisponiblesZona("A");
+            txtZADisponibles.Text = espaciosDisponiblesA.ToString();
+
+            int ocupadosA = mapaCompleto.mapaParqueo.totOcupadosZona("A");
+            txtOcupadosA.Text = ocupadosA.ToString();
+
+            // Para zona B
+            int totalZonaB = mapaCompleto.mapaParqueo.totZona("B");
+            txtZonaBTotal.Text = totalZonaB.ToString();
+
+            int espaciosDisponiblesB = mapaCompleto.mapaParqueo.totDisponiblesZona("B");
+            txtZBDisponibles.Text = espaciosDisponiblesB.ToString();
+
+            int ocupadosB = mapaCompleto.mapaParqueo.totOcupadosZona("B");
+            txtOcupadosB.Text = ocupadosB.ToString();
+
+            // Para zona C
+            int totalZonaC = mapaCompleto.mapaParqueo.totZona("C");
+            txtZonaCTotal.Text = totalZonaC.ToString();
+
+            int espaciosDisponiblesC = mapaCompleto.mapaParqueo.totDisponiblesZona("C");
+            txtZCDisponibles.Text = espaciosDisponiblesC.ToString();
+
+            int ocupadosC = mapaCompleto.mapaParqueo.totOcupadosZona("C");
+            txtOcupadosC.Text = ocupadosC.ToString();
+
+            // Para zona D
+            int totalZonaD = mapaCompleto.mapaParqueo.totZona("D");
+            txtZonaDTotal.Text = totalZonaD.ToString();
+
+            int espaciosDisponiblesD = mapaCompleto.mapaParqueo.totDisponiblesZona("D");
+            txtZDDisponibles.Text = espaciosDisponiblesD.ToString();
+
+            int ocupadosD = mapaCompleto.mapaParqueo.totOcupadosZona("D");
+            txtOcupadosD.Text = ocupadosD.ToString();
+
+
+            // totalizar estacionamientos
+
+            int totalEstacionamientos = totalZonaA + totalZonaB + totalZonaC + totalZonaD;
+            int totalLibres = espaciosDisponiblesA + espaciosDisponiblesB + espaciosDisponiblesC + espaciosDisponiblesD;
+            int totalOcupados = ocupadosA + ocupadosB + ocupadosC + ocupadosD;
+
+            lblTotalParqueos.Text = totalEstacionamientos.ToString();
+            lblTotalCarros.Text = totalOcupados.ToString();
+            lblTotalLibres.Text = totalLibres.ToString();
+            lblTotalOcupados.Text = totalOcupados.ToString();
+
+            // actualizar las barras de estado
+            int barIncrementeLibres = (100 * totalLibres) / totalEstacionamientos;
+            int barIncrementeOcupados = (100 * totalOcupados) / totalEstacionamientos;
+
+            progressBarLibres.Value = barIncrementeLibres;
+            progressBarOcupados.Value = barIncrementeOcupados;
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            actualizarEstadoZonas();
         }
     }
 }

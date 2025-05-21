@@ -40,7 +40,7 @@ namespace SmartParking.Services
             // asignar los numeros de los parqueos dependiendo de la fila y zona a la que perteneza
 
             // Extraer la letra (primer carácter)
-            char zona = zonafila[0]; // 'A'
+            zona = zonafila[0].ToString(); // 'A'
 
             // Extraer el número (resto del string)
             string numeroStr = zonafila.Substring(1); // "1"
@@ -135,6 +135,7 @@ namespace SmartParking.Services
             Coordenada = new Point(600, 130);
             PosicionRelativaCalle = 'n';
             ListaAdyacencia = new List<CAcalle>();
+            zona = "n";
 
        }
 
@@ -144,6 +145,7 @@ namespace SmartParking.Services
             Coordenada = coordenada;
             PosicionRelativaCalle = 'n';
             ListaAdyacencia = new List<CAcalle>();
+            zona = "n";
         }
 
         public void DibujarFila(Graphics g, Point origen)
